@@ -1,0 +1,58 @@
+mov =[
+    {
+        name: 'Adventure Time' ,
+        date: '2010 - 2018' ,
+        imga: 'https://fwcdn.pl/fpo/53/78/565378/7617547.3.jpg' ,
+        gat1: 'Animation',
+        gat2: 'Comedy',
+        gat3: 'Adventure',
+        id: '1',
+    },
+    {
+        name: 'Game Of Thrones' ,
+        date: '2011 - 2019' ,
+        imga: 'https://fwcdn.pl/cwpo/00/18/18/13.3.jpg' ,
+        gat1: 'Fantasy',
+        gat2: 'Drama',
+        gat3: 'Adventure',
+        id: '2',
+    },
+    {
+        name: 'Regular Show' ,
+        date: '2009 - 2017' ,
+        imga: 'https://fwcdn.pl/fpo/53/04/595304/7424170.3.jpg' ,
+        gat1: 'Animation',
+        gat2: 'Comedy',
+        gat3: 'Adventure',
+        id: '3',
+    },
+    {
+        name: 'The Witcher' ,
+        date: '2019 <' ,
+        imga: 'https://fwcdn.pl/fpo/44/64/724464/7981674.6.jpg' ,
+        gat1: 'Fantasy',
+        gat2: 'Adventure',
+        gat3: '',
+        id: '4',
+    },
+    {
+        name: 'Trailer Park Boys' ,
+        date: '2001 - 2018' ,
+        imga: 'https://fwcdn.pl/fpo/02/15/360215/7559887.3.jpg' ,
+        gat1: 'Drama',
+        gat2: 'Comedy',
+        gat3: '',
+        id: '5',
+    },
+    {
+        name: 'The Last Of Us' ,
+        date: '2023 >' ,
+        imga: 'https://www.gameshub.com/wp-content/uploads/sites/5/2023/01/the-last-of-us-hbo-tv-show-ellie-poster.jpg?w=692',
+        gat1: 'Drama',
+        gat2: 'Horror',
+        gat3: '',
+        id: '6',
+    },
+
+
+]
