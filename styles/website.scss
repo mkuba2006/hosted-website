@@ -1181,7 +1181,6 @@ h3 {
     background-repeat: repeat-y;
   }
   #first {
-    background-image: none;
     padding-top: 5vh;
     #cont {
       width: 670px;
@@ -1238,7 +1237,6 @@ h3 {
     background: none;
   }
   #four {
-    background: none;
     padding-top: 18%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
@@ -1256,7 +1254,7 @@ h3 {
     font-weight: 700;
     margin-top: 60px;
     display: block;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
 }
   section#about {
@@ -1327,6 +1325,12 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
+  #opis > div.navUL{
+    margin-top: 10px;
+  }
+  #app > h1 ,#appl > div{
+    font-size: 25px;
+  }
   #four{
     max-height: 1500px;
   }
