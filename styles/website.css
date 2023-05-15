@@ -1141,11 +1141,21 @@ h3 {
   }
 }
 @media screen and (max-width: 700px) {
+  #contact #container #ones #media ul a li {
+    list-style-type: none;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 15px;
+  }
+  #contact #container #ones #media h1 {
+    font-size: 20px;
+  }
   #contact #container #prawa {
     font-weight: 700;
     margin-top: 60px;
     display: block;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
   }
   section#about #container {
@@ -1212,6 +1222,16 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
+  #contact #container #ones #fform h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 29px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+  }
+  #prawa {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
   #appl .products .item .ram {
     transition-duration: 0.4s;
     width: 100%;
