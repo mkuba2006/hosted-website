@@ -180,6 +180,7 @@ body {
 }
 #first #cont #opis #buttons button:hover a,
 #first #cont #opis #buttons button:hover i {
+  cursor: pointer;
   color: #ddf7e3;
 }
 #first #opis2 {
