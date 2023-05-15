@@ -108,7 +108,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./pexels-bich-tran-669996.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?cs=srgb&dl=pexels-bich-tran-669996.jpg&fm=jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
