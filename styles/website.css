@@ -108,7 +108,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-bich-tran-669996.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./pexels-bich-tran-669996.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -240,7 +240,7 @@ section#about #container #rest #image img {
 }
 
 #four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./bg3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -292,7 +292,7 @@ section#about #container #rest #image img {
 }
 
 #formus {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./bg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1332,7 +1332,7 @@ h3 {
     font-size: 10px;
   }
   #app .product-list .kontent h1 a {
-    font-size: 18px;
+    font-size: 17px;
   }
   #app .product-list .kontent h3 {
     font-size: 15px;
