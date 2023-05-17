@@ -21,10 +21,11 @@ burger.addEventListener("click", () => {
 });
 
 const hrefs = document.querySelectorAll("#secret a");
-const secretDiv = document.querySelector('#secret');
+const secretDiv = document.getElementById('secret');
 
 hrefs.forEach(href=>{
   href.addEventListener('click', ()=>{
     secretDiv.classList.remove('nav_active');
+    burger.classList.toggle("toggle");
   })
 })

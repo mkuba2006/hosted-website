@@ -49,7 +49,7 @@ body {
   font-weight: 900;
   transition-duration: 0.4s;
   border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   animation: doLogo 5s linear infinite;
 }
 @keyframes doLogo {
@@ -72,7 +72,8 @@ body {
 #nav1 #logo1:hover {
   background-color: rgba(27, 27, 27, 0.5058823529);
 }
-#nav1 .Nav-el {
+
+.Nav-el {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   padding: 6px 11px 6px 11px;
@@ -83,10 +84,12 @@ body {
   background-color: rgba(0, 0, 0, 0.541);
   transition-duration: 0.4s;
 }
-#nav1 #burger1 {
+
+#burger1 {
   display: none;
 }
-#nav1 #burger1 div {
+
+#burger1 div {
   display: none;
   cursor: pointer;
   width: 26px;
@@ -96,10 +99,12 @@ body {
   padding-left: 3%;
   transition: all 0.3s ease;
 }
-#nav1 .mp {
+
+.mp {
   background-color: #1b1b1b;
 }
-#nav1 .scroll {
+
+.scroll {
   background-color: rgb(46, 44, 44);
 }
 
@@ -108,7 +113,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?cs=srgb&dl=pexels-bich-tran-669996.jpg&fm=jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-bich-tran-669996.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -180,7 +185,6 @@ body {
 }
 #first #cont #opis #buttons button:hover a,
 #first #cont #opis #buttons button:hover i {
-  cursor: pointer;
   color: #ddf7e3;
 }
 #first #opis2 {
@@ -241,7 +245,7 @@ section#about #container #rest #image img {
 }
 
 #four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -293,7 +297,7 @@ section#about #container #rest #image img {
 }
 
 #formus {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -328,7 +332,7 @@ section#about #container #rest #image img {
   justify-content: center;
   min-height: 150px;
 }
-#app .product-list #ram {
+#app .product-list .prod-item #ram {
   transition-duration: 0.4s;
   width: 100%;
   min-height: 130px;
@@ -341,15 +345,15 @@ section#about #container #rest #image img {
   justify-content: center;
   padding: 4px 12px;
 }
-#app .product-list #ram .obraz {
-  width: 40%;
+#app .product-list .prod-item #ram .obraz {
+  width: 42%;
 }
-#app .product-list #ram .obraz img {
+#app .product-list .prod-item #ram .obraz img {
   width: 100%;
   border-radius: 7px;
   height: auto;
 }
-#app .product-list #ram .kontent {
+#app .product-list .prod-item #ram .kontent {
   width: 60%;
   height: 50%;
   display: flex;
@@ -358,17 +362,17 @@ section#about #container #rest #image img {
   align-items: center;
   overflow: hidden;
 }
-#app .product-list #ram .kontent h1 {
+#app .product-list .prod-item #ram .kontent h1 {
   padding-top: 30px;
   font-size: 20px;
   font-weight: 700;
 }
-#app .product-list #ram .kontent h1 a {
+#app .product-list .prod-item #ram .kontent h1 a {
   color: #c84b31;
   list-style-type: none;
   text-decoration: none;
 }
-#app .product-list #ram .kontent h3 {
+#app .product-list .prod-item #ram .kontent h3 {
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
   overflow: hidden;
@@ -379,7 +383,7 @@ section#about #container #rest #image img {
   font-size: 18px;
 }
 #app .product-list .prod-item #ram:hover {
-  scale: 1.08;
+  transform: scale(1.08);
 }
 
 #appl {
@@ -765,7 +769,6 @@ h3 {
     font-size: 17px;
   }
   .carousel-item {
-    margin-top: 25vh;
     width: 100%;
   }
   .carousel-item img {
@@ -949,6 +952,9 @@ h3 {
   }
 }
 @media screen and (max-width: 880px) {
+  #formus {
+    background: none;
+  }
   section#about #container #rest {
     display: flex;
     justify-content: center;
@@ -1077,6 +1083,7 @@ h3 {
     background-repeat: repeat-y;
   }
   #first {
+    background-image: none;
     padding-top: 5vh;
   }
   #first #cont {
@@ -1127,6 +1134,7 @@ h3 {
     background: none;
   }
   #four {
+    background: none;
     padding-top: 18%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
@@ -1139,16 +1147,6 @@ h3 {
   }
 }
 @media screen and (max-width: 700px) {
-  #contact #container #ones #media ul a li {
-    list-style-type: none;
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    transition: 0.4s;
-    font-size: 15px;
-  }
-  #contact #container #ones #media h1 {
-    font-size: 20px;
-  }
   #contact #container #prawa {
     font-weight: 700;
     margin-top: 60px;
@@ -1220,58 +1218,6 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
-  #contact #container #ones #fform h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 29px;
-    margin: 20px 0 20px 0;
-    text-align: center;
-  }
-  #prawa {
-    margin-bottom: 40px;
-    font-size: 30px;
-  }
-  #appl .products .item .content h1 {
-    font-weight: 600;
-    color: #c84b31;
-    transition-duration: 0.4s;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-  }
-  #app .products .item .ram {
-    transition-duration: 0.4s;
-    width: 100%;
-    min-width: 90%;
-    max-width: 90%;
-    border-radius: 10px;
-    background-color: #161616;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 12px;
-  }
-  #appl .products .item .ram {
-    transition-duration: 0.4s;
-    width: 100%;
-    min-width: 90%;
-    max-width: 90%;
-    border-radius: 10px;
-    background-color: #161616;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 12px;
-  }
-  #opis > div.navUL {
-    margin-top: 10px;
-  }
-  #appl .titlep {
-    font-size: 25px;
-  }
   #four {
     max-height: 1500px;
   }
@@ -1296,7 +1242,7 @@ h3 {
   #app .product-list {
     padding: 0;
     width: auto;
-    max-width: 320px;
+    max-width: 340px;
     height: auto;
     grid-template-columns: 1fr;
   }
@@ -1330,7 +1276,7 @@ h3 {
     font-size: 10px;
   }
   #app .product-list .kontent h1 a {
-    font-size: 17px;
+    font-size: 18px;
   }
   #app .product-list .kontent h3 {
     font-size: 15px;
