@@ -1217,7 +1217,6 @@ h3 {
     background-repeat: repeat-y;
   }
   #first {
-    background-image: none;
     padding-top: 5vh;
     #cont {
       width: 670px;
@@ -1230,6 +1229,7 @@ h3 {
         width: 100%;
         padding: 0;
         margin-right: 0px;
+        margin-top: 20px;
       }
       #opis2 {
         clear: both;
@@ -1270,11 +1270,8 @@ h3 {
       }
     }
   }
-  #appl {
-    background: none;
-  }
+
   #four {
-    background: none;
     padding-top: 18%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
