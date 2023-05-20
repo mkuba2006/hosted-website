@@ -113,7 +113,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-bich-tran-669996.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/pexels-bich-tran-669996.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
