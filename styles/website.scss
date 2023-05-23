@@ -1550,49 +1550,16 @@ h3 {
   }
   
   #appl {
-    font-family: $font-family_1;
     .titlep {
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgb(181, 188, 194);
       font-size: 26px;
-      margin-bottom: 25px;
     }
     .products {
-      font-family: $font-family_1;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-flow: wrap;
-      max-width: 1100px;
-      padding: 0;
-      margin: 0 auto 0 auto;
       .item {
-        transition-duration: 0.4s;
-        padding: 9px 9px;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 150px;
         min-width: 260px;
         max-width: 260px;
         .ram {
-          transition-duration: 0.4s;
-          width: 100%;
-          min-height: 180px;
-          max-height: 180px;
           min-width: 300px;
           max-width: 300px;
-          border-radius: 10px;
-          background-color: $background-color_1;
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 4px 12px;
           .for_img {
             transition-duration: 0.4s;
             justify-content: center;
@@ -1600,29 +1567,9 @@ h3 {
             padding: auto 0 auto 0;
             min-height: 180px;
             max-height: 170px;
-            img {
-              transition-duration: 0.4s;
-              -o-object-fit: cover;
-              object-fit: cover;
-              width: 90%;
-              border-radius: 7px;
-              height: auto;
-              padding-top: 5px;
-              min-width: 128px;
-              max-width: 140px;
-              max-height: 174px;
-            }
           }
         }
         .content {
-          width: 60%;
-          height: 50%;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          overflow: hidden;
-          padding: 0 5px 0 5px;
           h1 {
             font-size: 18px;
           }
@@ -1638,13 +1585,4 @@ h3 {
       }
     }
   }
-  // #app {
-  //   .product-list {
-  //     .prod-item {
-  //       #ram:hover {
-  //         transform: scale(1.06);
-  //       }
-  //     }
-  //   }
-  // }
 }

@@ -1369,53 +1369,16 @@ h3 {
   #app .product-list .prod-item #ram:hover {
     transform: scale(1.08);
   }
-  #appl {
-    font-family: "Montserrat", sans-serif;
-  }
   #appl .titlep {
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(181, 188, 194);
     font-size: 26px;
-    margin-bottom: 25px;
-  }
-  #appl .products {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-    max-width: 1100px;
-    padding: 0;
-    margin: 0 auto 0 auto;
   }
   #appl .products .item {
-    transition-duration: 0.4s;
-    padding: 9px 9px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
     min-width: 260px;
     max-width: 260px;
   }
   #appl .products .item .ram {
-    transition-duration: 0.4s;
-    width: 100%;
-    min-height: 180px;
-    max-height: 180px;
     min-width: 300px;
     max-width: 300px;
-    border-radius: 10px;
-    background-color: #161616;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 12px;
   }
   #appl .products .item .ram .for_img {
     transition-duration: 0.4s;
@@ -1424,28 +1387,6 @@ h3 {
     padding: auto 0 auto 0;
     min-height: 180px;
     max-height: 170px;
-  }
-  #appl .products .item .ram .for_img img {
-    transition-duration: 0.4s;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 90%;
-    border-radius: 7px;
-    height: auto;
-    padding-top: 5px;
-    min-width: 128px;
-    max-width: 140px;
-    max-height: 174px;
-  }
-  #appl .products .item .content {
-    width: 60%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    padding: 0 5px 0 5px;
   }
   #appl .products .item .content h1 {
     font-size: 18px;
