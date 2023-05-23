@@ -1,4 +1,4 @@
-const scrollHandler = () => {
+const existingScrollHandler  = () => {
     const nav = document.querySelector('nav');
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -15,10 +15,10 @@ const scrollHandler = () => {
       }, 100); 
     });
   
-    window.removeEventListener('scroll', scrollHandler);
+    window.removeEventListener('scroll', existingScrollHandler );
   };
   
-  window.addEventListener('scroll', scrollHandler);
+  window.addEventListener('scroll', existingScrollHandler );
   
   
   
