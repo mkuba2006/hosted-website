@@ -1,12 +1,12 @@
 let movies = mov;
 const container = document.querySelector('.products');
 
-const render = (movies) =>{
-    container.innerHTML=``;
-    for(let i =0; i<= movies.length;i++){
+const render = (movies) => {
+    container.innerHTML = '';
+    for (let i = 0; i < movies.length; i++) {
         const item = document.createElement('li');
-        item.className = `item`;
-        item.innerHTML=`
+        item.className = 'item';
+        item.innerHTML = `
         <div class="ram">
             <div class="for_img" id="for_img${movies[i].id}">
                 <img src="${movies[i].imga}" img${movies[i].id}/>
@@ -22,14 +22,17 @@ const render = (movies) =>{
                 </select>
             </div>
         </div>
-        `
+        `;
         container.appendChild(item);
     }
-}
+};
 
 const Title = document.createElement('div');
 Title.className = 'titlep';
-Title.textContent = `My favourite series 🎥`;
+Title.textContent = 'My favourite series 🎥';
 document.querySelector('.products').before(Title);
-ScrollReveal().reveal(document.querySelector('.titlep'), { origin: 'left', distance: '10%'});
-document.onload = render(movies);
+ScrollReveal().reveal(document.querySelector('.titlep'), {
+    origin: 'left',
+    distance: '10%'
+});
+window.onload = () => render(movies);
