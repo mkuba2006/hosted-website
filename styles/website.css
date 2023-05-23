@@ -116,7 +116,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/pexels-bich-tran-669996.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -248,7 +248,7 @@ section#about #container #rest #image img {
 }
 
 #four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-pixabay-270348.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-pixabay-270348.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -300,7 +300,7 @@ section#about #container #rest #image img {
 }
 
 #formus {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/bg2.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
