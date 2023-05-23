@@ -5,7 +5,10 @@ html {
 }
 
 body {
+  box-sizing: border-box;
+  position: relative;
   margin: 0;
+  padding: 0;
   background-color: #010206;
 }
 
@@ -779,6 +782,7 @@ h3 {
   }
   #first #cont #opis #buttons {
     width: 100%;
+    margin-top: 10px;
   }
   #first #cont #opis2 {
     width: 250px;
@@ -830,6 +834,10 @@ h3 {
   }
   #first #cont #opis h1 {
     font-size: 20px;
+  }
+  #first #cont #opis h1:nth-child(3) {
+    width: 80%;
+    margin: auto;
   }
   #first #cont #opis #buttons button {
     font-size: 15px;

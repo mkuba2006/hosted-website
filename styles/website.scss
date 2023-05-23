@@ -13,7 +13,10 @@ html {
 }
 
 body {
+  box-sizing: border-box;
+  position: relative;
   margin: 0;
+  padding: 0;
   background-color: #010206;
 }
 
@@ -871,6 +874,7 @@ h3 {
         }
         #buttons {
           width: 100%;
+          margin-top: 10px;
         }
       }
       #opis2 {
@@ -929,6 +933,10 @@ h3 {
         width: 55%;
         h1 {
           font-size: 20px;
+        }
+        h1:nth-child(3){
+          width: 80%;
+          margin: auto;
         }
         #buttons {
           button {

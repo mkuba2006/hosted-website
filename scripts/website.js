@@ -60,6 +60,7 @@ buttons.forEach((button) => {
     i.forEach((i) => {
       i.style.cssText = `100px;`;
     });
+    document.querySelector("#prawa").innerHTML='Copyright © 2020 <span> JM*SUI</span>';
     dos_el[0].style.paddingBottom = "70px";
     dos_el[1].style.paddingBottom = "70px";
   }
