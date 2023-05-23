@@ -1247,7 +1247,7 @@ h3 {
   #app .product-list {
     padding: 0;
     width: auto;
-    max-width: 340px;
+    max-width: 300px;
     height: auto;
     grid-template-columns: 1fr;
   }
@@ -1258,19 +1258,24 @@ h3 {
   #app .product-list #ram {
     min-height: 130px;
     max-height: 130px;
+    width: 90%;
     padding: 4px 12px;
+  }
+  #app .product-list #ram .obraz {
+    justify-content: left;
   }
   #app .product-list #ram .obraz img {
     width: 100%;
-    min-width: 125px;
-    max-width: 125px;
-    min-height: 125px;
-    max-height: 125px;
+    min-width: 115px;
+    max-width: 115px;
+    min-height: 115px;
+    max-height: 115px;
   }
   #app .product-list .kontent {
     width: 60%;
     height: 50%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -1280,8 +1285,13 @@ h3 {
     padding-top: 30px;
     font-size: 10px;
   }
-  #app .product-list .kontent h1 a {
-    font-size: 18px;
+  #app .product-list .kontent h1 #stitle {
+    font-size: 17px;
+    display: inline-block;
+    max-width: 9ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   #app .product-list .kontent h3 {
     font-size: 15px;
@@ -1319,8 +1329,45 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
-  #app > h1 {
-    font-size: 26px;
+  #app .product-list .prod-item #ram {
+    width: 97%;
+  }
+  #app .product-list .prod-item #ram .kontent {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  #app .product-list .prod-item #ram .kontent h1 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #app .product-list .prod-item #ram .kontent h1 a {
+    color: #c84b31;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  #app .product-list .prod-item #ram .kontent h3 {
+    font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    color: #ecdbba;
+    padding: 0;
+    font-size: 18px;
+    display: inline-block;
+    max-width: 8ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #app .product-list .prod-item #ram:hover {
+    transform: scale(1.08);
   }
   #appl {
     font-family: "Montserrat", sans-serif;

@@ -1391,7 +1391,7 @@ h3 {
     .product-list {
       padding: 0;
       width: auto;
-      max-width: 340px;
+      max-width: 300px;
       height: auto;
       grid-template-columns: 1fr;
       .prod-item {
@@ -1401,14 +1401,16 @@ h3 {
       #ram {
         min-height: 130px;
         max-height: 130px;
+        width: 90%;
         padding: 4px 12px;
         .obraz {
+          justify-content: left;
           img {
             width: 100%;
-            min-width: 125px;
-            max-width: 125px;
-            min-height: 125px;
-            max-height: 125px;
+            min-width: 115px;
+            max-width: 115px;
+            min-height: 115px;
+            max-height: 115px;
           }
         }
       }
@@ -1416,6 +1418,7 @@ h3 {
         width: 60%;
         height: 50%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -1423,9 +1426,15 @@ h3 {
         h1 {
           padding-top: 30px;
           font-size: 10px;
-          a {
-            font-size: 18px;
+          #stitle {
+            font-size: 17px;
+            display: inline-block;
+            max-width: 9ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
+          
         }
 
         h3 {
@@ -1485,9 +1494,61 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
-  #app > h1{
-    font-size: 26px;
+
+  #app {
+  
+    .product-list {
+      .prod-item {
+        #ram {
+          width: 97%;
+          .kontent {
+            width: 60%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+  
+            h1 {
+              padding-top: 30px;
+              font-size: 20px;
+              font-weight: 700;
+  
+              a {
+                color: #c84b31;
+                list-style-type: none;
+                text-decoration: none;
+              }
+            }
+  
+            h3 {
+              font-family: "Montserrat", sans-serif;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 150px;
+              color: #ecdbba;
+              padding: 0;
+              font-size: 18px;
+              display: inline-block;
+              max-width: 8ch;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+  
+      .prod-item {
+        #ram:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
   }
+  
   #appl {
     font-family: $font-family_1;
     .titlep {
@@ -1577,4 +1638,13 @@ h3 {
       }
     }
   }
+  // #app {
+  //   .product-list {
+  //     .prod-item {
+  //       #ram:hover {
+  //         transform: scale(1.06);
+  //       }
+  //     }
+  //   }
+  // }
 }

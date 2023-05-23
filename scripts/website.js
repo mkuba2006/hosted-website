@@ -33,7 +33,6 @@ buttons.forEach((button) => {
     });
   });
 
- 
   
   const dos = document.getElementById("dos");
   const dos_el = document.querySelectorAll("#dos div");

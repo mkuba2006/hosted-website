@@ -21,7 +21,7 @@ class product{
                   <img src="${this.product.obraz}" class="img img${this.product.cyfra}">
               </div>
               <div class="kontent kontent${this.product.cyfra}">
-                  <h1><a href="${this.product.link}">${this.product.nazwa}</a></h1>
+                  <h1><a href="${this.product.link}" id="stitle">${this.product.nazwa}</a></h1>
                   <h3>${this.product.opis}</h3>
               </div>
           </div>
@@ -29,7 +29,6 @@ class product{
       return prod_body;
   }
 };
-
   
 class  productlist{
   product = [
