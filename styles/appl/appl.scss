@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
+$bg: #000000;
+$el1: #52057b;
+$el2: #892cdc;
+$el3: #bc6ff1;
+$el4mod: #1b1b1b;
+$el3mod: #bd6ff1a6;
+$alic: rgba(255, 255, 255, 0.884);
+$green: #ffb84c;
+html {
+  font-family: "Indie Flower", cursive;
+  color: $el3;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #010206;
+  overflow-x: hidden;
+}
+
+$color_1: #ffb84c;
+$color_2: #c84b31;
+$color_3: aliceblue;
+$color_4: #bc6ff1;
+$font-family_1: "Montserrat", sans-serif;
+$background-color_1: #161616;
+
+#appl {
+  font-family: $font-family_1;
+  height: 82vh;
+  .titlep {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(181, 188, 194);
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+  .products {
+    font-family: $font-family_1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    max-width: 1100px;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    .item {
+      transition-duration: 0.4s;
+      padding: 9px 9px;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      min-width: 360px;
+      max-width: 360px;
+      .ram {
+        transition-duration: 0.4s;
+        width: 100%;
+        min-height: 180px;
+        max-height: 180px;
+        min-width: 342px;
+        max-width: 342px;
+        border-radius: 10px;
+        background-color: $background-color_1;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 12px;
+        .for_img {
+          transition-duration: 0.4s;
+          justify-content: center;
+          align-items: center;
+          padding: auto 0 auto 0;
+          min-height: 180px;
+          max-height: 170px;
+          img {
+            transition-duration: 0.4s;
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 90%;
+            border-radius: 7px;
+            height: auto;
+            padding-top: 5px;
+            min-width: 128px;
+            max-width: 140px;
+            max-height: 174px;
+          }
+        }
+      }
+      .content {
+        width: 60%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        padding: 0 5px 0 5px;
+        h1 {
+          font-weight: 600;
+          $font-family_1: "Montserrat", sans-serif;
+          color: $color_2;
+          transition-duration: 0.4s;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 22px;
+        }
+        h3 {
+          transition-duration: 0.4s;
+          font-size: 19px;
+        }
+        select {
+          background-color: $background-color_1;
+          border: none;
+          color: $color_3;
+          font-size: 16px;
+          option {
+            background-color: $background-color_1;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .item {
+    .ram:hover {
+      scale: 1.05;
+    }
+  }
+}
+h3 {
+  color: $el3;
+}
+
+//MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+@media screen and (max-width: 1250px) {
+  #appl {
+    height: auto;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #appl{
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #appl {
+    .titlep {
+      font-size: 26px;
+    }
+    .products {
+      .item {
+        min-width: 260px;
+        max-width: 260px;
+        .ram {
+          min-width: 300px;
+          max-width: 300px;
+          .for_img {
+            transition-duration: 0.4s;
+            justify-content: center;
+            align-items: center;
+            padding: auto 0 auto 0;
+            min-height: 180px;
+            max-height: 170px;
+          }
+        }
+        .content {
+          h1 {
+            font-size: 18px;
+          }
+          h3 {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .item {
+      .ram:hover {
+        scale: 1.05;
+      }
+    }
+  }
+}

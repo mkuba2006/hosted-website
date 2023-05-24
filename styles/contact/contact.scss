@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
+$bg: #000000;
+$el1: #52057b;
+$el2: #892cdc;
+$el3: #bc6ff1;
+$el4mod: #1b1b1b;
+$el3mod: #bd6ff1a6;
+$alic: rgba(255, 255, 255, 0.884);
+$green: #ffb84c;
+html {
+  font-family: "Indie Flower", cursive;
+  color: $el3;
+}
+
+$color_1: #ffb84c;
+$color_2: #c84b31;
+$color_3: aliceblue;
+$color_4: #bc6ff1;
+$font-family_1: "Montserrat", sans-serif;
+$background-color_1: #161616;
+h3 {
+  color: $el3;
+}
+
+#contact {
+  #container {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 15% 4% 15%;
+    background-color: #0e0e0f;
+
+    #ones {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      #fform {
+        font-family: "Montserrat", sans-serif;
+        padding: 6px 14px;
+        border-radius: 9px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width: 400px;
+        h1 {
+          font-family: "Poppins", sans-serif;
+          font-size: 29px;
+          margin: 20px 0 20px 0;
+        }
+        form {
+          padding: 0 10px 0 0;
+          input,
+          textarea {
+            resize: none;
+            color: aliceblue;
+            width: 320px;
+            margin: 5px 0 0 0;
+            line-height: 24px;
+            background: none;
+            border: 1px solid #2e2e31;
+            outline: none;
+            display: block;
+            padding: 12px 16px;
+            font-size: 17px;
+            font-weight: 500;
+          }
+          .slide:hover,
+          .slide:focus {
+            box-shadow: inset 6.5em 0 0 0 var(--hover);
+          }
+
+          $colors: (
+            slide: #8fc866,
+          );
+          @each $button, $color in $colors {
+            .#{$button} {
+              --color: #{$color};
+              --hover: #{adjust-hue($color, 45deg)};
+            }
+          }
+          button {
+            color: var(--color);
+            transition: 0.25s;
+            &:hover,
+            &:focus {
+              border-color: var(--hover);
+              color: #fff;
+            }
+          }
+          button {
+            background: none;
+            border: 1px solid;
+            font: inherit;
+            line-height: 1;
+            margin-top: 0.5em;
+            font-size: 20px;
+            padding: 10px 26px;
+          }
+        }
+      }
+
+      #media {
+        width: 400px;
+        font-family: "Poppins", sans-serif;
+        h1 {
+          font-size: 29px;
+          span {
+            color: $green;
+          }
+        }
+        ul {
+          padding: 0;
+          line-height: 250%;
+          a {
+            text-decoration: none;
+            color: aliceblue;
+
+            li {
+              list-style-type: none;
+              letter-spacing: 1.2px;
+              cursor: pointer;
+              transition: 0.4s;
+            }
+          }
+          a li:hover {
+            letter-spacing: 5.5px;
+          }
+          a:nth-child(1):hover {
+            color: #4267b2;
+          }
+          a:nth-child(2):hover {
+            color: #ffdc80;
+          }
+          a:nth-child(3):hover {
+            color: #0072b1;
+          }
+          a:nth-child(4):hover {
+            color: #6cc644;
+          }
+        }
+      }
+    }
+    #prawa {
+      font-weight: 700;
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      span {
+        color: #df2e38;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+
+//MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  #contact #container #prawa {
+    font-weight: 700;
+    margin-top: 60px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #contact {
+    #container {
+      #ones {
+        #fform {
+          form {
+            padding: 0 10px 0 0;
+            input,
+            textarea {
+              width: 280px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

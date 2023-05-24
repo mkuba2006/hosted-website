@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  color: #bc6ff1;
+}
+
+h3 {
+  color: #bc6ff1;
+}
+
+#contact #container {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4% 15% 4% 15%;
+  background-color: #0e0e0f;
+}
+#contact #container #ones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+#contact #container #ones #fform {
+  font-family: "Montserrat", sans-serif;
+  padding: 6px 14px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 400px;
+}
+#contact #container #ones #fform h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 29px;
+  margin: 20px 0 20px 0;
+}
+#contact #container #ones #fform form {
+  padding: 0 10px 0 0;
+}
+#contact #container #ones #fform form input,
+#contact #container #ones #fform form textarea {
+  resize: none;
+  color: aliceblue;
+  width: 320px;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+  background: none;
+  border: 1px solid #2e2e31;
+  outline: none;
+  display: block;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+}
+#contact #container #ones #fform form .slide:hover,
+#contact #container #ones #fform form .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+#contact #container #ones #fform form .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+#contact #container #ones #fform form button {
+  color: var(--color);
+  transition: 0.25s;
+}
+#contact #container #ones #fform form button:hover, #contact #container #ones #fform form button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+#contact #container #ones #fform form button {
+  background: none;
+  border: 1px solid;
+  font: inherit;
+  line-height: 1;
+  margin-top: 0.5em;
+  font-size: 20px;
+  padding: 10px 26px;
+}
+#contact #container #ones #media {
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
+#contact #container #ones #media h1 {
+  font-size: 29px;
+}
+#contact #container #ones #media h1 span {
+  color: #ffb84c;
+}
+#contact #container #ones #media ul {
+  padding: 0;
+  line-height: 250%;
+}
+#contact #container #ones #media ul a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#contact #container #ones #media ul a li {
+  list-style-type: none;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#contact #container #ones #media ul a li:hover {
+  letter-spacing: 5.5px;
+}
+#contact #container #ones #media ul a:nth-child(1):hover {
+  color: #4267b2;
+}
+#contact #container #ones #media ul a:nth-child(2):hover {
+  color: #ffdc80;
+}
+#contact #container #ones #media ul a:nth-child(3):hover {
+  color: #0072b1;
+}
+#contact #container #ones #media ul a:nth-child(4):hover {
+  color: #6cc644;
+}
+#contact #container #prawa {
+  font-weight: 700;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+#contact #container #prawa span {
+  color: #df2e38;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+  #contact #container #prawa {
+    font-weight: 700;
+    margin-top: 60px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact #container #ones #fform form {
+    padding: 0 10px 0 0;
+  }
+  #contact #container #ones #fform form input,
+  #contact #container #ones #fform form textarea {
+    width: 280px;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  color: #bc6ff1;
+}
+
+h3 {
+  color: #bc6ff1;
+}
+
+#four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 18%;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  position: relative;
+  padding-bottom: 10%;
+}
+#four i {
+  padding: 0 auto 0 auto;
+  color: #bc6ff1;
+  font-size: 150px;
+}
+#four h3 {
+  color: #ffb84c;
+  font-weight: 1000;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+#four p {
+  color: #892cdc;
+  font-weight: 600;
+}
+#four #dos {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 0;
+}
+#four #dos > div {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  min-width: 400px;
+}
+#four #HTML {
+  height: 100%;
+}
+#four #CSS {
+  height: 100%;
+}
+#four #JS {
+  height: 100%;
+}
+
+@media screen and (max-width: 788px) {
+  #four {
+    padding-top: 18%;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10%;
+    height: 1200px;
+  }
+  #four #dos {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #four {
+    max-height: 1500px;
+  }
+}/*# sourceMappingURL=four.css.map */

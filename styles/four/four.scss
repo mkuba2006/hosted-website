@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
+$bg: #000000;
+$el1: #52057b;
+$el2: #892cdc;
+$el3: #bc6ff1;
+$el4mod: #1b1b1b;
+$el3mod: #bd6ff1a6;
+$alic: rgba(255, 255, 255, 0.884);
+$green: #ffb84c;
+html {
+  font-family: "Indie Flower", cursive;
+  color: $el3;
+}
+
+
+$color_1: #ffb84c;
+$color_2: #c84b31;
+$color_3: aliceblue;
+$color_4: #bc6ff1;
+$font-family_1: "Montserrat", sans-serif;
+$background-color_1: #161616;
+h3 {
+  color: $el3;
+}
+#four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url('https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 18%;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10%;
+  
+    i {
+      padding: 0 auto 0 auto;
+      color: $el3;
+      font-size: 150px;
+    }
+  
+    h3 {
+      color: $green;
+      font-weight: 1000;
+      text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    }
+  
+    p {
+      color: $el2;
+      font-weight: 600;
+    }
+  
+    #dos {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 0;
+    }
+  
+    #dos > div {
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      min-width: 400px;
+    }
+  
+    #HTML {
+      height: 100%;
+    }
+  
+    #CSS {
+      height: 100%;
+    }
+  
+    #JS {
+      height: 100%;
+    }
+  }
+
+
+//MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media screen and (max-width: 788px) {
+
+  #four {
+    padding-top: 18%;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10%;
+    height: 1200px;
+    #dos {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #four{
+    max-height: 1500px;
+  }
+}

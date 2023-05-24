@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  color: #bc6ff1;
+}
+
+#formus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/bg2.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=formus.css.map */

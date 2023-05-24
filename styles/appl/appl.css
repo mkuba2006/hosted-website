@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  color: #bc6ff1;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #010206;
+  overflow-x: hidden;
+}
+
+#appl {
+  font-family: "Montserrat", sans-serif;
+  height: 82vh;
+}
+#appl .titlep {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(181, 188, 194);
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+#appl .products {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  max-width: 1100px;
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+#appl .products .item {
+  transition-duration: 0.4s;
+  padding: 9px 9px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  min-width: 360px;
+  max-width: 360px;
+}
+#appl .products .item .ram {
+  transition-duration: 0.4s;
+  width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+  min-width: 342px;
+  max-width: 342px;
+  border-radius: 10px;
+  background-color: #161616;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+}
+#appl .products .item .ram .for_img {
+  transition-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  padding: auto 0 auto 0;
+  min-height: 180px;
+  max-height: 170px;
+}
+#appl .products .item .ram .for_img img {
+  transition-duration: 0.4s;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 90%;
+  border-radius: 7px;
+  height: auto;
+  padding-top: 5px;
+  min-width: 128px;
+  max-width: 140px;
+  max-height: 174px;
+}
+#appl .products .item .content {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 5px 0 5px;
+}
+#appl .products .item .content h1 {
+  font-weight: 600;
+  color: #c84b31;
+  transition-duration: 0.4s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+}
+#appl .products .item .content h3 {
+  transition-duration: 0.4s;
+  font-size: 19px;
+}
+#appl .products .item .content select {
+  background-color: #161616;
+  border: none;
+  color: aliceblue;
+  font-size: 16px;
+}
+#appl .products .item .content select option {
+  background-color: #161616;
+  border: none;
+}
+#appl .item .ram:hover {
+  scale: 1.05;
+}
+
+h3 {
+  color: #bc6ff1;
+}
+
+@media screen and (max-width: 1250px) {
+  #appl {
+    height: auto;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #appl {
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #appl .titlep {
+    font-size: 26px;
+  }
+  #appl .products .item {
+    min-width: 260px;
+    max-width: 260px;
+  }
+  #appl .products .item .ram {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  #appl .products .item .ram .for_img {
+    transition-duration: 0.4s;
+    justify-content: center;
+    align-items: center;
+    padding: auto 0 auto 0;
+    min-height: 180px;
+    max-height: 170px;
+  }
+  #appl .products .item .content h1 {
+    font-size: 18px;
+  }
+  #appl .products .item .content h3 {
+    font-size: 17px;
+  }
+  #appl .item .ram:hover {
+    scale: 1.05;
+  }
+}/*# sourceMappingURL=appl.css.map */

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  color: #bc6ff1;
+}
+
+#app {
+  padding-top: 18%;
+  font-family: "Montserrat", sans-serif;
+  height: 82vh;
+}
+#app .title-songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(181, 188, 194);
+}
+#app .product-list {
+  padding: 0;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#app .product-list .prod-item {
+  transition-duration: 0.4s;
+  padding: 9px 9px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#app .product-list .prod-item #ram {
+  transition-duration: 0.4s;
+  width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+  border-radius: 10px;
+  background-color: #161616;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+}
+#app .product-list .prod-item #ram .obraz {
+  width: 42%;
+}
+#app .product-list .prod-item #ram .obraz img {
+  width: 100%;
+  border-radius: 7px;
+  height: auto;
+}
+#app .product-list .prod-item #ram .kontent {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#app .product-list .prod-item #ram .kontent h1 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#app .product-list .prod-item #ram .kontent h1 a {
+  color: #c84b31;
+  list-style-type: none;
+  text-decoration: none;
+}
+#app .product-list .prod-item #ram .kontent h3 {
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  color: #ecdbba;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+#app .product-list .prod-item #ram:hover {
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 1050px) {
+  #app .product-list {
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #app .product-list #ram {
+    min-height: 130px;
+    max-height: 130px;
+    padding: 4px 12px;
+  }
+  #app .product-list #ram .obraz img {
+    width: 100%;
+    min-width: 125px;
+    max-width: 125px;
+    min-height: 125px;
+    max-height: 125px;
+  }
+}
+@media screen and (max-width: 788px) {
+  #app {
+    height: auto;
+    background: none;
+  }
+  #app .product-list {
+    padding: 0;
+    width: 420px;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  #app .product-list #ram {
+    min-height: 130px;
+    max-height: 130px;
+    padding: 4px 12px;
+  }
+  #app .product-list #ram .obraz img {
+    width: 100%;
+    min-width: 125px;
+    max-width: 125px;
+    min-height: 125px;
+    max-height: 125px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #app {
+    height: auto;
+  }
+  #app .product-list {
+    padding: 0;
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  #app .product-list .prod-item {
+    padding: 9px 9px;
+    min-height: 150px;
+  }
+  #app .product-list #ram {
+    min-height: 130px;
+    max-height: 130px;
+    width: 90%;
+    padding: 4px 12px;
+  }
+  #app .product-list #ram .obraz {
+    justify-content: left;
+  }
+  #app .product-list #ram .obraz img {
+    width: 100%;
+    min-width: 115px;
+    max-width: 115px;
+    min-height: 115px;
+    max-height: 115px;
+  }
+  #app .product-list .kontent {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  #app .product-list .kontent h1 {
+    padding-top: 30px;
+    font-size: 10px;
+  }
+  #app .product-list .kontent h1 #stitle {
+    font-size: 17px;
+    display: inline-block;
+    max-width: 9ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #app .product-list .kontent h3 {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    color: #ecdbba;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #app .product-list .prod-item #ram {
+    width: 97%;
+  }
+  #app .product-list .prod-item #ram .kontent {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  #app .product-list .prod-item #ram .kontent h1 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #app .product-list .prod-item #ram .kontent h1 a {
+    color: #c84b31;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  #app .product-list .prod-item #ram .kontent h3 {
+    font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    color: #ecdbba;
+    padding: 0;
+    font-size: 18px;
+    display: inline-block;
+    max-width: 8ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #app .product-list .prod-item #ram:hover {
+    transform: scale(1.08);
+  }
+}/*# sourceMappingURL=app.css.map */

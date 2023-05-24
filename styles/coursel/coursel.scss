@@ -12,15 +12,6 @@ html {
   color: $el3;
 }
 
-body {
-  box-sizing: border-box;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: #010206;
-  overflow-x: hidden;
-}
-
 .carousel {
   max-height: 700px;
   background-color: #0e0e0f;
@@ -66,90 +57,101 @@ body {
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@media screen and (max-width: 1500px) {
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 75%;
+    }
+    .carousel-caption {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
 
 @media screen and (max-width: 1250px) {
-  #second {
-    background-color: #010206;
-    padding-top: 18%;
-    font-family: "Montserrat", sans-serif;
-    width: 100vw;
-    position: relative;
-    padding-bottom: 10%;
-    display: flex;
-    i {
-      padding: 0 auto 0 auto;
-      color: $el3;
-      font-size: 150px;
-    }
-
-    #dos {
-      width: 100%;
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      align-items: center;
-      height: 280px;
-      background-color: #161616;
-    }
-
-    #dos > div {
-      min-width: 250px;
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 85%;
     }
   }
 }
 
 @media screen and (max-width: 1050px) {
-  #second {
-    background-color: #010206;
-    padding-top: 18%;
-    font-family: "Montserrat", sans-serif;
-    width: 100vw;
-    position: relative;
-    padding-bottom: 10%;
-    display: flex;
-    i {
-      padding: 0 auto 0 auto;
-      color: $el3;
-      font-size: 100px;
-    }
-
-    #dos {
-      width: 100%;
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      align-items: center;
-      height: 280px;
-      background-color: #161616;
-
-      p {
-        font-size: 20px;
-      }
-    }
-
-    #dos > div {
-      min-width: 250px;
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 100%;
     }
   }
 }
 
 @media screen and (max-width: 880px) {
-  #second {
-    i {
-      font-size: 10px;
-    }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-caption {
+    background-color: #010206;
   }
 }
 
 @media screen and (max-width: 788px) {
-  body {
-    background-image: url(/svg2.svg);
-    background-repeat: repeat-y;
+  .carousel-item {
+    margin-top: 0;
+    width: 100%;
+  }
+  .carousel-indicators {
+    margin-bottom: -1rem;
+  }
+  .carousel {
+    max-height: 450px;
+    margin: 350px 0;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-caption {
+    background-color: #010206;
   }
 }
 
-@media (min-width: 468px) {
-  .d-md-block {
-    display: block !important;
+
+
+@media screen and (max-width: 600px) {
+  .carousel-indicators {
+    margin-bottom: 2rem;
+  }
+  .carousel {
+    max-height: 350px;
+    margin: 150px 0;
+  }
+  .carousel-item {
+    width: 100%;
+    img {
+      min-height: 350px;
+      max-height: 500px;
+    }
+  }
+  .carousel-caption {
+    background-color: #010206;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel {
+    display: none;
+    max-height: 250px;
+    margin: 150px 0;
+  }
+  .carousel-item {
+    width: 100%;
+    img {
+      min-height: 250px;
+      max-height: 500px;
+    }
+  }
+  .carousel-caption {
+    background-color: #010206;
   }
 }
