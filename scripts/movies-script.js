@@ -5,7 +5,7 @@ const render = (movies) => {
     container.innerHTML = '';
     for (let i = 0; i < movies.length; i++) {
         const item = document.createElement('li');
-        item.className = 'item';
+        item.className = 'item sr-item';
         item.innerHTML = `
         <div class="ram">
             <div class="for_img" id="for_img${movies[i].id}">
@@ -35,4 +35,20 @@ ScrollReveal().reveal(document.querySelector('.titlep'), {
     origin: 'left',
     distance: '10%'
 });
-window.onload = () => render(movies);
+ScrollReveal().reveal('.item', {
+    delay: 200,
+    origin: 'bottom',
+    distance: '20%',
+    interval: 100
+  });
+window.onload = () => {
+  render(movies);
+  ScrollReveal().reveal('.sr-item', {delay: 200,origin: 'bottom',distance: '20%',interval: 100});
+};
+
+
+
+
+
+
+

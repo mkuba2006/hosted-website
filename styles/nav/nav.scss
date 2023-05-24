@@ -32,7 +32,7 @@ html {
   width: 100%;
   position: fixed;
   z-index: 1;
-  
+  color: white;
   .in-nav {
     padding: 0.3% 15% 0.3% 15%;
     display: flex;
@@ -89,7 +89,7 @@ html {
     font-family: "Montserrat", sans-serif;
     padding: 6px 11px 6px 11px;
     border: 1px solid $el4mod;
-    color: $alic;
+    color: white;
     border-radius: 5px;
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.541);
