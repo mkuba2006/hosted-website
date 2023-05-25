@@ -165,4 +165,9 @@ h3 {
   #appl .item .ram:hover {
     scale: 1.05;
   }
+}
+@media screen and (max-width: 500px) {
+  #appl .titlep {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=appl.css.map */

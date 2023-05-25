@@ -30,7 +30,8 @@ h3 {
     margin: 0 auto;
     padding: 4% 15% 4% 15%;
     background-color: #0e0e0f;
-
+    position: relative;
+    bottom: 0;
     #ones {
       display: flex;
       justify-content: center;

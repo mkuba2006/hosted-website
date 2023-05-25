@@ -107,10 +107,11 @@ section#about #container #rest #text p {
 }
 @media screen and (max-width: 750px) {
   section#about {
+    height: auto;
     min-height: 900px;
   }
   section#about #container {
-    width: 500px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -118,6 +119,7 @@ section#about #container #rest #text p {
     flex-wrap: wrap;
     text-align: left;
     height: auto;
+    border: none;
   }
   section#about #container h3 {
     margin: 0;
@@ -130,10 +132,10 @@ section#about #container #rest #text p {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    color: #7f8799;
+    color: rgb(193, 197, 201);
   }
   section#about #container #rest #text {
-    width: 350px;
+    width: 300px;
     font-size: 15px;
     padding: 0;
   }
@@ -145,6 +147,7 @@ section#about #container #rest #text p {
   }
   section#about #container #rest #text p {
     font-size: 15px;
+    font-weight: 400;
   }
   section#about #container #rest #image {
     display: flex;
@@ -155,19 +158,92 @@ section#about #container #rest #text p {
     filter: blur(0.1px);
   }
   section#about #container #rest #image img {
-    width: 350px;
+    width: 300px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
 }
 @media screen and (max-width: 600px) {
   section#about {
-    padding-top: 20px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0f;
+    overflow: hidden;
+  }
+  section#about #container {
+    width: 100%;
+    text-align: left;
+    border: none;
+  }
+  section#about #container #rest {
+    display: flex;
+    width: 100%;
+    color: #F8F6F4;
+  }
+  section#about #container #rest #image {
+    width: 100%;
+    filter: blur(0.1px);
+    opacity: 0.8;
+  }
+  section#about #container #rest #image img {
+    width: 250px;
+    height: 100%;
+  }
+  section#about #container #rest #text {
+    padding: 0;
+    width: 250px;
+  }
+  section#about #container #rest #text h1 {
+    font-weight: 400;
+  }
+  section#about #container #rest #text h6 {
+    font-weight: 400;
+  }
+  section#about #container #rest #text p {
+    font-weight: 300;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
+  section#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0f;
+    overflow: hidden;
+  }
+  section#about #container {
+    width: 100%;
+    text-align: left;
+    border: none;
+  }
+  section#about #container #rest {
+    display: flex;
+    width: 100%;
+    color: #F8F6F4;
+  }
+  section#about #container #rest #image {
+    width: 100%;
+    filter: blur(0.1px);
+    opacity: 0.8;
+  }
+  section#about #container #rest #image img {
+    width: 200px;
+    height: 100%;
+  }
   section#about #container #rest #text {
+    padding: 0;
     width: 80%;
-    font-size: 17px;
+    text-align: center;
+  }
+  section#about #container #rest #text h1 {
+    font-weight: 400;
+  }
+  section#about #container #rest #text h6 {
+    font-weight: 400;
+  }
+  section#about #container #rest #text p {
+    font-weight: 300;
   }
 }/*# sourceMappingURL=about.css.map */

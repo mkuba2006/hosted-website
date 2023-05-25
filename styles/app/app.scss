@@ -250,7 +250,7 @@ html {
             overflow: hidden;
   
             h1 {
-              padding-top: 30px;
+              padding-top: 20px;
               font-size: 20px;
               font-weight: 700;
   
@@ -262,11 +262,11 @@ html {
             }
   
             h3 {
-              font-family: "Montserrat", sans-serif;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
-              max-width: 150px;
+              min-width: 110px;
+              max-width: 110px;
               color: #ecdbba;
               padding: 0;
               font-size: 18px;
@@ -275,6 +275,8 @@ html {
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
+              margin-left: 15px;
+              margin-bottom: 0;
             }
           }
         }
