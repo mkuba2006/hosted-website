@@ -120,7 +120,17 @@ h3 {
             max-height: 250px;
           }
         }
-        .cloud1:hover, .cloud2:hover{
+        .cloud1:hover{
+          opacity: 1; 
+          display: flex;
+          img{
+            margin: 0;
+            opacity: 1;
+            max-width: 250px;
+            max-height: 250px;
+          }
+        }
+        .cloud2:hover{
           opacity: 1; 
           display: flex;
           img{

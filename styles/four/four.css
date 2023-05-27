@@ -100,11 +100,21 @@ h3 {
   max-width: 250px;
   max-height: 250px;
 }
-#four #certificates div .cloud1:hover, #four #certificates div .cloud2:hover {
+#four #certificates div .cloud1:hover {
   opacity: 1;
   display: flex;
 }
-#four #certificates div .cloud1:hover img, #four #certificates div .cloud2:hover img {
+#four #certificates div .cloud1:hover img {
+  margin: 0;
+  opacity: 1;
+  max-width: 250px;
+  max-height: 250px;
+}
+#four #certificates div .cloud2:hover {
+  opacity: 1;
+  display: flex;
+}
+#four #certificates div .cloud2:hover img {
   margin: 0;
   opacity: 1;
   max-width: 250px;
