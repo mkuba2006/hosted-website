@@ -147,7 +147,7 @@ h3 {
     width: 600px;
   }
   #four #certificates div img {
-    filter: blur(0.5px);
+    filter: blur(0px);
     width: 100%;
   }
 }
