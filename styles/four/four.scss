@@ -93,7 +93,7 @@ h3 {
       overflow: hidden;
       div{
         width: 700px;
-        z-index: 1;
+        z-index: 0;
         img{
           filter: blur(0.5px);
           width: 100%;
@@ -106,16 +106,17 @@ h3 {
           position: absolute;
           opacity: 0; 
           transition: opacity 0.5s ease 0s; 
-          z-index: 10; 
+          z-index: 0; 
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
+          margin: 0;
           img{
-            margin: auto auto;
+            margin: 0;
             opacity: 1;
-            max-width: 300px;
-            max-height: 300px;
+            max-width: 250px;
+            max-height: 250px;
           }
         }
         #cloud:hover{
