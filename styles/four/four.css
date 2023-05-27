@@ -107,8 +107,6 @@ h3 {
 #four #certificates div .cloud1:hover img {
   margin: 0;
   opacity: 1;
-  max-width: 250px;
-  max-height: 250px;
 }
 #four #certificates div .cloud2:hover {
   opacity: 1;
@@ -117,8 +115,6 @@ h3 {
 #four #certificates div .cloud2:hover img {
   margin: 0;
   opacity: 1;
-  max-width: 250px;
-  max-height: 250px;
 }
 #four #info {
   color: white;
@@ -162,11 +158,19 @@ h3 {
     gap: 40px;
   }
   #four #certificates div {
-    width: 600px;
+    width: 500px;
   }
   #four #certificates div img {
     filter: blur(0px);
     width: 100%;
+  }
+  #four #certificates div .cloud1 {
+    height: 48%;
+    top: 0px;
+  }
+  #four #certificates div .cloud2 {
+    height: 48%;
+    top: 52%;
   }
 }
 @media screen and (max-width: 688px) {
@@ -183,6 +187,14 @@ h3 {
   #four #certificates div img {
     filter: blur(0px);
     width: 100%;
+  }
+  #four #certificates div .cloud1 {
+    height: 364.5px;
+    top: 0px;
+  }
+  #four #certificates div .cloud2 {
+    height: 364.5px;
+    top: 52%;
   }
   #four #line2 {
     margin-bottom: 30px;
@@ -205,10 +217,51 @@ h3 {
     filter: blur(0px);
     width: 100%;
   }
+  #four #certificates div .cloud1 {
+    height: 48%;
+    top: 0px;
+  }
+  #four #certificates div .cloud1 img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  #four #certificates div .cloud2 {
+    height: 48%;
+    top: 52%;
+  }
+  #four #certificates div .cloud2 img {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 @media screen and (max-width: 500px) {
   #four #dos {
     margin-bottom: 0;
+  }
+  #dos {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  #four #dos {
+    margin-bottom: 0;
+  }
+  #four #certificates div .cloud1 {
+    min-height: auto;
+    max-height: 180px;
+    top: 0px;
+  }
+  #four #certificates div .cloud1 img {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  #four #certificates div .cloud2 {
+    height: 36%;
+    top: 52%;
+  }
+  #four #certificates div .cloud2 img {
+    max-width: 160px;
+    max-height: 160px;
   }
   #dos {
     margin-bottom: 0;
