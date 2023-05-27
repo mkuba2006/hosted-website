@@ -91,6 +91,7 @@ h3 {
       align-items: center;
       justify-content: space-around;
       overflow: hidden;
+      z-index: 0;
       div{
         width: 700px;
         z-index: 0;
@@ -197,7 +198,7 @@ h3 {
       div{
         width: 470px;
         img{
-          filter: blur(0.5px);
+          filter: blur(0px);
           width: 100%;
         }
       }
@@ -222,7 +223,7 @@ h3 {
       div{
         width: 80%;
         img{
-          filter: blur(0.5px);
+          filter: blur(0px);
           width: 100%;
         }
       }

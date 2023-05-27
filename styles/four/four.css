@@ -69,6 +69,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
+  z-index: 0;
 }
 #four #certificates div {
   width: 700px;
@@ -163,7 +164,7 @@ h3 {
     width: 470px;
   }
   #four #certificates div img {
-    filter: blur(0.5px);
+    filter: blur(0px);
     width: 100%;
   }
   #four #line2 {
@@ -184,7 +185,7 @@ h3 {
     width: 80%;
   }
   #four #certificates div img {
-    filter: blur(0.5px);
+    filter: blur(0px);
     width: 100%;
   }
 }
