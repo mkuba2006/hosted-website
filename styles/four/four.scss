@@ -297,8 +297,7 @@ h3 {
     #certificates{
       div{
         .cloud1{
-          min-height: auto;
-          max-height: 180px;
+          height: 48%;
           top: 0px;
           img{
             max-width: 160px;
@@ -306,7 +305,7 @@ h3 {
           }
         }
         .cloud2{
-          height: 36%;
+          height: 48%;
           top: 52%;
           img{
             max-width: 160px;

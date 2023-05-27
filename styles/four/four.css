@@ -247,8 +247,7 @@ h3 {
     margin-bottom: 0;
   }
   #four #certificates div .cloud1 {
-    min-height: auto;
-    max-height: 180px;
+    height: 48%;
     top: 0px;
   }
   #four #certificates div .cloud1 img {
@@ -256,7 +255,7 @@ h3 {
     max-height: 160px;
   }
   #four #certificates div .cloud2 {
-    height: 36%;
+    height: 48%;
     top: 52%;
   }
   #four #certificates div .cloud2 img {
