@@ -95,8 +95,8 @@ h3 {
 #four #certificates div #cloud img {
   margin: auto auto;
   opacity: 1;
-  max-width: 45%;
-  max-height: 70%;
+  max-width: 300px;
+  max-height: 300px;
 }
 #four #certificates div #cloud:hover {
   opacity: 1;
