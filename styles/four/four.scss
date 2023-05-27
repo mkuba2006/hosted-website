@@ -12,7 +12,7 @@ html {
   color: $el3;
 }
 
-
+//1000
 $color_1: #ffb84c;
 $color_2: #c84b31;
 $color_3: aliceblue;
@@ -80,12 +80,87 @@ h3 {
     #JS {
       height: 100%;
     }
+
+    #certificates{
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      overflow: hidden;
+      div{
+        width: 700px;
+        z-index: 1;
+        img{
+          filter: blur(0.5px);
+          width: 100%;
+          z-index: 0;
+        }
+        // img:hover{
+        //   filter: brightness(30%);
+        // }
+        #cloud{
+          height: 100%; 
+          background-color: #000000e6; 
+          top: 0px;
+          position: absolute;
+          opacity: 0; 
+          transition: opacity 0.5s ease 0s; 
+          z-index: 10; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          img{
+            margin: auto auto;
+            opacity: 1;
+            max-width: 45%;
+            max-height: 70%;
+          }
+        }
+        #cloud:hover{
+          opacity: 1; 
+        }
+      }
+    }
+    
+    #info{
+      color: white;
+      width: min-content;
+      margin: 0px auto 10px;
+      font-weight: 200;
+    }
+  
+    .line{
+      margin: 0px auto 30px ;
+      width: 100px;
+      height: 2px;
+      background:#FEA1A1;
+    }
+    #line2{
+      margin-bottom: 100px;
+    }
   }
 
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+@media screen and (max-width: 1600px) {
+  #four {
+    #certificates{
+      div{
+        width: 48%;
+        img{
+          filter: blur(0.5px);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 788px) {
 
@@ -95,16 +170,76 @@ h3 {
     width: 100%;
     position: relative;
     padding-bottom: 10%;
-    height: 1200px;
+    height: auto;
     #dos {
       margin-bottom: 100px;
+    }
+    #certificates{
+      gap: 40px;
+      div{
+        width: 600px;
+        img{
+          filter: blur(0.5px);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+
+  #four {
+    #dos {
+      padding: 0;
+      margin-bottom: 100px;
+    }
+    #certificates{
+      gap: 40px;
+      div{
+        width: 470px;
+        img{
+          filter: blur(0.5px);
+          width: 100%;
+        }
+      }
+    }
+    #line2{
+      margin-bottom: 30px;
     }
   }
 }
 
 
+@media screen and (max-width: 600px) {
+  #dos {
+    margin-bottom: 0;
+  }
+  #four {
+    #dos {
+      margin-bottom: 0;
+    }
+    #certificates{
+      gap: 40px;
+      div{
+        width: 80%;
+        img{
+          filter: blur(0.5px);
+          width: 100%;
+        }
+      }
+      
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   #four{
-    max-height: 1500px;
+    #dos {
+      margin-bottom: 0;
+    }
+  }
+  #dos {
+    margin-bottom: 0;
   }
 }

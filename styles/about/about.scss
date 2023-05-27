@@ -31,6 +31,9 @@ section#about {
   overflow: hidden;
   h3{
     color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   #line{

@@ -11,7 +11,7 @@ html {
   font-family: "Indie Flower", cursive;
   color: $el3;
 }
-
+//1000
 .carousel {
   max-height: 700px;
   background-color: #0e0e0f;
@@ -98,6 +98,9 @@ html {
 }
 
 @media screen and (max-width: 788px) {
+  .carousel{
+    display: none;
+  }
   .carousel-item {
     margin-top: 0;
     width: 100%;

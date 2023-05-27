@@ -51,7 +51,7 @@ buttons.forEach((button) => {
       i.style.cssText = `font-size: 100px;`;
     });
   } else if (window.outerWidth < 600) {
-    dos.style.cssText = `display: grid; width: 100vw; height: auto; padding: 100px 0px; margin-bottom: 1000px; `;
+    dos.style.cssText = `display: grid; width: 100vw; height: auto; padding: 100px 0px; margin-bottom: 0; `;
     
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px;width: 50vw; font-size: 15px; height: auto;`;

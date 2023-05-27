@@ -59,7 +59,74 @@ h3 {
 #four #JS {
   height: 100%;
 }
+#four #certificates {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+#four #certificates div {
+  width: 700px;
+  z-index: 1;
+}
+#four #certificates div img {
+  filter: blur(0.5px);
+  width: 100%;
+  z-index: 0;
+}
+#four #certificates div #cloud {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  top: 0px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#four #certificates div #cloud img {
+  margin: auto auto;
+  opacity: 1;
+  max-width: 45%;
+  max-height: 70%;
+}
+#four #certificates div #cloud:hover {
+  opacity: 1;
+}
+#four #info {
+  color: white;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0px auto 10px;
+  font-weight: 200;
+}
+#four .line {
+  margin: 0px auto 30px;
+  width: 100px;
+  height: 2px;
+  background: #FEA1A1;
+}
+#four #line2 {
+  margin-bottom: 100px;
+}
 
+@media screen and (max-width: 1600px) {
+  #four #certificates div {
+    width: 48%;
+  }
+  #four #certificates div img {
+    filter: blur(0.5px);
+    width: 100%;
+  }
+}
 @media screen and (max-width: 788px) {
   #four {
     padding-top: 18%;
@@ -67,14 +134,64 @@ h3 {
     width: 100%;
     position: relative;
     padding-bottom: 10%;
-    height: 1200px;
+    height: auto;
   }
   #four #dos {
     margin-bottom: 100px;
   }
+  #four #certificates {
+    gap: 40px;
+  }
+  #four #certificates div {
+    width: 600px;
+  }
+  #four #certificates div img {
+    filter: blur(0.5px);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 688px) {
+  #four #dos {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  #four #certificates {
+    gap: 40px;
+  }
+  #four #certificates div {
+    width: 470px;
+  }
+  #four #certificates div img {
+    filter: blur(0.5px);
+    width: 100%;
+  }
+  #four #line2 {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #dos {
+    margin-bottom: 0;
+  }
+  #four #dos {
+    margin-bottom: 0;
+  }
+  #four #certificates {
+    gap: 40px;
+  }
+  #four #certificates div {
+    width: 80%;
+  }
+  #four #certificates div img {
+    filter: blur(0.5px);
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
-  #four {
-    max-height: 1500px;
+  #four #dos {
+    margin-bottom: 0;
+  }
+  #dos {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=four.css.map */

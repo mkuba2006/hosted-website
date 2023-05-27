@@ -84,6 +84,9 @@ html {
   }
 }
 @media screen and (max-width: 788px) {
+  .carousel {
+    display: none;
+  }
   .carousel-item {
     margin-top: 0;
     width: 100%;
