@@ -24,7 +24,14 @@ html {
     justify-content: center;
     color: rgb(181, 188, 194);
   }
-
+  #line{
+    display: block;
+    margin: 0px auto 30px ;
+    width: 200px;
+    height: 2px;
+    clear: both;
+    background:#FEA1A1;
+  }
   .product-list {
     padding: 0;
     width: 1000px;
@@ -172,6 +179,12 @@ html {
 @media screen and (max-width: 500px) {
   #app {
     height: auto;
+    #line{
+      width: 100px;
+    }
+    .title-songs {
+      font-size: 22px;
+    }
     .product-list {
       padding: 0;
       width: auto;

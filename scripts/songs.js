@@ -60,7 +60,11 @@ class rnd{
       title.textContent ="My favourite songs 🎵";
       ScrollReveal().reveal(title, { delay: 400, origin: 'left', distance: '30%'});
       title.className ="title-songs";
+      const line = document.createElement('div');
+      line.className= 'line';
+      line.id='line';
       renderHook.append(title);
+      renderHook.append(line);
       const productList = new productlist();
       const prodListEl = productList.render();
       renderHook.append(prodListEl);

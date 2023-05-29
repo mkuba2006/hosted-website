@@ -38,7 +38,16 @@ $background-color_1: #161616;
     justify-content: center;
     color: rgb(181, 188, 194);
     font-size: 33px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  #line{
+    display: block;
+    margin: 0px auto 30px ;
+    width: 200px;
+    height: 2px;
+    clear: both;
+    background:#FEA1A1;
   }
   .products {
     font-family: $font-family_1;
@@ -163,6 +172,9 @@ h3 {
   #appl {
     .titlep {
       font-size: 26px;
+    }
+    #line{
+      width: 100px;
     }
     .products {
       .item {

@@ -30,7 +30,11 @@ const render = (movies) => {
 const Title = document.createElement('div');
 Title.className = 'titlep';
 Title.textContent = 'My favourite series 🎥';
+const line = document.createElement('div');
+line.className= 'line';
+line.id='line';
 document.querySelector('.products').before(Title);
+document.querySelector('.products').before(line);
 ScrollReveal().reveal(document.querySelector('.titlep'), {
     origin: 'left',
     distance: '10%'
