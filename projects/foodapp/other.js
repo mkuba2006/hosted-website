@@ -21,9 +21,9 @@ buttons.forEach(button => {
     button.addEventListener('mouseenter',()=>{
 
         if (button.classList.contains('active')) {
-            after.style.bottom = '-15px';
+            after.style.bottom = '-20px';
         }else{
-            after.style.bottom = '-15px';
+            after.style.bottom = '-20px';
         }
     })
     button.addEventListener('mouseleave',()=>{
