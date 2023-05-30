@@ -27,7 +27,7 @@ const render = (movies) => {
     }
 };
 
-const Title = document.createElement('div');
+const Title = document.createElement('h1');
 Title.className = 'titlep';
 Title.textContent = 'My favourite series 🎥';
 const line = document.createElement('div');

@@ -1,89 +1,93 @@
 body {
-    background-color: #0e0e0f;
-    color: rgb(0, 0, 0);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-  }
-  #container{
-    display: grid;
-    grid-template-columns: 70px 70px 70px 70px; 
-    grid-template-rows: 70px 70px 70px 70px 70px 70px; 
-    gap: 10px;
-    grid-template-areas:
-    "header header header header"
-    "oblicz oblicz oblicz oblicz"
-    "cyfr cyfr cyfr oblicz"
-    "cyfr cyfr cyfr oblicz"
-    "cyfr cyfr cyfr oblicz"
-    "cyfr cyfr cyfr oblicz";
-    justify-content: center;
-    position: relative;
-    margin: 10% auto;
-  }
-  #tablica{
-  background-color: #BAD7E9;
-  grid-column: 1/ -1;
-  border: none;
+  background-color: #6c6cd4;
+  color: rgb(59, 58, 58);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+#container{
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px; 
+  grid-template-rows: 70px 70px 70px 70px 70px 70px; 
+  gap: 5px;
+  grid-template-areas:
+  "header header header header"
+  "oblicz oblicz oblicz oblicz"
+  "cyfr cyfr cyfr oblicz"
+  "cyfr cyfr cyfr oblicz"
+  "cyfr cyfr cyfr oblicz"
+  "cyfr cyfr cyfr oblicz";
+  justify-content: center;
+  position: relative;
+  margin: 10% auto;
+}
+#tablica{
+background-color: #BAD7E9;
+grid-column: 1/ -1;
+border: none;
+font-size: 30px;
+box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+}
+.operator , .wynik{
   font-size: 30px;
-  }
-  .operator , .wynik{
-    font-size: 30px;
-    background-color: #EB455F;
-    border: none;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 310px;
-    text-align: center;
-  }
-  .liczba , #reset{
-    font-size: 30px;
-    background-color: #EB455F;
-    border: none;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70px;
-    text-align: center;
-  }
-  .liczba, #reset{
-    background-color: #FCFFE7;
-  }
-  .operator{
-    background-color: 13005A;
-  }
-  .wynik{
-    grid-row: 4 / 9; 
-    grid-column: 4
-  }
-  .display {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
-    min-height: 20%;
-    max-height: min-content;
-    background-color:rgba(255, 255, 255, 0.616);
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    color: rgb(0, 0, 0);
-    word-break: break-all;
-    justify-content: left;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    font-weight: 900;
-    padding-left: 20px;
-  }
-  
-  .currentNumber {
-    font-size: 45px;
-  }
-  
-  .previousNumber1{
-    color: rgb(182,182,182);
-    font-size: 30px;
-  }
-  
-  .mathSign {
-    font-size: 32px;
-  }
+  background-color: #EB455F;
+  border: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 310px;
+  text-align: center;
+  box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+}
+.liczba , #reset{
+  font-size: 30px;
+  background-color: #EB455F;
+  border: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  text-align: center;box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+}
+.liczba, #reset{
+  background-color: #F6F1E9;
+}
+.operator{
+  background-color: #DBDFEA;
+}
+.wynik{
+  grid-row: 4 / 9; 
+  grid-column: 4;
+  max-height: 295px;
+}
+.display {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  min-height: 20%;
+  max-height: min-content;
+  background-color:#2D2727;
+  box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: rgb(255, 255, 255);
+  word-break: break-all;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-weight: 900;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.currentNumber {
+  font-size: 45px;
+}
+
+.previousNumber1{
+  color: rgb(182,182,182);
+  font-size: 30px;
+}
+
+.mathSign {
+  font-size: 32px;
+}
