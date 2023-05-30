@@ -6,7 +6,7 @@ body{
     color: rgb(253, 253, 253);
     margin: 0;
     background-size: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/bg5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://github.com/mkuba2006/rpp/blob/master/images/bg5.jpg?raw=true);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
