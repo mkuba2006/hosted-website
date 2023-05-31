@@ -165,13 +165,12 @@ html {
     font-size: 20px;
   }
   #first #cont #opis h1:nth-child(3) {
-    width: 80%;
     margin: auto;
   }
   #first #cont #opis #buttons button {
     font-size: 15px;
     padding: 5px 9px;
-    width: 150px;
+    width: 145px;
   }
   #first #cont #opis2 {
     width: 200px;

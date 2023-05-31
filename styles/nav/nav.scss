@@ -105,9 +105,8 @@ html {
     height: 4px;
     margin: 5px;
     background-color: #fdfdfd;
-
     padding-left: 3%;
-    transition: all 0.3s ease;
+    transition: all 0.26s ease;
   }
   .mp {
     background-color: $el4mod;
@@ -235,5 +234,11 @@ html {
       padding: 10px 10px 0px 10px;
       animation: doLogo 5s linear infinite;
     }
+  }
+  #nav > div:nth-child(2) {
+    width: 70%;
+  }
+  #nav > div:nth-child(2) {
+    transition: transform 0.35s ease-in;
   }
 }

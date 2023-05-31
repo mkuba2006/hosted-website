@@ -1,6 +1,4 @@
 ScrollReveal().reveal('#one',{origin: 'left', distance: '30%'});
-ScrollReveal().reveal('#nav > div:nth-child(2) a', {delay: 500, origin: 'left', distance: '130%', interval: 200});
-ScrollReveal().reveal('#nav > div:nth-child(2) a button', {delay: 500, origin: 'left', distance: '30%', interval: 200});
 ScrollReveal().reveal('.addon .n', { origin: 'bottom', interval: 200});
 ScrollReveal().reveal('#dos div', { delay: 200, origin: 'left', distance: '30%', interval: 200});
 ScrollReveal().reveal('#opis h3', { delay: 200, origin: 'left', distance: '30%'});
@@ -23,4 +21,6 @@ ScrollReveal().reveal('#app .product-list .prod-item', {delay: 200, origin: 'bot
 if(window.outerWidth > 1000){
     ScrollReveal().reveal('#certificates #first_cert', {delay: 200, origin: 'left', distance: '20%'});
     ScrollReveal().reveal('#certificates #second_cert', {delay: 400, origin: 'left', distance: '20%'});
+    ScrollReveal().reveal('#nav > div:nth-child(2) a', {delay: 500, origin: 'left', distance: '130%', interval: 200});
+    ScrollReveal().reveal('#nav > div:nth-child(2) a button', {delay: 500, origin: 'left', distance: '30%', interval: 200});
 }
