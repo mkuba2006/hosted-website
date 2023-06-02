@@ -29,3 +29,12 @@ hrefs.forEach(href=>{
     burger.classList.toggle("toggle");
   })
 })
+
+const toggleMenu = () => document.body.classList.toggle('open');
+const as = document.querySelectorAll("body aside a");
+for(let i=0;i<as.length;i++){
+  as[i].addEventListener('click',()=>{
+    document.body.classList.remove('open');
+    burger.classList.toggle("toggle");
+  })
+}

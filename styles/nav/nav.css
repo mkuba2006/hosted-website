@@ -16,13 +16,90 @@ html {
   transform: rotate(45deg) translate(-9px, -4px);
 }
 
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(27, 32, 44, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+body.open .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+aside {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  width: 260px;
+  height: 100%;
+  background: #1d1d1d;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  translate: 100% 0;
+  transition: 0.3s;
+}
+
+body.open aside {
+  translate: 0;
+}
+
+aside a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+aside a:first-of-type {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 60px;
+}
+
+#burger1 {
+  display: none;
+  z-index: 11;
+  position: fixed;
+}
+
+#burger1 div {
+  display: none;
+  cursor: pointer;
+  width: 26px;
+  height: 4px;
+  margin: 5px;
+  background-color: #fdfdfd;
+  padding-left: 3%;
+  transition: all 0.26s ease;
+  z-index: 3;
+}
+
 #nav1 {
   font-family: "Indie Flower", cursive;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.664);
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   color: white;
 }
 #nav1 .in-nav {
@@ -81,21 +158,6 @@ html {
   transition-duration: 0.4s;
 }
 
-#burger1 {
-  display: none;
-}
-
-#burger1 div {
-  display: none;
-  cursor: pointer;
-  width: 26px;
-  height: 4px;
-  margin: 5px;
-  background-color: #fdfdfd;
-  padding-left: 3%;
-  transition: all 0.26s ease;
-}
-
 .mp {
   background-color: #1b1b1b;
 }
@@ -150,10 +212,14 @@ html {
   }
 }
 @media screen and (max-width: 880px) {
-  #nav1 #burger1 {
+  #burger1 {
     display: block;
+    z-index: 11;
+    position: fixed;
+    right: 40px;
+    top: 6.5%;
   }
-  #nav1 #burger1 div {
+  #burger1 div {
     display: block;
   }
   #burger1 #jeden,
@@ -164,40 +230,7 @@ html {
     width: 30px;
   }
   #nav > div:nth-child(2) {
-    position: absolute;
-    right: 0px;
-    height: 83vh;
-    top: 17vh;
-    background-color: rgba(0, 0, 0, 0.877);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-  #nav > div:nth-child(2).nav_active {
-    transform: translateX(0%);
-  }
-  #nav > div:nth-child(2) > a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25%;
-    text-decoration: none;
-  }
-  #nav > div:nth-child(2) > a > button {
-    font-size: 25px;
-    border: none;
-    background: none;
-  }
-  .nav_active {
-    transform: translateX(0%);
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -209,11 +242,5 @@ html {
     border-radius: 10px;
     padding: 10px 10px 0px 10px;
     animation: doLogo 5s linear infinite;
-  }
-  #nav > div:nth-child(2) {
-    width: 70%;
-  }
-  #nav > div:nth-child(2) {
-    transition: transform 0.35s ease-in;
   }
 }/*# sourceMappingURL=nav.css.map */
