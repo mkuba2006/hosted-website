@@ -94,6 +94,8 @@ aside a:first-of-type {
 }
 
 #nav1 {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   font-family: "Indie Flower", cursive;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.664);
@@ -236,7 +238,7 @@ aside a:first-of-type {
 @media screen and (max-width: 500px) {
   #nav1 #logo1 {
     height: auto;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 900;
     transition-duration: 0.4s;
     border-radius: 10px;
