@@ -101,11 +101,13 @@ body{
   background-color: #2a2a2b;
   padding: 10px;
   width: 270px;
+  transition: 0.2s;
 }
 
 .product:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    scale: 1.02;
 }
 #img_back{
   margin: 0 auto;
@@ -157,7 +159,7 @@ p{
   width: 80%;
   padding: 8px 16px;
   border-radius: 7px;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   font-weight: 900;
 }
 #button:hover{
