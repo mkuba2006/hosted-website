@@ -3,6 +3,7 @@
     "@floating-ui/dom": "^1.2.9",
     "@popperjs/core": "^2.11.8",
     "animejs": "^3.2.1",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "remixicon": "^3.3.0"
   }
 }

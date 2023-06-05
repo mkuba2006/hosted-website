@@ -29,23 +29,35 @@ const render_items = (items) =>{
     products_container.innerHTML =``;
     for(let i = 0; i<= items.length; i++){
         const new_prod = document.createElement('div');
-        new_prod.className = `product product${items[i].id}`;
-        new_prod.innerHTML = `
-            <div id="img_back" class="img_back${items[i].id}">
-                <img src="${items[i].obraz}"/>
+        new_prod.className = `card-container product${items[i].id}`;
+        new_prod.innerHTML =`
+          <a class="hero-image-container">
+          <i class="fa fa${items[i].id} fa-regular fa-star"></i>
+            <section>
+              <img class="hero-image" src="${items[i].obraz}"/>
+            </section>
+          </a>
+          <main class="main">
+            <h1><a href="#m">${items[i].nazwa_albumu} #${items[i].id}</a></h1>
+            <p>${items[i].opis}</p>
+            <div class="flex-row">
+              <div class="coin-base">
+              <i class="fa-solid fa-star"></i>
+                <h2>${items[i].rank}</h2>
+              </div>
+              <div class="time-left">
+                <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
+                <p>${items[i].rok_wydania}</p>
+              </div>
             </div>
-            <div id="content">
-                <a id="title">
-                ${items[i].nazwa_albumu}
-                </a>
-                <div id="opis">
-                    <p>${items[i].zespol}</p>
-                    <p>${items[i].cena} zł</p>
-                </div>
-            </div>
-            <div id="button">Favourite <i class="fa-regular fa-heart ${items[i].id}"></i></div>
-        `;
-        products_container.appendChild(new_prod);
+          </main>
+          <div class="card-attribute">
+            <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
+            <p>created by <span><a href="#">${items[i].zespol}</a></span></p>
+          </div>
+          </div>
+        `
+      products_container.appendChild(new_prod);
     }
 };
 
