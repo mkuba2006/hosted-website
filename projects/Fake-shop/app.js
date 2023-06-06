@@ -14,7 +14,7 @@ search_input.addEventListener('input', (e)=>{
     });
     const nie = document.querySelector('#nie');
     console.log(found_item.length);
-    if(found_item.length === 0){
+    if(found_item.length < 1){
         nie.classList.remove('notactive');
     }else{
         nie.classList.add('notactive');

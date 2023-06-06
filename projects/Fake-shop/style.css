@@ -19,8 +19,16 @@ html {
     box-sizing: inherit;
     margin: 0;
 }
-
-
+#nie{
+  color: aliceblue;
+  font-size: 30px;
+  position: absolute;
+  top: 12vh;
+  left: 45%;
+}
+.notactive{
+  opacity: 0;
+}
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -278,6 +286,18 @@ div.attribution {
     color: var(--var-soft-blue);
 }
 
+
+
+@media (max-width:1700px) {
+  .products{
+    width: 90%;
+  }
+}
+@media (max-width:1500px) {
+  .products{
+    max-width:1000px;
+  }
+}
 
 @media screen and (max-width: 650px) {
   .products {
