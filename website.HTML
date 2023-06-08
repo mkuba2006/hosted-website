@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/four/four.css">
     <link rel="stylesheet" href="styles/contact/contact.css">
     <link rel="stylesheet" href="styles/coursel/coursel.css">
-
+    <link rel="stylesheet" href="styles/hire/hire.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>JmsuiPage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
@@ -26,60 +26,57 @@
 </head>
 <body>
 
-    <nav id="nav1">
-        <div class="in-nav" id="nav">
-            <div id="one">
-              <a id="hrf" href="#first"><div id="logo1" >JM*Sui</div></a>
-            </div>
-            <div id="secret">
-                <a href="#about"><button id="abou" class="Nav-el" >about</button></a>
-                <a href="#app"><button id="languages" class="Nav-el">hobbies</button></a>
-                <a href="#four"><button id="infos" class="Nav-el">experience</button></a>
-                <a href="#certificates"><button id="certificates" class="Nav-el">certificates</button></a>
-                <a href="#ones"><button id="contact" class="Nav-el">contact</button></a>
-            </div>
+  <nav id="nav1">
+    <div class="in-nav" id="nav">
+      <div id="one">
+        <a id="hrf" href="#first"><div id="logo1" >JM*Sui</div></a>
+      </div>
+      <div id="secret">
+        <a href="#about"><button id="abou" class="Nav-el" >about</button></a>
+        <a href="#app"><button id="languages" class="Nav-el">hobbies</button></a>
+        <a href="#four"><button id="infos" class="Nav-el">experience</button></a>
+        <a href="#certificates"><button id="certificates" class="Nav-el">certificates</button></a>
+        <a href="#ones"><button id="contact" class="Nav-el">contact</button></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="burger1" onclick="toggleMenu()">
+    <div id="jeden" class="line_one"></div>
+    <div id="dwa" class="line_dwo"></div>
+    <div id="trzy" class="line_three"></div>
+  </div>
+
+  <div class="overlay"></div>
+  <aside>
+    <a href="#about">about</a>
+    <a href="#app">hobbies</a>
+    <a href="#four">experience</a>
+    <a href="#certificates">certificates</a>
+    <a href="#ones">contact</a>
+  </aside>
+
+  <section id="first">
+    <div id="cont">
+      <div id="opis">
+        <div class="navUL">
+          <h3> &#9995 Hi, my name is</h3>
         </div>
-    </nav>
-
-
-    <div id="burger1" onclick="toggleMenu()">
-      <div id="jeden" class="line_one"></div>
-      <div id="dwa" class="line_dwo"></div>
-      <div id="trzy" class="line_three"></div>
+        <h1 id="myname">Jakub Myrta.</h1>
+        <h1>I'm
+        <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p id="p1">Lorem</p></div></span>   
+          student from gdańsk. I'm Front-End developer</h1>
+        <div id="buttons">
+          <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006"> GITHUB</a><span></span></button>
+          <button><i class="fa-brands fa-linkedin"></i> MORE</button>
+        </div>
+      </div>
+      <div id="opis2">
+        <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/ME6.jpg">
+      </div>
     </div>
-
-    
-    <div class="overlay"></div>
-    <aside>
-      <a href="#about">about</a>
-      <a href="#app">hobbies</a>
-      <a href="#four">experience</a>
-      <a href="#certificates">certificates</a>
-      <a href="#ones">contact</a>
-    </aside>
-
-    <section id="first">
-        <div id="cont">
-            <div id="opis">
-                    <div class="navUL">
-                        <h3> &#9995 Hi, my name is</h3>
-                    </div>
-                <h1 id="myname">Jakub Myrta.</h1>
-                <h1>I'm
-                    <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p id="p1">Lorem</p></div></span>   
-                    student from gdańsk. I'm Front-End developer</h1>
-                <div id="buttons">
-                    <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006"> GITHUB</a><span></span></button>
-                    <button><i class="fa-brands fa-linkedin"></i> MORE</button>
-                </div>
-            </div>
-            <div id="opis2">
-                <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/ME6.jpg">
-            </div>
-    </div>
-    </section>
-
-
+  </section>
 
 
   <section id="about">
@@ -102,7 +99,6 @@
                       With my expertise, your website will be taken to the next level.
                   </p>
               </div>
-
           </div>
       </div>
   </section>
@@ -160,6 +156,7 @@
 
     <section id="four">
       <h3 id="info"><span>EXPERIENCE</span></h3>
+
       <div class="line"></div>
 
         <div id="dos">
@@ -168,13 +165,11 @@
               <h3>HTML</h3>
               <p>Using from the beginning</p>
             </div>
-      
             <div id="CSS">
               <i class="fa-brands fa-css3-alt"></i>
               <h3>CSS</h3>
               <p>I love it</p>
             </div>
-      
             <div id="JS">
               <i class="fa-brands fa-square-js"></i>
               <h3>JS</h3>
@@ -184,7 +179,6 @@
 
           <h3 id="info"><span>CERTIFICATES</span></h3>
           <div class="line" id="line2"></div>
-
           <section id="certificates">
             <div id="first_cert">
                 <img src="https://github.com/mkuba2006/rpp/blob/master/images/centyfikat_1.png?raw=true" id="img1"/>
@@ -199,9 +193,46 @@
                 </div>
             </div>
           </section>
-
     </section>
     
+  <section id="hire">
+    <div id="main">
+      <h3 id="info"><span>Hire Me</span></h3>
+      <div class="line" id="line"></div>
+
+      <div id="elements">
+
+
+        <div id="consultation">
+          <i class="fa-regular fa-comment fa-xl"></i>
+          <p>1.Consultation</p>
+        </div>
+
+        <div id="processing">
+          <i class="fa-solid fa-code fa-xl"></i>
+          <p>2.Processing</p>
+        </div>
+        <div id="presenting">
+          <i class="fa-solid fa-person-chalkboard fa-xl"></i>
+          <p>3.presenting</p>
+        </div>
+
+        <div id="payment">
+          <i class="fa-sharp fa-solid fa-basket-shopping fa-xl"></i>
+          <p>4.Payment</p>
+        </div>
+
+        <div id="done">
+          <i class="fa-regular fa-circle-check fa-xl"></i>
+          <p>5.Done</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
 
 <section id="contact">
     <div id="container">

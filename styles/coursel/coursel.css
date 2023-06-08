@@ -47,6 +47,10 @@ html {
   width: 102px;
 }
 
+#carouselExampleCaptions > div.carousel-inner {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1500px) {
   .carousel-item {
     width: 100%;

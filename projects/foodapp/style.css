@@ -14,17 +14,25 @@ body{
 }
 
 header {
-    background-color: #252424b4;
+    background-color: #292727b4;
     color: rgb(255, 255, 255);
     font-family: 'Pacifico', cursive;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
+    padding-top: 30px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
-
+#one{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
 
 
@@ -39,13 +47,12 @@ input[type='text']{
     font-family: 'Pacifico', cursive;
 }
 #clear{
-    
-    color: white;
-    cursor: pointer;
-    padding: 8px 6px;
-    border: 1px solid #c74040;
-    transition-duration: 0.4s;
-    border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 6px;
+  border: 1px solid #c74040;
+  transition-duration: 0.4s;
+  border-radius: 7px;
 }
 #clear:hover{
     background-color: #c74040; 
@@ -61,8 +68,8 @@ input[type='text']{
 
 }
 #warn{
-    font-size: 30px;
-    margin: 50px 0 50px 0;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -78,14 +85,14 @@ input[type='text']{
     font-family: 'Raleway', sans-serif;
 }
 #nations, #types {
+    background-color: #f1b7b7;
     text-align: center;
-    max-width: 550px;
+    width: max-content;
+    max-width: 650px;
     display: flex;
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-
-    border-radius: 5px;
     padding: 6px 16px;
     margin-bottom: 25px;
     transition-duration: 0.2s;
@@ -130,46 +137,110 @@ button:hover:after{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 20px;
+    padding: 0 10%;
     margin-bottom: 200px;
 }
-
-.product{
-    width: 300px;
-    max-width: 300px;
-    background-color: rgb(43, 44, 44);
-    padding: 8px;
-    border-radius: 6px;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-#img_back{
-    width: 100%;
-    height: 200px;
-}
-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
+.cards_item {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  padding: 1rem;
+  width: 300px;
+  height: 300px;
 }
 
-h2,h3{
-    margin: 0;
-    font-weight: 400;
+.card_image {
+  position: relative;
+  max-height: 180px;
+  width: 100%;
 }
-h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    font-size: 40px;
-    height: 80px;
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #5e1010;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover{
+  scale: 1.07;
+}
+
+.card_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 16px 8px 0 8px ;
+  max-height: 290px;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.card_title {
+  color: #c9efdc;
+  position: relative;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card_text p {
+  color: #c9efdc;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.card_title::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00DFA2;
+  content: "";
 }
 h2{
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-size: 30px;
 }
+.card_text{
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  width: 90%;
+  gap: 5px;
+}
+
+
+
+
 @media only screen and (max-width: 1000px) {
     header {
       flex-direction: column;

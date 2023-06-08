@@ -247,21 +247,37 @@ const render = (product) =>{
     product_container.innerHTML='';
     for(let i = 0; i < product.length; i++){
         const new_prod = document.createElement('div');
-        new_prod.className= `product`;
+        new_prod.className= `cards_item`;
         new_prod.innerHTML =`
-        <div id="img_back"">
-            <img src="${product[i].img}"/>
-        </div>
-        <div id="content">
-            <div id="opis">
-                <h1 id='name'>${product[i].name}</h1>
-                <h2 id='continent'>${product[i].continent}</h2>
-                <h3 id='country'>${product[i].country}</h3>
-                <h3 id='group'>${product[i].group}</h3>
+        <div class="card">
+          <div class="card_image">
+            <img src="${product[i].img}" alt="a Reuben sandwich on wax paper." />
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">${product[i].name}</h2>
+            <div class="card_text">
+                <p id='continent'>${product[i].continent}</p>
+                <p id='country'>${product[i].country}</p>
+                <p id='group'>${product[i].group}</p>
             </div>
+          </div>
         </div>
+      </div>
         `;
         product_container.appendChild(new_prod);
     }
 }
 document.onload = render(foods);
+
+
+{/* <div id="img_back"">
+<img src="${product[i].img}"/>
+</div>
+<div id="content">
+<div id="opis">
+    <h1 id='name'>${product[i].name}</h1>
+    <h2 id='continent'>${product[i].continent}</h2>
+    <h3 id='country'>${product[i].country}</h3>
+    <h3 id='group'>${product[i].group}</h3>
+</div>
+</div> */}

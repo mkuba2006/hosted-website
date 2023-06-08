@@ -21,6 +21,9 @@ ScrollReveal().reveal('#app .product-list .prod-item', {delay: 200, origin: 'bot
 ScrollReveal().reveal('#nav > div:nth-child(2) a', { delay: 500, origin: 'left', distance: '130%', interval: 200 });
 ScrollReveal().reveal('#nav > div:nth-child(2) a button', { delay: 500, origin: 'left', distance: '30%', interval: 200 });
 
+ScrollReveal().reveal('#info', { delay: 200, origin: 'left', distance: '30%', interval: 200});
+ScrollReveal().reveal('#elements div', { delay: 400, origin: 'left', distance: '30%', interval: 200});
+
 document.addEventListener('DOMContentLoaded', () => {
     if (window.outerWidth > 1000) {
       ScrollReveal().reveal('#certificates #first_cert', { delay: 200, origin: 'left', distance: '20%' });
