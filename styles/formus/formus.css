@@ -14,6 +14,6 @@ html {
 
 @media screen and (max-width: 450px) {
   #formus {
-    background: url(/images/circle.svg);
+    background: url("https://raw.githubusercontent.com/mkuba2006/rpp/188a8683501e4dfddf993e28c354d459cba6c8c4/images/circle.svg");
   }
 }/*# sourceMappingURL=formus.css.map */
