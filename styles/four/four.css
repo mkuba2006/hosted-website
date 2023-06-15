@@ -222,16 +222,16 @@ h3 {
     top: 0px;
   }
   #four #certificates div .cloud1 img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
   }
   #four #certificates div .cloud2 {
-    height: 48%;
-    top: 52%;
+    height: 46%;
+    top: 54%;
   }
   #four #certificates div .cloud2 img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -247,7 +247,7 @@ h3 {
     margin-bottom: 0;
   }
   #four #certificates div .cloud1 {
-    height: 48%;
+    height: 45%;
     top: 0px;
   }
   #four #certificates div .cloud1 img {
@@ -255,8 +255,8 @@ h3 {
     max-height: 160px;
   }
   #four #certificates div .cloud2 {
-    height: 48%;
-    top: 52%;
+    height: 45%;
+    top: 55%;
   }
   #four #certificates div .cloud2 img {
     max-width: 160px;
