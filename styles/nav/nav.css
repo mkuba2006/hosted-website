@@ -65,13 +65,6 @@ aside a {
 }
 
 aside a:first-of-type {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
   margin-top: 60px;
 }
 
@@ -230,6 +223,7 @@ aside a:first-of-type {
     display: block;
     cursor: pointer;
     width: 30px;
+    border-radius: 50px;
   }
   #nav > div:nth-child(2) {
     display: none;
@@ -244,5 +238,14 @@ aside a:first-of-type {
     border-radius: 10px;
     padding: 10px 10px 0px 10px;
     animation: doLogo 5s linear infinite;
+  }
+  body aside a {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
   }
 }/*# sourceMappingURL=nav.css.map */

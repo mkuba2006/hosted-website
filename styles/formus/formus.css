@@ -10,4 +10,10 @@ html {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  #formus {
+    background: url(/images/circle.svg);
+  }
 }/*# sourceMappingURL=formus.css.map */

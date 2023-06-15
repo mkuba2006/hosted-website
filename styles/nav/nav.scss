@@ -69,19 +69,8 @@ aside a{
   font-family: "Montserrat", sans-serif;
 }
 aside a:first-of-type{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
   margin-top: 60px;
 }
-
-
-
-
 #burger1 {
   display: none;
   z-index: 11;
@@ -98,7 +87,6 @@ aside a:first-of-type{
   transition: all 0.26s ease;
   z-index: 3;
 }
-
 #nav1 {
   backdrop-filter: blur(6px);
   font-family: "Indie Flower", cursive;
@@ -245,44 +233,11 @@ aside a:first-of-type{
     display: block;
     cursor: pointer;
     width: 30px;
+    border-radius: 50px;
   }
   #nav > div:nth-child(2) {
-    // position: absolute;
-    // right: 0px;
-    // height: 83vh;
-    // top: 17vh;
-    // background-color: rgba(0, 0, 0, 0.877);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // width: 100%;
-    // padding: 0;
-    // margin: 0;
-    // transform: translateX(100%);
-    // transition: transform 0.5s ease-in;
-    // text-align: center;
-    // justify-content: space-evenly;
     display: none;
   }
-  // #nav > div:nth-child(2).nav_active {
-  //   transform: translateX(0%);
-  // }
-  // #nav > div:nth-child(2) > a {
-  //   width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   height: 25%;
-  //   text-decoration: none;
-  // }
-  // #nav > div:nth-child(2) > a > button {
-  //   font-size: 25px;
-  //   border: none;
-  //   background: none;
-  // }
-  // .nav_active {
-  //   transform: translateX(0%);
-  // }
 }
 
 
@@ -302,10 +257,13 @@ aside a:first-of-type{
       animation: doLogo 5s linear infinite;
     }
   }
-  // #nav > div:nth-child(2) {
-  //   width: 70%;
-  // }
-  // #nav > div:nth-child(2) {
-  //   transition: transform 0.35s ease-in;
-  // }
+  body aside a{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
 }

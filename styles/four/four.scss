@@ -291,6 +291,7 @@ h3 {
 
 @media screen and (max-width: 350px) {
   #four{
+    
     #dos {
       margin-bottom: 0;
     }
@@ -318,4 +319,12 @@ h3 {
   #dos {
     margin-bottom: 0;
   }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #four{
+      background-image: url(/images/circle.svg);
+    }
 }

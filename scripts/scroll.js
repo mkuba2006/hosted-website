@@ -13,7 +13,6 @@ ScrollReveal().reveal('#about #container', {delay: 200, origin: 'bottom', distan
 
 ScrollReveal().reveal('#fform', {delay: 200, origin: 'bottom', distance: '40%'});
 ScrollReveal().reveal('#media', {delay: 400, origin: 'bottom', distance: '40%'});
-ScrollReveal().reveal('#prawa', {delay: 200, origin: 'bottom', distance: '40%'});
 
 ScrollReveal().reveal('#app .title-songs', {origin: 'left', distance: '5%'});
 ScrollReveal().reveal('#app .product-list .prod-item', {delay: 200, origin: 'bottom', distance: '20%',interval: 100});
@@ -32,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const width = img.offsetWidth;
       const els = document.querySelectorAll("#cloud");
       els.forEach(e => e.style.width = `${width}px`);
+    }
+    if (window.outerWidth > 800) {
+      ScrollReveal().reveal('#prawa', {delay: 200, origin: 'bottom', distance: '40%'});
     }
   });
   

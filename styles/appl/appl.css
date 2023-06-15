@@ -18,11 +18,11 @@ body {
   height: 82vh;
 }
 #appl .titlep {
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: 400;
+  color: rgb(181, 188, 194);
   font-size: 33px;
   margin-bottom: 5px;
   width: 100%;

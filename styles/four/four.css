@@ -265,4 +265,9 @@ h3 {
   #dos {
     margin-bottom: 0;
   }
+}
+@media screen and (max-width: 450px) {
+  #four {
+    background-image: url(/images/circle.svg);
+  }
 }/*# sourceMappingURL=four.css.map */

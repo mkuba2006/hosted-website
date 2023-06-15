@@ -6,7 +6,11 @@ const scroll = () =>{
 };
 document.addEventListener('scroll', scroll,{passive: true});
 
-
+$(document).ready(function(){
+	$('#burger1').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
 const navl = document.querySelector("#burger1")
 const navi = document.querySelector("#secret")

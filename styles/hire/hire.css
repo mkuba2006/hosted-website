@@ -33,7 +33,7 @@
   background: #FEA1A1;
 }
 #hire #main #elements {
-  min-height: 200px;
+  min-height: 150px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
