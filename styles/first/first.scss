@@ -258,4 +258,9 @@ html {
 }
 
 
+@media screen and (max-width: 400px) {
+  #first #cont #opis h1:nth-child(3) {
+    font-size: 18px;
+  }
+}
 
