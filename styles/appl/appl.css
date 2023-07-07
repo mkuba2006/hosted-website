@@ -152,9 +152,14 @@ h3 {
   #appl #line {
     width: 100px;
   }
+  #appl .products {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
   #appl .products .item {
-    min-width: 260px;
-    max-width: 260px;
+    min-width: 220px;
+    max-width: 220px;
   }
   #appl .products .item .ram {
     min-width: 300px;

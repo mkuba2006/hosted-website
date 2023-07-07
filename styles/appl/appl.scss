@@ -177,9 +177,16 @@ h3 {
       width: 100px;
     }
     .products {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       .item {
-        min-width: 260px;
-        max-width: 260px;
+        min-width: 220px;
+        max-width: 220px;
+        // min-width: 260px;
+        // max-width: 260px;
         .ram {
           min-width: 300px;
           max-width: 300px;
