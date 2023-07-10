@@ -23,12 +23,12 @@ h3 {
   color: $el3;
 }
 #four {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url('https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg');
+    background-image: linear-gradient(rgba(1, 1, 1, 0.90), rgba(1, 1, 1, 0.90)), url('https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding-top: 18%;
+    padding-top: 12%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
     position: relative;
@@ -54,8 +54,10 @@ h3 {
     #dos {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       position: relative;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       padding: 80px 0;
     }
@@ -66,19 +68,42 @@ h3 {
       justify-content: center;
       align-items: center;
       font-size: 20px;
-      min-width: 400px;
+      min-width: 200px;
+      padding-bottom: 70px;
     }
   
     #HTML {
-      height: 100%;
+      i{
+        color: red;
+      }
     }
   
     #CSS {
-      height: 100%;
+      i{
+        color: blue;
+      }
     }
   
     #JS {
-      height: 100%;
+      i{
+        color: yellow;
+      }
+    }
+    #React{
+      i{
+        color: #61DBFB;
+      }
+    }
+    #Bootstrao{
+      i{
+        color: #0d6efd;
+      }
+    }
+    #Tailwind{
+      svg{
+        height: 150px;
+        width: 168px;
+      }
     }
 
     #certificates{
@@ -173,7 +198,83 @@ h3 {
     }
   }
 }
+@media screen and (max-width: 1250px) {
 
+  #four {
+    #dos {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 80px 0;
+      height: auto;
+    }
+  
+    #dos div {
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      min-width: 33.3%;
+      height: 250px;
+    }
+  
+    #HTML {
+      i{
+        color: red;
+      }
+    }
+  
+    #CSS {
+      i{
+        color: blue;
+      }
+    }
+  
+    #JS {
+      i{
+        color: yellow;
+      }
+    }
+    #React{
+      i{
+        color: #61DBFB;
+      }
+    }
+    #Bootstrao{
+      i{
+        color: #0d6efd;
+      }
+    } 
+  }
+
+
+}
+@media screen and (max-width: 1000px) {
+  #four {
+    #dos {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 80px 0;
+      height: auto;
+    }
+    #Tailwind{
+      svg{
+        height: 100px;
+        width: 112.5px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 788px) {
 
   #four {

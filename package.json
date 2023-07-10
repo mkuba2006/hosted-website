@@ -5,5 +5,8 @@
     "animejs": "^3.2.1",
     "jquery": "^3.7.0",
     "remixicon": "^3.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }

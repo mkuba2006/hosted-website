@@ -9,12 +9,12 @@ h3 {
 }
 
 #four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg");
+  background-image: linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)), url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  padding-top: 18%;
+  padding-top: 12%;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   position: relative;
@@ -37,8 +37,10 @@ h3 {
 #four #dos {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 80px 0;
 }
@@ -48,16 +50,27 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  min-width: 400px;
+  min-width: 200px;
+  padding-bottom: 70px;
 }
-#four #HTML {
-  height: 100%;
+#four #HTML i {
+  color: red;
 }
-#four #CSS {
-  height: 100%;
+#four #CSS i {
+  color: blue;
 }
-#four #JS {
-  height: 100%;
+#four #JS i {
+  color: yellow;
+}
+#four #React i {
+  color: #61DBFB;
+}
+#four #Bootstrao i {
+  color: #0d6efd;
+}
+#four #Tailwind svg {
+  height: 150px;
+  width: 168px;
 }
 #four #certificates {
   position: relative;
@@ -140,6 +153,60 @@ h3 {
   #four #certificates div img {
     filter: blur(0.5px);
     width: 100%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #four #dos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+    height: auto;
+  }
+  #four #dos div {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    min-width: 33.3%;
+    height: 250px;
+  }
+  #four #HTML i {
+    color: red;
+  }
+  #four #CSS i {
+    color: blue;
+  }
+  #four #JS i {
+    color: yellow;
+  }
+  #four #React i {
+    color: #61DBFB;
+  }
+  #four #Bootstrao i {
+    color: #0d6efd;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #four #dos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+    height: auto;
+  }
+  #four #Tailwind svg {
+    height: 100px;
+    width: 112.5px;
   }
 }
 @media screen and (max-width: 788px) {

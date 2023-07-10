@@ -32,11 +32,11 @@ $background-color_1: #161616;
   font-family: $font-family_1;
   height: 82vh;
   .titlep {
-    font-weight: 700;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(181, 188, 194);
+    color: white;
     font-size: 33px;
     margin-bottom: 5px;
     width: 100%;
@@ -156,14 +156,15 @@ h3 {
 @media screen and (max-width: 1250px) {
   #appl {
     height: auto;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 10%;
   }
 }
 
 @media screen and (max-width: 1050px) {
   #appl{
     max-width: 800px;
-    margin: 100px auto 0 auto;
+    margin: 60px auto 0 auto;
   }
 }
 
