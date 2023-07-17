@@ -78,7 +78,7 @@ html {
   font-weight: 700;
 }
 #app .product-list .prod-item #ram .kontent h1 a {
-  color: #c84b31;
+  color: #E900FF;
   list-style-type: none;
   text-decoration: none;
 }
@@ -88,7 +88,8 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 150px;
-  color: #ecdbba;
+  font-weight: 700;
+  color: rgba(234, 0, 255, 0.6156862745);
   padding: 10px 10px;
   font-size: 18px;
 }

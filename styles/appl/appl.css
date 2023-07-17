@@ -99,17 +99,17 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding: 0 5px 0 5px;
+  padding: 0 5px 0 6px;
 }
 #appl .products .item .content h1 {
   font-weight: 600;
-  color: #c84b31;
+  color: #E900FF;
   transition-duration: 0.4s;
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 22px;
+  font-size: 21px;
 }
 #appl .products .item .content h3 {
   transition-duration: 0.4s;
@@ -118,7 +118,7 @@ body {
 #appl .products .item .content select {
   background-color: #161616;
   border: none;
-  color: aliceblue;
+  color: #FFC600;
   font-size: 16px;
 }
 #appl .products .item .content select option {

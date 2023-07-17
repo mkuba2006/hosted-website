@@ -52,6 +52,10 @@ h3 {
   font-size: 20px;
   min-width: 200px;
   padding-bottom: 70px;
+  transition: 0.3s;
+}
+#four #dos div:hover {
+  scale: 1.06;
 }
 #four #HTML i {
   color: red;

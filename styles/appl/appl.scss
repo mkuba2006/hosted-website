@@ -111,17 +111,17 @@ $background-color_1: #161616;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        padding: 0 5px 0 5px;
+        padding: 0 5px 0 6px;
         h1 {
           font-weight: 600;
           $font-family_1: "Montserrat", sans-serif;
-          color: $color_2;
+          color: #E900FF;
           transition-duration: 0.4s;
           width: 100%;
           display: flex;
           justify-content: center;
           text-align: center;
-          font-size: 22px;
+          font-size: 21px;
         }
         h3 {
           transition-duration: 0.4s;
@@ -130,7 +130,7 @@ $background-color_1: #161616;
         select {
           background-color: $background-color_1;
           border: none;
-          color: $color_3;
+          color: #FFC600;
           font-size: 16px;
           option {
             background-color: $background-color_1;
