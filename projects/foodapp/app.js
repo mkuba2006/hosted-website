@@ -1,6 +1,6 @@
 let foods = food;
 let product_container = document.getElementById('container');
-
+let fo2= foods;
 const Kraje = document.querySelectorAll('button#nat');
 const Typy = document.querySelectorAll('button#type');
 const clear = document.getElementById('clear');
@@ -47,6 +47,7 @@ Kraje.forEach(kraj =>{
                     }
                 });
                 foods=filtrKraj1;
+                fo2= filtrKraj1;
                 render(foods); 
             }
             else{//Kraj 1 | Typ 0
@@ -56,6 +57,7 @@ Kraje.forEach(kraj =>{
                     }
                 });
                 foods = filtrKraj1; 
+                 fo2= filtrKraj1;
                 render(foods);  
             }
         }
@@ -78,6 +80,12 @@ Kraje.forEach(kraj =>{
         }
     })
 })
+
+
+
+
+
+
 
 
 
@@ -117,6 +125,7 @@ Typy.forEach(typ =>{
                     }
                 });
                 foods=filtrTyp1;
+                fo2= filtrTyp1;
                 render(foods);  
                 foods2=filtrTyp2;
             }
@@ -134,6 +143,7 @@ Typy.forEach(typ =>{
                 });
                 render(filtrTyp1); 
                 foods = filtrTyp1;
+                fo2= filtrTyp1;
                 if(foods.length ===0){
                     foods = food;
                     const filtrTyp1 = foods.filter((product)=>{
@@ -142,6 +152,7 @@ Typy.forEach(typ =>{
                         }
                     });
                     foods = filtrTyp1;
+                    fo2= filtrTyp1;
                     render(foods);
                 }
             }
@@ -168,6 +179,7 @@ Typy.forEach(typ =>{
                         }
                     });
                     foods = filtrTyp1;
+                    fo2= filtrTyp1;
                     render(foods);
                 }
             }          
@@ -188,53 +200,135 @@ Typy.forEach(typ =>{
 
 
 
-itext.addEventListener('input', ()=>{
+let prev_val = '';
+itext.addEventListener('input', () => {
     let ival = itext.value;
-
-    const fff = foods.filter(product=>{
-        if(product.name.toLowerCase().includes(ival)){
-            return product;
-        }
-    })
-    if(ival ===''){
-        render(foods);
+    let i= ival.length;
+    let p= prev_val.length;
+    console.log('bes:',ival);
+    console.log('prev:',prev_val);
+    if(i>p){
+        console.log('1');
+        const fff = fo2.filter(product => product.name.toLowerCase().includes(ival));
+        render(fff);
+        prev_val = ival;
     }else{
-        foods=fff;
+        console.log('2');
+        const fff = fo2.filter(product => product.name.toLowerCase().includes(prev_val));
+        render(fff);
+        prev_val = ival;
+    }
+
+    if (ival === '' && prev_val ==='') {
+        render(fo2);
+    }else{
+        const fff = fo2.filter(product => product.name.toLowerCase().includes(prev_val));
         render(fff);
     }
-    foods=food;
-    console.log(itext.value);
-})
-
-console.log(itext.value);
+});
 
 
 
 
 
+// itext.addEventListener('input', ()=>{
+//     let ival = itext.value;
+//     const fff = foods.filter(product=>{
+//         if(product.name.toLowerCase().includes(ival)){
+//             return product;
+//         }
+//     })
+//     if(ival ===''){
+//         render(foods);
+//     }else{
+//         foods=fff;
+//         render(fff);
+//     }
+//     foods=food;
+//     console.log(itext.value);
+// })
 
 
 
-clear.addEventListener('click',()=>{
-    nations =[];
-    groups =[];
-    nations =[];
-    foods2 =[];
-    Kraje.forEach(button=>{
-        if(button.classList.contains('active')){
-            button.classList.remove('active');
-        }
-        foods = food;
-    })
-    Typy.forEach(button=>{
-        if(button.classList.contains('active')){
-            button.classList.remove('active');
-        }
-        foods = food;
-    })
+
+
+
+
+
+
+
+
+const buttons = document.querySelectorAll('button');
+
+function handleButtonMouseEnter() {
+    const after = this.querySelector('#af1');
+    after.style.width = '100%';
+}
+
+function handleButtonMouseLeave() {
+    const after = this.querySelector('#af1');
+    after.style.width = this.classList.contains('active') ? '100%' : '0%';
+}
+
+
+function handleButtonClick() {
+    const after = this.querySelector('#af1');
+    after.style.width = this.classList.contains('active') ? '100%' : '0%';
+}
+
+
+buttons.forEach(button => {
+    const after = document.createElement('div');
+    after.id = 'af1';
+    after.style.opacity = '1';
+    after.style.position = 'absolute';
+    after.style.display = 'block';
+    after.style.width = '0%';
+    after.style.height = '1px';
+    after.style.bottom = '0';
+    after.style.borderRadius = '50px';
+    after.style.left = '50%';
+    after.style.transform = 'translateX(-50%)';
+    after.style.backgroundColor = '#000000';
+    after.style.content = '""';
+    after.style.transition = '0.5s';
+
+    button.appendChild(after);
+});
+
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', handleButtonMouseEnter);
+    button.addEventListener('mouseleave', handleButtonMouseLeave);
+    button.addEventListener('click', handleButtonClick);
+});
+
+
+let continentElements = document.querySelectorAll("#continent");
+
+continentElements.forEach((continentElement) => {
+    let continentText = continentElement.textContent;
+    if (continentText.length > 7) {
+        continentElement.textContent = continentText.substring(0, 8) + "...";
+    }
+});
+
+
+
+
+
+clear.addEventListener('click', () => {
+    nations = [];
+    groups = [];
+    foods2 = [];
+
+    Kraje.forEach(button => button.classList.remove('active'));
+    Typy.forEach(button => button.classList.remove('active'));
+
     foods = food;
-    render(foods)
-})
+    render(foods);
+
+    buttons.forEach(button => button.querySelector('div').style.width = '0%');
+});
 
 
 
