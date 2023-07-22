@@ -17,7 +17,16 @@ body{
     background-position: center;
     background-size: cover;
 }
-
+#hh i{
+  font-style: normal;
+  display: inline-block;
+  padding-left: 1px;
+  padding-right: 1px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#hh i:hover{
+  transform: translate3d(0, -6px, 0);
+}
 header {
     /* background-color: #292727b4; */
     /* color: rgb(255, 255, 255); */
@@ -144,14 +153,13 @@ button span {
 }
 
 #container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0 10%;
-    margin-bottom: 200px;
-    max-width: 1300px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 200px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .cards_item {
   font-family: "Montserrat", sans-serif;
@@ -159,9 +167,12 @@ button span {
   padding: 1.2rem;
   width: 380px;
   height: auto;
+  transition: 0.5s;
 }
 
-
+#container:hover > :not(:hover){
+  opacity: .6;
+}
 
 .card {
   border-radius: 0.25rem;
