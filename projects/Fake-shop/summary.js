@@ -4,7 +4,7 @@ const navbar = document.querySelector('.navbar');
 const dropdown = document.querySelector("body > nav > div > ul");
 
 
-const image = document.querySelectorAll("section div.card-container .hero-image-container")
+const image = document.querySelectorAll("section div.card-container .image-container")
 const icons = document.querySelectorAll("body section div.card-container a i") ;
 for(let i=0;i<image.length; i++){
     image[i].addEventListener('mouseenter',()=>{
