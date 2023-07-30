@@ -11,8 +11,11 @@ html {
   font-family: "Indie Flower", cursive;
   color: $el3;
 }
-
-//1000
+@font-face {
+  font-family: 'xxx';
+  src: url(../Library3am-5V3Z.otf);
+}
+// font-family: 'xxx', sans-serif;
 $color_1: #ffb84c;
 $color_2: #c84b31;
 $color_3: aliceblue;
@@ -43,7 +46,6 @@ h3 {
     h3 {
       color: $green;
       font-weight: 1000;
-      text-shadow: 0px 1px, 1px 0px, 1px 1px;
     }
   
     p {
@@ -172,7 +174,9 @@ h3 {
       color: white;
       width: min-content;
       margin: 0px auto 10px;
-      font-weight: 200;
+      font-weight: 100;
+      font-size: 33px;
+      font-family: 'xxx', sans-serif;
     }
   
     .line{

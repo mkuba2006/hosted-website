@@ -7,6 +7,11 @@ $el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
 $green: #ffb84c;
+@font-face {
+  font-family: 'xxx';
+  src: url(../Library3am-5V3Z.otf);
+}
+// font-family: 'xxx', sans-serif;
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -37,6 +42,8 @@ html {
     overflow: hidden;
     a{
       z-index: 2;
+      font-family: 'xxx', sans-serif;
+      color: #ffb84c;
     }
     a::before {
       content: '';
