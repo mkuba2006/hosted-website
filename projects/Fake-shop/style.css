@@ -3,11 +3,9 @@
 :root {
     font-size: 15px;
     --var-soft-blue: hsl(215, 51%, 70%);
-    --var-cyan: hsl(178, 100%, 50%);
-    --var-main-darkest: hsl(217, 54%, 11%);
-    --var-card-dark: hsl(216, 50%, 16%);
-    --var-line-dark: hsl(215, 32%, 27%);
-    --var-lightest: white;
+    --var-bg-color : #121212;
+    --var-li-bg : #272727;
+    --var-spotify-bg : #1db954f3;
 }
 html {
     box-sizing: border-box;
@@ -33,13 +31,11 @@ body{
     padding: 0;
     margin: 0;
     color: #0e0e0ecb;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://github.com/mkuba2006/rpp/blob/master/projects/Fake-shop/img/fappp.jpg?raw=true); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* background-color: var(--var-main-darkest); */
-    background: #191414;
+    background: var(--var-bg-color);
 }
 .navbar{
     display: flex;
@@ -53,7 +49,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
  #site{
-  color: #9DF1DF;
+  color: white;
   z-index: 90;
   background-color: #331D2C;
 }
@@ -61,23 +57,67 @@ body{
   text-align: center;
   width: min-content;
   margin: 0 auto;
+  transition: transform 0.3s ease;
 }
-  #name span{
-    font-size: 30px;
+#name span{
+  font-size: 30px;
+}
+#third-nav{
+  display: flex;
+  justify-content: center;
+}
+select{
+  border: none;
+  background: none;
+  width: min-content;
+  color: white;
+  transition: 0.2s;
+  padding: 5px 10px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  select{
+    margin-top: 10px;
+    display: block;
+    transform: translateY(-90px);
+    transition: transform 0.5s ease;
   }
-  ul{
-    display: none;
-    width: 250px;
-    position: absolute;
-    z-index: 1;
-    overflow-y: scroll;
-    max-height: 50vh;
+  #before-search{
+    display: block;
+    transition: transform 0.5s ease;
+    transform: translateY(-90px);
   }
-  #drop-menu{
-    background-color: #272727;
-    z-index: 80;
-    
+  .navbar{
+    box-shadow: none;
   }
+}
+
+
+
+
+select:hover{
+  background-color: #545b62;
+}
+option{
+  background-color: #331D2C;
+  border: none;
+}
+
+ul{
+  display: none;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+#drop-menu{
+  background-color: var(--var-li-bg);
+  z-index: 80; 
+}
 .uls{
   display: list-item;
   list-style-type: none;
@@ -92,7 +132,7 @@ body{
   padding: 5px 10px;
   display: flex;
   color: #300e0ebb;
-  background-color: #272727;
+  background-color: var(--var-li-bg);
   border-bottom: 1px solid black;
   transition: 0.2s;
 }
@@ -173,7 +213,7 @@ body{
 .products{
   position: relative;
   top: 15vh;
-  color: rgb(255, 240, 240);
+  color: white;
   width: 90%;
   gap: 20px 40px;
   margin: 0 auto 50px auto;
@@ -182,7 +222,7 @@ body{
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  background: #191414;
+  background: var(--var-bg-color);
 }
 
 
@@ -201,8 +241,8 @@ body{
   cursor: pointer;
 }
 .card-container:hover{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  background-color: #1d1818;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  background-color: #1B1A1A;
 }
 img{
   transition: 0.4s;
@@ -236,7 +276,7 @@ img{
   position: absolute;
   top: 172px;
   right: 13px;
-  background-color: #1db954f3;
+  background-color: var(--var-spotify-bg);
   color: white;
   padding: 9px;
   border-radius: 100%;
@@ -287,7 +327,15 @@ img:hover, #products .card-container .global a:hover img {
 .card-container .card-text .opis-cont p.notAct {
   animation: slideFromTop 0.3s ease;
 }
-
+#band{
+  margin: 0 0 2px 0;
+}
+#rate{
+  margin: 0 0 9px 0;
+}
+#rate span{
+  color: var(--var-spotify-bg);
+}
 
 .card-container .card-text .opis-cont #content-button{
   background: none;
@@ -299,7 +347,7 @@ img:hover, #products .card-container .global a:hover img {
 
 span a{
   text-decoration: none;
-  color: #1db954;
+  color: var(--var-spotify-bg);
 }
 
 
@@ -564,451 +612,3 @@ span a{
 
 
 
-
-
-
-
-
-/* 
-
-.products{
-  position: relative;
-  top: 15vh;
-  color: rgb(255, 240, 240);
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-
-.card-container{
-  width: 300px;
-  min-width: 200px;
-  height: auto;
-  padding: 20px;
-  background-color: #191825;
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
-  border-radius: 12px;
-  transition: .3s;
-}
-.card-container:hover{
-  scale: 1.02;
-}
-.card-container .global{
-  display: flex;
-  flex-direction: row;
-}
-
-.card-container .global .image-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100%;
-  margin-bottom: 15px;
-  background-color: #9DF1DF;
-}
-.card-container .global .image-container section{
-  width: 100px;
-}
-
-.card-container .global .image-container img{
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover; 
-  border-radius: 12px;
-}
-
-.card-container .global .image-container i{
-  transition: 0.3s;
-  z-index: 10;
-  border-radius: 12px;
-  opacity: 0;
-  font-size: 30px;
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  padding: auto;
-  background-color: #1d277d73;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-.card-container .global .main{
-  width: calc(100% - 100px);
-  padding: 10px;
-}
-.card-container .global .main .opis-cont{
-  overflow: hidden;
-}
-
-
-.card-container .global .main .opis-cont p {
-  font-size: 12px;
-  padding: 0 0 0 22px;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  color: #E384FF;
-}
-
-.card-container .global .main .opis-cont p.Act {
-  max-height: 132px;
-}
-
-@keyframes slideFromTop {
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: fit-content;
-  }
-}
-.card-container .global .main .opis-cont p.notAct {
-  animation: slideFromTop 0.3s ease;
-}
-
-
-
-
-
-.card-container .global .main .opis-cont #content-button{
-  border: none;
-  background: none;
-  color: #e8b2f8;
-  text-decoration: underline;
-  width: 100%;
-  margin-top: 10px;
-}
-.card-container .global .main h1 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-container .global .main h1 a{
-  font-size: 17px;
-  color: #865DFF;
-  font-weight: 500;
-  text-decoration: none;
-}
-.card-container .card-attribute{
-  margin: 0 auto;
-  width: auto;
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-.card-container .card-attribute a{
-  color: #FFEA20;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1075px) {
-
-  .card-container{
-    width: 70%;
-    min-width: 350px;
-    height: auto;
-    padding: 20px;
-    background-color: #191825;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 12px ;
-    border-radius: 12px;
-    transition: .3s;
-  }
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-  .card-container .global .image-container i{
-    font-size: 40px;
-  }
-  
-  
-  
-  .card-container .global .main h1 {
-    text-align: left;
-    padding-left: 5%;
-}
-  
-  .card-container .global .main{
-    width: 70%;
-    padding: 10px;
-  }
-  
-  
-  .card-container .global .main .opis-cont p {
-    padding: 0 0 0 22px;
-    max-height: 100%;
-    overflow: hidden;
-    color: #E384FF;
-}
-
-  .card-container .global .main .opis-cont #content-button{
-    display: none;
-  }
-
-}
-
-
-
-@media screen and (max-width:900px) {
-
-  .card-container{
-    width: 90%;
-    min-width: 350px;
-    height: auto;
-    padding: 20px;
-    background-color: #191825;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 12px ;
-    border-radius: 12px;
-    transition: .3s;
-  }
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-  .card-container .global .image-container i{
-    font-size: 40px;
-  }
-  
-  
-  
-  .card-container .global .main h1 {
-    text-align: left;
-    padding-left: 5%;
-}
-  
-  .card-container .global .main{
-    width: 70%;
-    padding: 10px;
-  }
-  
-  
-  .card-container .global .main .opis-cont p {
-    padding: 0 0 0 22px;
-    max-height: 100%;
-    overflow: hidden;
-    color: #E384FF;
-}
-
-  .card-container .global .main .opis-cont #content-button{
-    display: none;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:720px) {
-  .products {
-    top: 25vh;
-}
-}
-
-@media screen and (max-width:660px) {
-
-  .card-container{
-    width: 90%;
-    min-width: 350px;
-    height: auto;
-    padding: 20px;
-    background-color: #191825;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 12px ;
-    border-radius: 12px;
-    transition: .3s;
-  }
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-  .card-container .global .image-container i{
-    font-size: 40px;
-  }
-  
-  
-  
-  .card-container .global .main h1 {
-    padding: 0 0 0 22px;
-  }
-  
-  .card-container .global .main{
-    width: 95%;
-    padding: 10px;
-  }
-
-  .card-container .global .main .opis-cont #content-button{
-    display: none;
-  }
-
-
-
-  .card-container .global{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-container .global .image-container{
-    width: 100%;
-    background-color: #0000007c;
-    padding: 10px;
-    border-radius: 12px;
-  }
-  .card-container .global .image-container section{
-    width: 190px;
-    height: 190px;
-  }
-  
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:500px) {
-
-  .card-container{
-    width: 90%;
-    min-width: 350px;
-    height: auto;
-    padding: 20px;
-    background-color: #191825;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 12px ;
-    border-radius: 12px;
-    transition: .3s;
-  }
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-  .card-container .global .image-container i{
-    font-size: 40px;
-  }
-  
-  
-  
-  .card-container .global .main h1 {
-    padding: 0 0 0 22px;
-  }
-  
-  .card-container .global .main{
-    width: 95%;
-    padding: 10px;
-  }
-
-  .card-container .global .main .opis-cont #content-button{
-    display: block;
-  }
-
-
-
-  .card-container .global{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-container .global .image-container{
-    width: 100%;
-    background-color: #0000007c;
-    padding: 10px;
-    border-radius: 12px;
-  }
-  .card-container .global .image-container section{
-    width: 190px;
-    height: 190px;
-  }
-  
-  .card-container .global .image-container img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    border-radius: 12px;
-  }
-  
-  .card-container .global .main .opis-cont p {
-    padding: 0 0 0 22px;
-    margin: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    color: #E384FF;
-  }
-} */

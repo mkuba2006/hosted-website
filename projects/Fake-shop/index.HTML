@@ -19,7 +19,6 @@
 <body>
     <nav class="navbar" id="nvb">
             <a id="site" class="navbar-brand">MusicArchive <i class="fa-solid fa-circle-play"></i></a>
-
             <div id="before-search">
                 <div class="search-box">
                     <button class="btn-search"><i class="fas fa-search"></i></button>
@@ -28,11 +27,20 @@
             </div>
             
 
-            <div class="dropdown" id="drp">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Fav List
-                </a>
-                <ul id="drop-menu" class="dropdown-menu"></ul>
+            <div id="third-nav">
+                <select id="options">
+                    <option value="return" selected>Select an option</option>
+                    <option value="ascNAME">name ascending</option>
+                    <option value="desNAME">name descending</option>
+                    <option value="ascRATING">rating ascending</option>
+                    <option value="desRATING">rating descending</option>
+                </select>
+                <div class="dropdown" id="drp">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fav List
+                    </a>
+                    <ul id="drop-menu" class="dropdown-menu"></ul>
+                </div>
             </div>
     </nav>
     <div id="nie" class="notactive">Couldn't find...</div>
