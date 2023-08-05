@@ -1,6 +1,8 @@
 
-
-
+@font-face {
+  font-family: 'xxx';
+  src: url(../Library3am-5V3Z.otf);
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
 $bg: #000000;
@@ -34,6 +36,8 @@ section#about {
     width: 100%;
     display: flex;
     justify-content: center;
+    font-family: 'xxx', sans-serif;
+    font-weight: 100;
   }
 
   #line{

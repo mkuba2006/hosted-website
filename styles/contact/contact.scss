@@ -7,6 +7,11 @@ $el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
 $green: #ffb84c;
+@font-face {
+  font-family: 'xxx';
+  src: url(../Library3am-5V3Z.otf);
+}
+// font-family: 'xxx', sans-serif;
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -151,6 +156,7 @@ h3 {
       span {
         color: #df2e38;
         padding: 0 5px;
+        font-family: 'xxx', sans-serif;
       }
     }
   }

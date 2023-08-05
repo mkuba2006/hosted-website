@@ -4,6 +4,10 @@ html {
   color: #bc6ff1;
 }
 
+@font-face {
+  font-family: "xxx";
+  src: url(../Library3am-5V3Z.otf);
+}
 h3 {
   color: #bc6ff1;
 }
@@ -28,7 +32,6 @@ h3 {
 #four h3 {
   color: #ffb84c;
   font-weight: 1000;
-  text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 #four p {
   color: #892cdc;
@@ -138,7 +141,9 @@ h3 {
   width: -moz-min-content;
   width: min-content;
   margin: 0px auto 10px;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 33px;
+  font-family: "xxx", sans-serif;
 }
 #four .line {
   margin: 0px auto 30px;
