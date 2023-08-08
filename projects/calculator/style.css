@@ -1,6 +1,6 @@
 body {
-  background-color: #6c6cd4;
-  color: rgb(59, 58, 58);
+  background-color: #000000;
+  color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
@@ -41,7 +41,7 @@ box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
 }
 .liczba , #reset{
   font-size: 30px;
-  background-color: #EB455F;
+  background-color: #FDFFAE;
   border: none;
   font-weight: 700;
   display: flex;
@@ -51,10 +51,10 @@ box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
   text-align: center;box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
 }
 .liczba, #reset{
-  background-color: #F6F1E9;
+  background-color: #C1ECE4;
 }
 .operator{
-  background-color: #DBDFEA;
+  background-color: #068FFF;
 }
 .wynik{
   grid-row: 4 / 9; 
