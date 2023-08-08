@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+@property --progress-value {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+:root {
+  --progress-bar-color: #cfd8dc;
+  --progress-value-color: #2196f3;
+  --progress-empty-color-h: 4.1;
+  --progress-empty-color-s: 89.6;
+  --progress-empty-color-l: 58.4;
+  --progress-filled-color-h: 122.4;
+  --progress-filled-color-s: 39.4;
+  --progress-filled-color-l: 49.2;
+}
+
 html {
   font-family: "Indie Flower", cursive;
   color: #bc6ff1;
@@ -38,46 +54,114 @@ h3 {
   font-weight: 600;
 }
 #four #dos {
-  width: 100%;
+  width: 1000px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 80px 0;
-}
-#four #dos > div {
-  text-align: center;
-  display: block;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 100px auto;
+}
+#four #dos .mmm {
+  border-style: solid;
+  border-color: transparent;
+  width: 300px;
+  margin: 10px;
+  background-color: #030d2d;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  font-size: 20px;
-  min-width: 200px;
-  padding-bottom: 70px;
+  color: #E4FBFF;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 7px;
   transition: 0.3s;
 }
-#four #dos div:hover {
-  scale: 1.06;
+#four #dos .mmm i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 50px;
+  height: 100%;
 }
-#four #HTML i {
+#four #dos .mmm #info {
+  width: 200px;
+}
+#four #dos .mmm #info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+#four #dos .mmm #info progress {
+  width: 200px;
+}
+#four #dos .mmm #info progress[value] {
+  display: block;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 80%;
+  height: 6px;
+  border: 0;
+  --border-radius: 10px;
+  border-radius: var(--border-radius);
+  counter-reset: progress var(--progress-value);
+  --progress-value-string: counter(progress) "%";
+  --progress-max-decimal: calc(var(--value, 0) / var(--max, 0));
+  --progress-value-decimal: calc(var(--progress-value, 0) / var(--max, 0));
+  --progress-value-percent: calc(var(--progress-value-decimal) * 100%);
+  --progress-value-color: hsl(
+    calc((var(--progress-empty-color-h) + (var(--progress-filled-color-h) - var(--progress-empty-color-h)) * var(--progress-value-decimal)) * 1deg)
+    calc((var(--progress-empty-color-s) + (var(--progress-filled-color-s) - var(--progress-empty-color-s)) * var(--progress-value-decimal)) * 1%)
+    calc((var(--progress-empty-color-l) + (var(--progress-filled-color-l) - var(--progress-empty-color-l)) * var(--progress-value-decimal)) * 1%)
+  );
+  animation: calc(3s * var(--progress-max-decimal)) linear 0.5s 1 normal both progress;
+}
+@supports selector(::-moz-progress-bar) {
+  #four #dos .mmm #info progress[value] {
+    --progress-value-decimal: calc(var(--value, 0) / var(--max, 0));
+  }
+}
+#four #dos .mmm #info progress[value]::-webkit-progress-bar {
+  background-color: var(--progress-bar-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+#four #dos .mmm #info progress[value]::-webkit-progress-value {
+  width: var(--progress-value-percent) !important;
+  background-color: var(--progress-value-color);
+  border-radius: var(--border-radius);
+}
+#four #dos .mmm #info progress[value]::-moz-progress-bar {
+  width: var(--progress-value-percent) !important;
+  background-color: var(--progress-value-color);
+  border-radius: var(--border-radius);
+}
+@keyframes progress {
+  from {
+    --progress-value: 0;
+  }
+  to {
+    --progress-value: var(--value);
+  }
+}
+#four #dos #HTML i {
   color: red;
 }
-#four #CSS i {
+#four #dos #CSS i {
   color: blue;
 }
-#four #JS i {
+#four #dos #JS i {
   color: yellow;
 }
-#four #React i {
+#four #dos #React i {
   color: #61DBFB;
 }
-#four #Bootstrao i {
+#four #dos #Bootstrap i {
   color: #0d6efd;
 }
-#four #Tailwind svg {
-  height: 150px;
-  width: 168px;
+#four #dos .mmm:hover {
+  border: solid #5d5cda;
 }
 #four #certificates {
   position: relative;
@@ -164,43 +248,6 @@ h3 {
     width: 100%;
   }
 }
-@media screen and (max-width: 1250px) {
-  #four #dos {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 80px 0;
-    height: auto;
-  }
-  #four #dos div {
-    text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    min-width: 33.3%;
-    height: 250px;
-  }
-  #four #HTML i {
-    color: red;
-  }
-  #four #CSS i {
-    color: blue;
-  }
-  #four #JS i {
-    color: yellow;
-  }
-  #four #React i {
-    color: #61DBFB;
-  }
-  #four #Bootstrao i {
-    color: #0d6efd;
-  }
-}
 @media screen and (max-width: 1000px) {
   #four #dos {
     width: 100%;
@@ -213,9 +260,8 @@ h3 {
     padding: 80px 0;
     height: auto;
   }
-  #four #Tailwind svg {
-    height: 100px;
-    width: 112.5px;
+  #four #dos div i {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 788px) {
@@ -312,10 +358,7 @@ h3 {
 }
 @media screen and (max-width: 500px) {
   #four #dos {
-    margin-bottom: 0;
-  }
-  #dos {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 350px) {

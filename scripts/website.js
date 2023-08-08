@@ -37,32 +37,8 @@ buttons.forEach((button) => {
   const dos = document.getElementById("dos");
   const dos_el = document.querySelectorAll("#dos div");
 
-  const i = document.querySelectorAll("#dos i");
-  if (window.outerWidth < 1200 && window.outerWidth > 930) {
-    dos.style.cssText = `height: 400px; padding: 80px 0px;`;
-    dos_el.forEach((el) => {
-      el.style.cssText = `min-width: 200px;`;
-    });
-  } else if (window.outerWidth < 920 && window.outerWidth > 600) {
-    dos_el.forEach((el) => {
-      el.style.cssText = `min-width: 200px; font-size: 15px;`;
-    });
-    i.forEach((i) => {
-      i.style.cssText = `font-size: 100px;`;
-    });
-  } else if (window.outerWidth < 600) {
-    dos.style.cssText = `display: grid; width: 100vw; height: auto; padding: 100px 0px; margin-bottom: 0; `;
-    
-    dos_el.forEach((el) => {
-      el.style.cssText = `min-width: 200px;width: 50vw; font-size: 15px; height: auto;`;
-    });
-    i.forEach((i) => {
-      i.style.cssText = `100px;`;
-    });
-    document.querySelector("#prawa").innerHTML='Copyright © 2023 <span> JM*SUI</span>.';
-    dos_el[0].style.paddingBottom = "70px";
-    dos_el[1].style.paddingBottom = "70px";
-  }
+  
+  
 
 function func() {
   const bubble = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
