@@ -61,6 +61,7 @@ const render_items = (items) =>{
         `
         }
       products_container.appendChild(new_prod);
+      ScrollReveal().reveal('.card-container', { delay: 200, origin: 'bottom', distance: '60%', interval: 110});
     }
     
 };

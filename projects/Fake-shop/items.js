@@ -601,7 +601,7 @@ products = [
         zespol: 'Arctic Monkeys',
         obraz: 'https://fordhamobserver.com/wp-content/uploads/2020/04/Nyckole-Lopez-ram-jams.jpeg',
         opis: 'An album by The Strokes, not Arctic Monkeys.',
-        rank: 'N/A'
+        rank: '8/10'
     }
 
 
