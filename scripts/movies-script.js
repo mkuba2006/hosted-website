@@ -1,6 +1,5 @@
 let movies = mov;
 const container = document.querySelector('.products');
-
 const render = (movies) => {
     container.innerHTML = '';
     for (let i = 0; i < movies.length; i++) {
@@ -45,10 +44,9 @@ ScrollReveal().reveal('.item', {
     distance: '20%',
     interval: 100
   });
-window.onload = () => {
   render(movies);
   ScrollReveal().reveal('.sr-item', {delay: 200,origin: 'bottom',distance: '20%',interval: 100});
-};
+
 
 
 
