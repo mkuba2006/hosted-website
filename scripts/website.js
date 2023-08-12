@@ -68,3 +68,21 @@ hrf.forEach(hr => {
     }, 200);
   });
 });
+
+
+
+///////new
+document.addEventListener("DOMContentLoaded", function() {
+  const hh = document.querySelectorAll("#stitle");
+  hh.forEach(h => {
+    if(window.innerWidth > 1060){
+      const origin = h.textContent;
+      // const truncatedText = h.textContent.slice(0, 10); // Get the first 7 characters
+      // console.log('trunk:',truncatedText.length , 'trunk:',origin.length);
+      if(origin.length >10){
+        const truncatedText = h.textContent.slice(0, 7);
+        h.textContent = truncatedText+'...';
+      }
+    }
+  });
+});
