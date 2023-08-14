@@ -113,7 +113,7 @@ const sortItems = (option) => {
 };
 
 const selectElement = document.getElementById('options');
-selectElement.addEventListener('click', (e) => {
+selectElement.addEventListener('change', (e) => {
   const selectedOption = e.target.value;
   sortItems(selectedOption);
 });
