@@ -122,6 +122,7 @@ const selectElement = document.getElementById('options');
 selectElement.addEventListener('change', (e) => {
   const selectedOption = e.target.value;
   sortItems(selectedOption);
+  search_input.value = "";
 });
 
 

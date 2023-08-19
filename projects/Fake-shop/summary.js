@@ -68,12 +68,12 @@ function initializeApp() {
             const nel = document.createElement('li');
             nel.className = 'li_fav noadd';
             nel.innerHTML = img;
+            nel.id = txtNode.substring(0, 3);
             nel.appendChild(t);
 
             icons[i].addEventListener('click', () => {
                 nel.classList.toggle('noadd');
                 nel.classList.toggle('add');
-                console.log(nel);
                 if(nel.classList.contains('add')){
                     dropdown.appendChild(nel);
                 }else{
@@ -82,38 +82,38 @@ function initializeApp() {
             });
         }
     
-        i.forEach((a)=>{
-            console.log(a);
-            const copy = document.createElement('li');
-            copy.className = 'li_fav';
+        // i.forEach((a)=>{
+        //     console.log(a);
+        //     const copy = document.createElement('li');
+        //     copy.className = 'li_fav';
 
-            const parent = a.parentElement;
+        //     const parent = a.parentElement;
 
-            const tit = document.createElement('a');
-            const title = parent.querySelector('#title').textContent;
-            tit.innerHTML = title;
+        //     const tit = document.createElement('a');
+        //     const title = parent.querySelector('#title').textContent;
+        //     tit.innerHTML = title;
 
-            const img = parent.querySelector('#img_back').innerHTML;
-            copy.innerHTML = img;
-            copy.appendChild(tit)
+        //     const img = parent.querySelector('#img_back').innerHTML;
+        //     copy.innerHTML = img;
+        //     copy.appendChild(tit)
 
 
-            a.className = 'faR faH';
-            const heart = a.querySelector('i');
-            a.addEventListener('click', ()=>{
-                console.log(a);
-                heart.classList.toggle('fa-regular');
-                heart.classList.toggle('fa-solid');
-                a.classList.toggle('faR');
-                a.classList.toggle('faS');  
-                if(a.classList.contains('faS')){
-                    dropdown.appendChild(copy);
-                } else{
-                    dropdown.removeChild(copy);
-                }
-                console.log(heart);
-            })
-        })
+        //     a.className = 'faR faH';
+        //     const heart = a.querySelector('i');
+        //     a.addEventListener('click', ()=>{
+        //         console.log(a);
+        //         heart.classList.toggle('fa-regular');
+        //         heart.classList.toggle('fa-solid');
+        //         a.classList.toggle('faR');
+        //         a.classList.toggle('faS');  
+        //         if(a.classList.contains('faS')){
+        //             dropdown.appendChild(copy);
+        //         } else{
+        //             dropdown.removeChild(copy);
+        //         }
+        //         console.log(heart);
+        //     })
+        // })
     }
 }
 

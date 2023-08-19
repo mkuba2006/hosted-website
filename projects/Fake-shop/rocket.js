@@ -15,13 +15,13 @@ window.onload = () => {
     }
     
     const totalDocumentHeight = getTotalDocumentHeight();
-    console.log('Total document height:', totalDocumentHeight);
+
 
 
 
     const items = document.getElementById("itemsa");
     items.style.height = totalDocumentHeight+'px';
-    console.log(totalDocumentHeight);  
+
 
 
 
@@ -29,7 +29,7 @@ window.onload = () => {
     itemekElements.forEach(i => {
         const calculatedHeight = totalDocumentHeight * 0.1;
         i.style.height = calculatedHeight + 'px';
-        console.log(calculatedHeight);
+
     });
     for (let i = 0; i < itemekElements.length; i++) {
         itemekElements[i].className ='itemek'+ i;
