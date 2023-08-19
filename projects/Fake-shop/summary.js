@@ -29,6 +29,7 @@ if(window.innerWidth < 601){
             arrow.style.transform = "rotate(0deg)";
             products.style.top = h - 50+'px';
             search.style.transform = 'translateY(-90px)';
+            options.style.transform = "translateY(-90px)";
         } 
     });
 

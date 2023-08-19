@@ -351,7 +351,23 @@ span a{
   color: var(--var-spotify-bg);
 }
 
-
+@media screen and (max-width:1250px) {
+  #before-search{
+    min-width: 250px;
+  }
+  .f_input{
+    width: 250px;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10%;
+  }
+}
 @media screen and (max-width:931px) {
 
   #before-search{
@@ -411,9 +427,6 @@ span a{
   .f_input::placeholder , .btn-search{
     font-size: 13px;
   }
-  .dropdown{
-    margin-top: 20px;
-  }
   .search-box{
     margin-top: 5px;
   }
@@ -421,12 +434,16 @@ span a{
     top: 30vh;
   }
 }
-
+@media screen and (max-width:600px) and (min-width:560px) {
+  .card-text{
+    width: 100%;
+  }
+}
 @media screen and (max-width:600px) {
   .navbar{
     flex-direction: column;
     padding: 0px 10% 20px 10%;
-    background: #191414;
+    background: none;
     z-index: 10;
     overflow: hidden;
   }
@@ -434,7 +451,7 @@ span a{
     width: 100%;
     margin: 0;
     text-align: center;
-    background: #191414;
+    background: var(--var-bg-color);
     z-index: 200;
     padding-top: 20px;
   }

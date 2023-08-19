@@ -6,7 +6,7 @@ const render_items = (items) =>{
     for(let i = 0; i < items.length; i++){
         const new_prod = document.createElement('div');
         new_prod.className = `card-container product${items[i].id}`;
-        if(window.innerWidth > 600){
+        if(window.innerWidth > 590){
           new_prod.innerHTML =`
             <div class="global">
               <a class="card-img-for">
@@ -61,7 +61,11 @@ const render_items = (items) =>{
         `
         }
       products_container.appendChild(new_prod);
-      ScrollReveal().reveal('.card-container', { delay: 200, origin: 'bottom', distance: '60%', interval: 110});
+      if(window.innerWidth <600){
+        ScrollReveal().reveal('.card-container', { delay: 200, origin: 'bottom', distance: '60%', interval: 110});
+      }else {
+        ScrollReveal().reveal('.card-container', { delay: 200, origin: 'bottom', distance: '100%', interval: 110});
+      }
     }
     
 };
@@ -76,8 +80,10 @@ const type = (txt)=>{
   const found_item = items.filter(product => product.nazwa_albumu.toLowerCase().includes(txt));
   const nie = document.querySelector('#nie');
   nie.classList.toggle('notactive', found_item.length >= 1);
-  render_items(found_item);
-  initializeApp();
+  setTimeout(()=>{
+    render_items(found_item);
+    initializeApp();
+  },200)
 }
 
 search_input.addEventListener('input',(e)=>{
