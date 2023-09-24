@@ -38,23 +38,29 @@ buttons.forEach((button) => {
   const dos_el = document.querySelectorAll("#dos div");
 
   
-  
+
+
+
 
 function func() {
   const bubble = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
   const Data = new Date('October 5, 2007 01:00:00');
   let tDay = new Date();
-  var crok = tDay.getFullYear() - Data.getFullYear();
-  var cdni =  tDay.getDay() - Data.getDay();
-  cdni = Math.floor(cdni/(1000*60*60*24)) +1;
+  var roznica = tDay - Data;
+  var roznicaData = new Date(roznica);
+  var lata = roznicaData.getUTCFullYear() - 1970;
+  var miesiace = roznicaData.getUTCMonth();
+
+  var cdni = tDay.getDate() - Data.getDate();
   var cgodz = tDay.getHours() - Data.getHours();
   var cmin = tDay.getMinutes() - Data.getMinutes();
   var csek = tDay.getSeconds() - Data.getSeconds();
   var cmilsek = tDay.getMilliseconds() - Data.getMilliseconds();
-  bubble.textContent = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
-  setTimeout(func, 10);
+  bubble.textContent = `${lata}.${miesiace}${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
+  setTimeout(func, 20);
 }
 func();
+
 
 document.querySelector("#appl > ul > li:nth-child(4) > div > div.content > select option")
 

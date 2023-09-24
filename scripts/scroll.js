@@ -1,6 +1,8 @@
 ScrollReveal().reveal('#one',{origin: 'left', distance: '30%'});
 ScrollReveal().reveal('.addon .n', { origin: 'bottom', interval: 200});
-ScrollReveal().reveal('#dos div', { delay: 200, origin: 'left', distance: '30%', interval: 200});
+
+ScrollReveal().reveal('#dos .mmm', { delay: 200, origin: 'left', distance: '30%', interval: 200});
+
 ScrollReveal().reveal('#opis h3', { delay: 200, origin: 'left', distance: '30%'});
 ScrollReveal().reveal('#opis h1', { delay: 400, origin: 'left', distance: '30%'});
 ScrollReveal().reveal('#opis #buttons', { delay: 600, origin: 'left', distance: '30%'});
