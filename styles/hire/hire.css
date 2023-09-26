@@ -77,4 +77,37 @@
   #hire #main #line {
     margin: 0px auto 60px;
   }
+}
+@media screen and (max-width: 600px) {
+  #hire #main {
+    padding: 3% 0;
+  }
+  #hire #main #line {
+    margin: 0px auto 20px;
+  }
+  #hire #main #elements {
+    row-gap: 0px;
+  }
+  #hire #main #elements div {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+  }
+  #hire #main #elements div i {
+    color: #bc6ff1;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 50px;
+  }
+  #hire #main #elements div p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
 }/*# sourceMappingURL=hire.css.map */

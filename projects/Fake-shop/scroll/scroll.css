@@ -63,8 +63,11 @@
 }
 
 @media screen and (max-width:600px) {
-    #scroll{
+    #row_one, #row_two, #row_three{
         display: none;
     }
-
+    .products{
+        z-index: 2;
+        background: none;
+    }
 }

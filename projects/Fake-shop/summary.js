@@ -24,12 +24,14 @@ if(window.innerWidth < 601){
             options.style.transform = "translateY(0px)";
             products.style.top=220+'px';
             nav.style.boxShadow='rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;'
+            nav.style.backgroundColor="#121212";
         } else{
             rotationState = 0;
             arrow.style.transform = "rotate(0deg)";
             products.style.top = h - 50+'px';
             search.style.transform = 'translateY(-90px)';
             options.style.transform = "translateY(-90px)";
+            nav.style.background="none";
         } 
     });
 

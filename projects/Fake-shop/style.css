@@ -442,7 +442,7 @@ span a{
 @media screen and (max-width:600px) {
   .navbar{
     flex-direction: column;
-    padding: 0px 10% 20px 10%;
+    padding: 0px 0 20px 0;
     background: none;
     z-index: 10;
     overflow: hidden;

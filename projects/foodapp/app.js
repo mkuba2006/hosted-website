@@ -289,10 +289,9 @@ buttons.forEach(button => {
     after.style.borderRadius = '50px';
     after.style.left = '50%';
     after.style.transform = 'translateX(-50%)';
-    after.style.backgroundColor = '#000000';
+    after.style.backgroundColor = "white";
     after.style.content = '""';
     after.style.transition = '0.5s';
-
     button.appendChild(after);
 });
 

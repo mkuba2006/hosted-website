@@ -7,11 +7,7 @@
 body{
     color: black;
     margin: 0;
-    background-size: 100%;
-    /* background-image: url(https://img.freepik.com/premium-photo/herb-spices-cooking-background_136595-562.jpg?w=1600); */
-    background-image: url(https://img.freepik.com/premium-photo/vegetables-herbs-cooking-top-view_136595-15025.jpg?w=3800);
-    /* background: url(https://img.freepik.com/free-photo/flat-lay-cheese-composition-with-copyspace_23-2148161872.jpg?w=2380&t=st=1689717672~exp=1689718272~hmac=d82354ce7c16f1d44e5f35de6c583250fb92b7f0156206963c20db80ac791ebd); */
-    /* background: url(https://img.freepik.com/free-photo/overhead-view-puffed-rice-cakes-with-grains-white-paper_23-2148097143.jpg?w=3380&t=st=1689717897~exp=1689718497~hmac=878bbca6ebcbf0e9a74b8146b6d66e6945d2232bd47e02761add74ed81c07b89); */
+    background-color: #F3FDE8;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -28,15 +24,13 @@ body{
   transform: translate3d(0, -6px, 0);
 }
 header {
-    /* background-color: #292727b4; */
-    /* color: rgb(255, 255, 255); */
+    background-color: #252525;
     font-family: 'Pacifico', cursive;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     padding: 0px 10%;
     
 }
@@ -54,36 +48,39 @@ header::after {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  color: #F90716;
 }
 #sec_div{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
 }
 
 
 input[type='text']{
-    height: 40px;
-    border-radius: 7px;
+    height: 30px;
+    border-radius: 15px;
     width: 300px;
     min-width: 300px;
-    border: none;
     font-size: 15px;
     padding: 6px 14px;
     font-family: 'Pacifico', cursive;
-    border: 2px solid #d6d6d6;
+    border: none;
+    background-color: #353434;
+    color: #F3FDE8;
 }
 #clear{
-  /* color: white; */
+  color: #F3FDE8;
   cursor: pointer;
-  padding: 8px 6px;
-  color: rgb(0, 0, 0);
-  border: 2px solid #f88c8c;
+  padding: 8px 12px;
   transition-duration: 0.4s;
-  border-radius: 7px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  background-color: #353434;
 }
 #clear:hover{
     background-color: #f88c8c; 
@@ -91,13 +88,13 @@ input[type='text']{
 }
 
 #line2{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 #warn{
     font-size: 20px;
@@ -117,7 +114,6 @@ input[type='text']{
     font-family: 'Raleway', sans-serif;
 }
 #nations, #types {
-    /* background-color: #f1b7b7; */
     text-align: center;
     width: max-content;
     max-width: 650px;
@@ -139,6 +135,7 @@ button{
     max-height: 30px;
     background: none;
     overflow: hidden;
+    color: white;
 }
 button span {
     position: relative;
@@ -149,7 +146,7 @@ button span {
 
 
 .active{
-  color: rgb(2, 2, 2); 
+  color: white;
 }
 
 #container{
@@ -276,6 +273,29 @@ h2{
 
 
 
+.swiper {
+  width: 100%;
+  background-color: #252525;
+  height: 60vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+
+.image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center; /* Center the image within its container */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally within the slide */
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
     header {
@@ -294,3 +314,4 @@ h2{
     padding: 0;
 }
 }  
+

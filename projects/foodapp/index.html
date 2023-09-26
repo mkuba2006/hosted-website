@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
     
@@ -16,10 +18,8 @@
                 <div id="clear">Clear the filters</div>
             </div>
         </div>
-        <!-- <div id="warn">If you find error, click Top-Right button to reset</div> -->
         <div id="line2">
             <div id="nations">
-                <!-- <div id="opisa">Nation:</div> -->
                 <br>
                 <button class="Nat1" id="nat" value="Europe"><span>Europe</span></button>
                 <button id="nat" value="North America"><span>North America</span></button>
@@ -29,7 +29,6 @@
                 <button id="nat" value="Africa"><span>Africa</span></button>
             </div>
             <div id="types">
-                <!-- <div id="opisa">Type:</div> -->
                 <br>
                 <button class="Typ1" id="type" value="Fast Food"><span>Fast Food</span></button>
                 <button id="type" value="main courses"><span>main courses</span></button>
@@ -38,11 +37,63 @@
             </div>
         </div>
     </header>
-    
+
+
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <img src="https://img.freepik.com/free-photo/modern-kitchen-composition-with-healthy-ingredients_23-2147859431.jpg?w=1380&t=st=1695761632~exp=1695762232~hmac=baa5c45a01f125f426e4e8da6f9442d69b6a9bca6078177d9a206cbd4c04a578" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-vector/italian-food-with-pasta-realistic-composition-dark-background-isolated-icons-spaghetti-greens-vector-illustration_1284-83053.jpg?w=1380&t=st=1695761751~exp=1695762351~hmac=0eae25c45235a9610ea994b740f79bfc6fbd3f9e99d99fa8ea0a24f01ae2c07f" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://assets.editorial.aetnd.com/uploads/2014/08/canned-food-gettyimages-95480270.jpg" class="image"/>
+            </div>
+         <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/golden-monstera-leaves-background-design-resource_53876-143097.jpg?w=1380&t=st=1695762089~exp=1695762689~hmac=148e529101aa5338ee0b323760d68f75946552e1de941209829fb9d216a981dd" class="image"/>
+            </div>
+
+
+
+
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
 
     <div id="container"></div>
+
+
+
     <script src="food.js"></script>
     <script src="app.js"></script>
     <script src="other.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
