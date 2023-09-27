@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 body{
-    color: black;
-    margin: 0;
-    background-color: #F3FDE8;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  color: black;
+  margin: 0;
+  background-color: #F8F6F4;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
 }
 #hh i{
   font-style: normal;
@@ -31,16 +32,7 @@ header {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px 10%;
-    
-}
-header::after {
-  display: block;
-  width: 95%;
-  height: 2px;
-  background-color: #d6d6d6;
-  content: "";
-  border-radius: 50px;
+    padding: 0px 10% 20px 10%;
 }
 #one{
   width: 100%;
@@ -126,21 +118,21 @@ input[type='text']{
 }
 
 
-button{
-    position: relative;
-    font: 900 15px 'Raleway', sans-serif;
-    margin: 2px 5px;
-    border: none;
-    transition-duration: 0.4s;
-    max-height: 30px;
-    background: none;
-    overflow: hidden;
-    color: white;
+#nat, #type{
+  position: relative;
+  font: 900 15px 'Raleway', sans-serif;
+  margin: 2px 5px;
+  border: none;
+  transition-duration: 0.4s;
+  max-height: 30px;
+  background: none;
+  overflow: hidden;
+  color: white;
 }
-button span {
-    position: relative;
-    z-index: 2;
-  }
+#nat span, #type span{
+  position: relative;
+  z-index: 2;
+}
 
 
 
@@ -173,7 +165,6 @@ button span {
 
 .card {
   border-radius: 0.25rem;
-  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -274,26 +265,78 @@ h2{
 
 
 .swiper {
-  width: 100%;
+  width: 100vw;
   background-color: #252525;
   height: 60vh;
+  min-height: 400px;
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
-
 .image {
-  width: 100%;
-  object-fit: contain;
-  object-position: center; /* Center the image within its container */
+  min-height: 400px;
+  width: 100vw;
+  max-height: 60vh;
+  object-fit: cover;
   display: block;
-  margin: 0 auto; /* Center the image horizontally within the slide */
+  margin: 0 auto; 
+}
+.swiper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603); /* Adjust the color and opacity as needed */
+  z-index: 10; /* Place the overlay above the image */
+}
 
+.opis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-43vh);
+  z-index: 10;
+  width: 100vw;
+  position: relative;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
 
+.opis h1{
+  font-size: 70px;
+  margin: 0 0 10px 0;
+}
 
+.opis h3{
+  margin: 0 0 10px 0;
+  max-width: 500px;
+  font-size: 30px;
+  text-align: center;
+}
 
+#see{
+  font-family: "Montserrat", sans-serif;
+  padding: 12px 32px;
+  border: 1px solid red;
+  background-color: #D80032;
+  color: white;
+  font-size: 20px;
+  transition: .4s;
+  border-radius: 7px;
+}
+#see:hover{
+  scale: 1.05;
+}
 
+@media  screen and (max-width: 1400px) {
+  .swiper {
+    max-height: 400px;
+  }
+}
 
 
 

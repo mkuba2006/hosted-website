@@ -258,7 +258,7 @@ itext.addEventListener('input', () => {
 
 
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('#nat, #type');
 
 function handleButtonMouseEnter() {
     const after = this.querySelector('#af1');
@@ -300,6 +300,7 @@ buttons.forEach(button => {
     button.addEventListener('mouseleave', handleButtonMouseLeave);
     button.addEventListener('click', handleButtonClick);
 });
+
 
 
 let continentElements = document.querySelectorAll("#continent");
