@@ -74,7 +74,45 @@
 
 
 
-    <section id="container"></section>
+    <section id="container" class="ctm"></section>
+
+
+    <section id="contact">
+        <div id="container">
+            <div id="ones">
+                <div id="fform">
+                    <h1>Message me💬</h1>
+                    <form action="https://formsubmit.co/9921724cfdd2e5dab1fe1196b9c58239 " method="POST">
+                            <input type="text" id="name_form" class="inp"  name="name" required placeholder="enter your name:">
+                    
+                            <input type="email" id="email_form" class="inp" name="email" required placeholder="enter your mail:">
+                        
+                            <textarea id="content_form" rows="3" class="inp" name="message" required placeholder="content:"></textarea>
+    
+                        <button class="slide" type="submit">Send</button>
+                    </form>
+                </div>
+                <div id="media">
+                    <h1>You can find me on <span>social media</span>:</h1>
+                    <ul>
+                        <a href="https://www.facebook.com/profile.php?id=100042699441638"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/jakub_myrta/"><li>Instagram</li></a>
+                        <a href="https://www.linkedin.com/in/jakub-myrta-7525a6261/"><li>Linkedin</li></a>
+                        <a href="https://github.com/mkuba2006"><li>GitHub</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="prawa">
+                Copyright © 2023 <span> JM*SUI</span>. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 
 
 
@@ -86,15 +124,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
+          spaceBetween: 100,
           centeredSlides: true,
           autoplay: {
-            delay: 2500,
+            delay: 4500,
             disableOnInteraction: false,
           },
           pagination: {
             el: ".swiper-pagination",
-            clickable: true,
+            clickable: false,
           },
           navigation: {
             nextEl: ".swiper-button-next",

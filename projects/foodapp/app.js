@@ -344,16 +344,16 @@ const render = (product) =>{
         new_prod.className= `cards_item`;
         new_prod.innerHTML =`
         <div class="card">
-          <div class="card_image">
-            <img src="${product[i].img}" alt="a Reuben sandwich on wax paper." />
-          </div>
-          <div class="card_content">
+        <div class="card_content">
             <h2 class="card_title">${product[i].name}</h2>
             <div class="card_text">
                 <p id='continent'>${product[i].continent}</p>
                 <p id='country'>${product[i].country}</p>
                 <p id='group'>${product[i].group}</p>
             </div>
+          </div>
+          <div class="card_image">
+            <img src="${product[i].img}" alt="a Reuben sandwich on wax paper." />
           </div>
         </div>
       </div>

@@ -4,10 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
 body{
   color: black;
   margin: 0;
-  background-color: #F8F6F4;
+  background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -50,7 +51,7 @@ header {
 }
 
 
-input[type='text']{
+#text{
     height: 30px;
     border-radius: 15px;
     width: 300px;
@@ -141,25 +142,43 @@ input[type='text']{
   color: white;
 }
 
-#container{
+
+.ctm::before{
+  content: "See products";
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+
+.ctm{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 200px;
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1500px;
+  margin: 100px auto 0 auto;
 }
 .cards_item {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
   display: flex;
+  justify-content: center;
   padding: 1.2rem;
   width: 380px;
+  padding: 10px 40px;
   height: auto;
   transition: 0.5s;
+  background-color: #d6e4e521;
+  margin: 3px;
 }
 
-#container:hover > :not(:hover){
+.ctm:hover > :not(:hover){
   opacity: .6;
 }
 
@@ -172,14 +191,16 @@ input[type='text']{
 }
 
 .card_image {
+  background: none;
   position: relative;
-  height: 340px;
-  width: 340px;
-  border-radius: 3px;
+  height: 280px;
+  width: 280px;
+  padding: 10px;
 }
 
 .card_image img {
-  height: 340px;
+  background: none;
+  height: 280px;
   width: 100%;
   object-fit: cover;
   border-radius: 3px;
@@ -192,7 +213,7 @@ input[type='text']{
 .card_content {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 10px 8px 0 8px ;
@@ -219,9 +240,8 @@ input[type='text']{
   color: black;
   position: relative;
   margin: 0;
-  padding-bottom: 10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -229,7 +249,7 @@ input[type='text']{
 .card_text{
   display: flex;
   align-items: top;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   margin-top: 5px;
   gap: 10px;
@@ -237,7 +257,7 @@ input[type='text']{
 
 .card_text p {
   color: black;
-  font-size: 18px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -261,6 +281,12 @@ input[type='text']{
 h2{
   font-size: 30px;
 }
+
+
+
+
+
+
 
 
 
@@ -289,8 +315,8 @@ h2{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.603); /* Adjust the color and opacity as needed */
-  z-index: 10; /* Place the overlay above the image */
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
 }
 
 .opis{
@@ -331,6 +357,169 @@ h2{
 #see:hover{
   scale: 1.05;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #contact #container {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  padding: 4% 15% 4% 15%;
+  background-color: #0e0e0f;
+  position: relative;
+  bottom: 0;
+  flex-direction: column;
+}
+#ones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+#ones #fform {
+  font-family: "Montserrat", sans-serif;
+  padding: 6px 14px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 400px;
+}
+#ones #fform h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 29px;
+  margin: 20px 0 20px 0;
+}
+#ones #fform form {
+  padding: 0 10px 0 0;
+}
+#ones #fform form input,
+#ones #fform form textarea {
+  resize: none;
+  color: aliceblue;
+  width: 320px;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+  background: none;
+  border: 1px solid #2e2e31;
+  outline: none;
+  display: block;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+}
+  #fform form .slide:hover,
+  #fform form .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+  #fform form .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+  #fform form button {
+  color: var(--color);
+  transition: 0.25s;
+}
+  #fform form button:hover,   #fform form button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+  #fform form button {
+  background: none;
+  border: 1px solid;
+  font: inherit;
+  line-height: 1;
+  margin-top: 0.5em;
+  font-size: 20px;
+  padding: 10px 26px;
+}
+  #media {
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
+  #media h1 {
+  font-size: 29px;
+}
+  #media h1 span {
+  color: #ffb84c;
+}
+  #media ul {
+  padding: 0;
+  line-height: 250%;
+}
+  #media ul a {
+  text-decoration: none;
+  color: aliceblue;
+}
+  #media ul a li {
+  list-style-type: none;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+  #media ul a li:hover {
+  letter-spacing: 5.5px;
+}
+  #media ul a:nth-child(1):hover {
+  color: #4267b2;
+}
+  #media ul a:nth-child(2):hover {
+  color: #ffdc80;
+}
+  #media ul a:nth-child(3):hover {
+  color: #0072b1;
+}
+  #media ul a:nth-child(4):hover {
+  color: #6cc644;
+}
+ #container #prawa {
+  font-weight: 700;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+ #container #prawa span {
+  color: #df2e38;
+  padding: 0 5px;
+  font-family: "xxx", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+   #container #prawa {
+    font-weight: 700;
+    margin-top: 60px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+   #container #ones #fform form {
+    padding: 0 10px 0 0;
+  }
+   #container #ones #fform form input,
+   #container #ones #fform form textarea {
+    width: 280px;
+  }
+}
+
+
+
 
 @media  screen and (max-width: 1400px) {
   .swiper {
