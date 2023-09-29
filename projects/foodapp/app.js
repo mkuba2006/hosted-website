@@ -1,197 +1,143 @@
 let foods = food;
 let product_container = document.getElementById('container');
 let fo2= foods;
-const Kraje = document.querySelectorAll('button#nat');
-const Typy = document.querySelectorAll('button#type');
+
 const clear = document.getElementById('clear');
-var activeElement = document.querySelector('.active');
 const itext = document.getElementById('text');
+
+const Kraje = document.querySelector('#natSelect');
+const Typy = document.querySelector('#typeSelect');
 
 
 let nations =[];
 let groups =[];
-let foods2=[];
+let mix = food;
+let natS= false;
+let typS= false;
 
+    Kraje.addEventListener('change',()=>{
+        const selectedOption = Kraje.options[Kraje.selectedIndex];
+        const value = selectedOption.value.toLowerCase();
+        console.clear();
+        console.log('początek');
+        console.log('kraj:', natS, 'typ:', typS);
 
-//klik kraj
-Kraje.forEach(kraj =>{
-    
-    const value = kraj.value.toLowerCase();
-
-    kraj.addEventListener('click',()=>{
-        itext.textContent='';
-        document.getElementById('text').value=''
-        const filtrKraj = foods.filter((product)=>{
-            if(product.continent.toLowerCase().includes(value)){
-                return product;
-            }
-        });
-        nations = filtrKraj 
-        let activeButtonCount = 0;
-        let activeButton;
-        
-        Typy.forEach(button => {
-          if (button.classList.contains('active')) {
-            activeButtonCount++;
-            activeButton = button;
-          }
-        });
-    
-        kraj.classList.toggle('active');
-
-        if(kraj.classList.contains('active')){
-            if(activeButtonCount>0){ //Kraj 1 | Typ 1
-                const filtrKraj1 = foods2.filter((product)=>{
-                    if(product.continent.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods=filtrKraj1;
-                fo2= filtrKraj1;
-                render(foods); 
-            }
-            else{//Kraj 1 | Typ 0
-                const filtrKraj1 = foods.filter((product)=>{
-                    if(product.continent.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods = filtrKraj1; 
-                 fo2= filtrKraj1;
-                render(foods);  
-            }
-        }
-        else{
-            if(activeButtonCount>0){ //Kraj 0 | Typ 1
-                if(foods=[]){
-                    render(foods2);
-                } else{
-                    render(foods)
+        if(typS == true && natS == false){
+            console.log('11');
+            const filtrKraj = groups.filter((product)=>{
+                if(product.continent.toLowerCase().includes(value)){
+                    return product;
                 }
-            }
+            });
+            nations = filtrKraj;
+            mix = nations;
+            render(mix);
             
-            else{//Kraj0 | Typ0
-                nations =[];
-                groups =[];
-                foods = food;
-                render(foods);
-                foods = food;
-            }
         }
-    })
-})
-
-
-
-
-
-
-
-
-
-//klik Typ
-Typy.forEach(typ =>{
-    const value = typ.value.toLowerCase()
-    typ.addEventListener('click',()=>{
-        itext.textContent='';
-        document.getElementById('text').value=''
-        const filtrTyp = foods.filter((product)=>{
-            if(product.group.toLowerCase().includes(value)){
-                return product;
-            }
-        });
-        groups = filtrTyp 
-        let activeButtonCount = 0;
-        Kraje.forEach(button => {
-          if (button.classList.contains('active')) {
-            activeButtonCount++;
-          }
-        });
-        typ.classList.toggle('active');
-
         
-
-        if(typ.classList.contains('active')){
-            if(activeButtonCount>0){ //Typ 1 | Kraj 1
-                const filtrTyp1 = nations.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods=food;
-                const filtrTyp2 = foods.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods=filtrTyp1;
-                fo2= filtrTyp1;
-                render(foods);  
-                foods2=filtrTyp2;
-            }
-            else{//Typ 1 | Kraj 0
-                const filtrTyp2 = foods.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                 });
-                 foods2=filtrTyp2;
-                const filtrTyp1 = nations.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                render(filtrTyp1); 
-                foods = filtrTyp1;
-                fo2= filtrTyp1;
-                if(foods.length ===0){
-                    foods = food;
-                    const filtrTyp1 = foods.filter((product)=>{
-                        if(product.group.toLowerCase().includes(value)){
-                            return product;
-                        }
-                    });
-                    foods = filtrTyp1;
-                    fo2= filtrTyp1;
-                    render(foods);
+        else if(typS == true && natS == true){
+            typS = false;
+            console.log('12');
+            Typy.selectedIndex = 0;
+            const filtrKraj = foods.filter((product)=>{
+                if(product.continent.toLowerCase().includes(value)){
+                    return product;
                 }
-            }
+            });
+            nations = filtrKraj;
+            mix = nations;
+            render(mix);
         }
+        
         else{
-            if(activeButtonCount>0){ //Typ 0 | Kraj 1
-                groups =[];
-                if(nations.length === 0){
-                    render(foods);
-                } 
-
-                else{
-                    let activeButtonCount = 0;
-                    let activeButton;
-                    Kraje.forEach(button => {
-                      if (button.classList.contains('active')) {
-                        activeButton = button.value.toLowerCase();
-                      }
-                    });
-                    foods = nations;
-                    const filtrTyp1 = foods.filter((product)=>{
-                        if(product.continent.toLowerCase().includes(activeButton)){
-                            return product;
-                        }
-                    });
-                    foods = filtrTyp1;
-                    fo2= filtrTyp1;
-                    render(foods);
+            console.log('13');
+            const filtrKraj = foods.filter((product)=>{
+                if(product.continent.toLowerCase().includes(value)){
+                    return product;
                 }
-            }          
-            else{//Kraj0 | Typ0
-                foods = food;
-                groups =[];
-                nations=[];
-                render(foods);
-            }
+            });
+            nations = filtrKraj;
+            mix = nations;
+            render(mix);
+            
         }
+        if(natSelect.selectedIndex === 0){
+            console.log(typeSelect.selectedIndex);
+            natS = false;
+        }else{
+            natS = true;
+        }
+        console.log('-----------');
+        console.log('end');
+        console.log('kraj:', natS, 'typ:', typS);
+        console.log('-----------');
     })
-})
+
+
+
+
+    Typy.addEventListener('change',()=>{
+        const selectedOption = Typy.options[Typy.selectedIndex];
+        const value = selectedOption.value.toLowerCase();
+
+        console.clear();
+        console.log('początek');
+        console.log('kraj:', natS, 'typ:', typS);
+
+
+
+
+        if(natS == true && typS == false){
+    
+            console.log('21');
+            const filtrTyp = nations.filter((product)=>{
+                if(product.group.toLowerCase().includes(value)){
+                    return product;
+                }
+            });
+            groups = filtrTyp; 
+            mix = groups;
+            render(mix);
+        }
+
+        else if(typS == true && natS == true){
+            natS = false;
+            console.log('22');
+            Kraje.selectedIndex = 0;
+            const filtrTyp = foods.filter((product)=>{
+                if(product.group.toLowerCase().includes(value)){
+                    return product;
+                }
+            });
+            groups = filtrTyp; 
+            mix = groups;
+            render(mix);
+        }
+
+        else{
+            console.log('23');
+            const filtrTyp = foods.filter((product)=>{
+                if(product.group.toLowerCase().includes(value)){
+                    return product;
+                }
+            });
+            groups = filtrTyp; 
+            mix = groups;
+            render(mix);
+        }
+
+        if(typeSelect.selectedIndex === 0){
+            console.log(typeSelect.selectedIndex);
+            typS = false;
+        }else{
+            typS = true;
+        }
+
+        console.log('-----------');
+        console.log('end');
+        console.log('kraj:', natS, 'typ:', typS);
+        console.log('-----------');
+    })
 
 
 
@@ -209,45 +155,25 @@ itext.addEventListener('input', () => {
     console.log('prev:',prev_val);
     if(i>p){
         console.log('1');
-        const fff = fo2.filter(product => product.name.toLowerCase().includes(ival));
+        const fff = mix.filter(product => product.name.toLowerCase().includes(ival));
         render(fff);
         prev_val = ival;
     }else{
         console.log('2');
-        const fff = fo2.filter(product => product.name.toLowerCase().includes(prev_val));
+        const fff = mix.filter(product => product.name.toLowerCase().includes(prev_val));
         render(fff);
         prev_val = ival;
     }
 
     if (ival === '' && prev_val ==='') {
-        render(fo2);
+        typeSelect.selectedIndex = 0;
+        natSelect.selectedIndex = 0;
+        render(foods);
     }else{
-        const fff = fo2.filter(product => product.name.toLowerCase().includes(prev_val));
+        const fff = mix.filter(product => product.name.toLowerCase().includes(prev_val));
         render(fff);
     }
 });
-
-
-
-
-
-// itext.addEventListener('input', ()=>{
-//     let ival = itext.value;
-//     const fff = foods.filter(product=>{
-//         if(product.name.toLowerCase().includes(ival)){
-//             return product;
-//         }
-//     })
-//     if(ival ===''){
-//         render(foods);
-//     }else{
-//         foods=fff;
-//         render(fff);
-//     }
-//     foods=food;
-//     console.log(itext.value);
-// })
-
 
 
 
@@ -289,7 +215,7 @@ buttons.forEach(button => {
     after.style.borderRadius = '50px';
     after.style.left = '50%';
     after.style.transform = 'translateX(-50%)';
-    after.style.backgroundColor = "white";
+    after.style.backgroundColor = "black";
     after.style.content = '""';
     after.style.transition = '0.5s';
     button.appendChild(after);
@@ -317,17 +243,9 @@ continentElements.forEach((continentElement) => {
 
 
 clear.addEventListener('click', () => {
-    nations = [];
-    groups = [];
-    foods2 = [];
-
-    Kraje.forEach(button => button.classList.remove('active'));
-    Typy.forEach(button => button.classList.remove('active'));
-
-    foods = food;
+    typeSelect.selectedIndex = 0;
+    natSelect.selectedIndex = 0;
     render(foods);
-
-    buttons.forEach(button => button.querySelector('div').style.width = '0%');
 });
 
 
@@ -362,16 +280,3 @@ const render = (product) =>{
     }
 }
 document.onload = render(foods);
-
-
-{/* <div id="img_back"">
-<img src="${product[i].img}"/>
-</div>
-<div id="content">
-<div id="opis">
-    <h1 id='name'>${product[i].name}</h1>
-    <h2 id='continent'>${product[i].continent}</h2>
-    <h3 id='country'>${product[i].country}</h3>
-    <h3 id='group'>${product[i].group}</h3>
-</div>
-</div> */}

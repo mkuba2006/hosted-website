@@ -13,28 +13,6 @@
     <header>
         <div id="one">
             <h1 id="hh"><i>F</i><i>o</i><i>d</i><i>i</i><i>e</i><i>H</i><i>u</i><i>b</i></h1>
-            <div id="sec_div">
-                <input id="text" type="text" placeholder="Search by name...">
-                <div id="clear">Clear the filters</div>
-            </div>
-        </div>
-        <div id="line2">
-            <div id="nations">
-                <br>
-                <button class="Nat1" id="nat" value="Europe"><span>Europe</span></button>
-                <button id="nat" value="North America"><span>North America</span></button>
-                <button id="nat" value="South America"><span>South America</span></button>
-                <button id="nat" value="Asia"><span>Asia</span></button>
-                <button id="nat" value="Australia"><span>Australia</span></button>
-                <button id="nat" value="Africa"><span>Africa</span></button>
-            </div>
-            <div id="types">
-                <br>
-                <button class="Typ1" id="type" value="Fast Food"><span>Fast Food</span></button>
-                <button id="type" value="main courses"><span>main courses</span></button>
-                <button id="type" value="soups"><span>soups</span></button>
-                <button id="type" value="desserts"><span>desserts</span></button>
-            </div>
         </div>
     </header>
 
@@ -72,9 +50,33 @@
     </div>
 
 
+    <div id="line2">
+            <select id="natSelect">
+                <option value="" selected>Select an option</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Africa">Africa</option>
+            </select>
+        
+            <select id="typeSelect">
+                <option value="" selected>Select an option</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="main courses">Main Courses</option>
+                <option value="soups">Soups</option>
+                <option value="desserts">Desserts</option>
+            </select>
+        <div id="sec_div">
+            <input id="text" type="text" placeholder="Search by name...">
+            <div id="clear">Clear the filters</div>
+        </div>
+    </div>
 
-
-    <section id="container" class="ctm"></section>
+    <section id="container" class="ctm">
+        
+    </section>
 
 
     <section id="contact">
@@ -118,7 +120,6 @@
 
     <script src="food.js"></script>
     <script src="app.js"></script>
-    <script src="other.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
