@@ -714,7 +714,19 @@ h2{
   .card_text p {
     font-size: 20px;
   }
-
+  .opis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    transform: translateY(-500px);
+    z-index: 10;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+  }
 }
 
 
