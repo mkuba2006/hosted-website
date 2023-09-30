@@ -295,14 +295,15 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-43vh);
+  transform: translateY(-60vh);
   z-index: 10;
   width: 100vw;
+  height: 60vh;
   position: relative;
   color: white;
   font-family: 'Amatic SC', cursive;
 }
-
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .opis h1{
   font-size: 70px;
   margin: 0 0 10px 0;
@@ -599,7 +600,8 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-35vh);
+    max-height: 400px;
+    transform: translateY(-400px);
     z-index: 10;
     width: 100vw;
     position: relative;
@@ -626,6 +628,15 @@ h2{
 
 
 @media  screen and (max-width: 660px) {
+  select{
+    margin-right: 0;
+  }
+  #f_div{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .swiper {
     max-height: 400px;
   }
@@ -710,7 +721,14 @@ h2{
 
 
 @media  screen and (max-width: 410px){
-
+  #f_div{
+    width: auto;
+    flex-direction: column;
+    row-gap: 11px;
+  }
+  select{
+    width: 90vw;
+  }
   #text{
     height: 30px;
     border-radius: 15px;
@@ -730,7 +748,7 @@ h2{
     width: 90%;
   }
   .opis{
-    transform: translateY(-38vh);
+    transform: translateY(-48vh);
   }
   .card_item{
     width: 80%;
