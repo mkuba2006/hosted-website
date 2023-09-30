@@ -733,11 +733,16 @@ h2{
     transform: translateY(-38vh);
   }
 
+  .card_content{
+    margin-bottom: 5px;
+  }
   .card_title {
     font-size: 20px;
   }
   
-  
+  .cards_item {
+    padding: 10px 20px;
+}
   
   .card_text p {
     font-size: 15px;
