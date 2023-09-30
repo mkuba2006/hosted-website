@@ -53,7 +53,7 @@ const food = [
         country:'Greec',
         group:'main courses',
         name:'Moussaka',
-        img: 'https://mrmoussaka.co.uk/wp-content/themes/yootheme/cache/3d/mr-moussaka-2023-3d132663.png'
+        img: 'https://rootkitchen.uk/cdn/shop/products/moussaka-942515.png?v=1658210958'
     },
     {
         id: 7,
