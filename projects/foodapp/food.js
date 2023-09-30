@@ -246,5 +246,85 @@ const food = [
     group:'main courses',
     name:'Asado',
     img: 'https://yastatic.net/avatars/get-grocery-goods/2756334/cb796ad8-dd5f-4c6f-8569-82219fe6f163/750x500?webp=true'
-    }
+    },
+    {
+        id: 31,
+        continent: 'Asia',
+        country: 'South Korea',
+        group: 'main courses',
+        name: 'Bibimbap',
+        img: 'https://niedzielnykucharz.pl/wp-content/uploads/2021/05/5-Obiad%C3%B3w-za-10-z%C5%82-2021-05-18T223659.105-1.png'
+    },
+    {
+        id: 32,
+        continent: 'North America',
+        country: 'Mexico',
+        group: 'appetizers',
+        name: 'Guacamole',
+        img: 'https://blog.misfitsmarket.com/wp-content/uploads/2021/04/basic-guacamole-2021.png'
+    },
+    {
+        id: 33,
+        continent: 'Africa',
+        country: 'Morocco',
+        group: 'desserts',
+        name: 'Baklava',
+        img: 'https://www.imamcagdas.com/iyi-baklavanin-sesi-5-blog.png'
+    },
+    {
+        id: 34,
+        continent: 'Asia',
+        country: 'Vietnam',
+        group: 'desserts',
+        name: 'Che Ba Mau',
+        img: 'https://delitasty.nl/wp-content/uploads/2014/06/29-che-ba-mau.png'
+    },
+    {
+        id: 35,
+        continent: 'Europe',
+        country: 'Spain',
+        group: 'desserts',
+        name: 'Churros',
+        img: 'https://loschurroshermanos.ch/wp-content/uploads/2021/06/Untitled-3.png'
+    },
+    {
+        id: 36,
+        continent: 'North America',
+        country: 'USA',
+        group: 'desserts',
+        name: 'Key Lime Pie',
+        img: 'https://8e9d5b8b8dcb9208ef3f-01db2a53ae0368d03387780ee86ead55.ssl.cf2.rackcdn.com/0263624000000_CF_hyvee_default_large.png'
+    },
+    {
+        id: 37,
+        continent: 'Europe',
+        country: 'Germany',
+        group: 'main courses',
+        name: 'Sauerbraten',
+        img: 'https://hofmanns-shop.de/cdn/shop/products/zarter-sauerbraten_48108_1.png?v=1667739098&width=533'
+    },
+    {
+        id: 38,
+        continent: 'Asia',
+        country: 'Indonesia',
+        group: 'main courses',
+        name: 'Nasi Goreng',
+        img: 'https://www.klein-java.nl/wp-content/uploads/2020/12/klein-java-indisch-eten-breda-Rames-nasi-goreng.png'
+    },
+    {
+        id: 39,
+        continent: 'Europe',
+        country: 'Italy',
+        group: 'desserts',
+        name: 'Tiramisu',
+        img: 'https://kultowealkohole.pl/uploads/images/7g/604769f70c2f7.png'
+    },
+    {
+        id: 40,
+        continent: 'South America',
+        country: 'Peru',
+        group: 'main courses',
+        name: 'Lomo Saltado',
+        img: 'https://recreolagranjita.com/wp-content/uploads/2023/07/Carta-Extra_Lomo-Saltado.png'
+      }
 ]
