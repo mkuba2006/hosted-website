@@ -146,7 +146,7 @@ products = [
         nazwa_albumu: '21st Century Breakdown',
         rok_wydania: '2009',
         zespol: 'Green Day',
-        obraz: 'https://ecsmedia.pl/c/21st-century-breakdown-b-iext123420020.jpg',
+        obraz: 'https://ecsmedia.pl/c/21st-century-breakdown-b-iext137176464.jpg',
         opis: 'Another rock opera by Green Day, 21st Century Breakdown tackled ambitious concepts and delivered anthemic tracks.',
         rank: '8/10'
     },

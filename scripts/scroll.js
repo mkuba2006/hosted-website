@@ -1,4 +1,4 @@
-ScrollReveal().reveal('#one',{origin: 'left', distance: '30%'});
+
 ScrollReveal().reveal('.addon .n', { origin: 'bottom', interval: 200});
 
 ScrollReveal().reveal('#dos .mmm', { delay: 200, origin: 'left', distance: '30%', interval: 200});
@@ -19,8 +19,7 @@ ScrollReveal().reveal('#media', {delay: 400, origin: 'bottom', distance: '40%'})
 ScrollReveal().reveal('#app .title-songs', {origin: 'left', distance: '5%'});
 ScrollReveal().reveal('#app .product-list .prod-item', {delay: 200, origin: 'bottom', distance: '20%',interval: 100});
 
-ScrollReveal().reveal('#nav > div:nth-child(2) a', { delay: 500, origin: 'left', distance: '130%', interval: 200 });
-ScrollReveal().reveal('#nav > div:nth-child(2) a button', { delay: 500, origin: 'left', distance: '30%', interval: 200 });
+
 
 ScrollReveal().reveal('#info', { delay: 200, origin: 'left', distance: '30%', interval: 200});
 ScrollReveal().reveal('#elements div', { delay: 400, origin: 'left', distance: '30%', interval: 200});
