@@ -732,7 +732,9 @@ h2{
   .opis{
     transform: translateY(-38vh);
   }
-
+  .card_item{
+    width: 80%;
+  }
   .card_content{
     margin-bottom: 5px;
   }
@@ -747,4 +749,17 @@ h2{
   .card_text p {
     font-size: 15px;
   }
+  .card_content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 8px 0 8px ;
+    max-height: 290px;
+    height: 50px;
+    gap: 10px;
+  }
+
 }
