@@ -464,6 +464,7 @@ h2{
     text-align: center;
   }
 }
+
 @media screen and (max-width: 500px) {
    #container #ones #fform form {
     padding: 0 10px 0 0;
@@ -474,7 +475,18 @@ h2{
   }
 }
 
-
+@media screen and (max-width: 370px) {
+  #container #ones #fform form {
+   padding: 0 10px 0 0;
+ }
+  #container #ones #fform form input,
+  #container #ones #fform form textarea {
+   width: 200px;
+ }
+ #media h1 {
+  font-size: 23px;
+}
+}
 
 
 
@@ -630,6 +642,7 @@ h2{
     display: flex;
     justify-content: center;
     width: 100%;
+    min-width: 0px;
     padding: 10px 40px;
     height: auto;
     transition: 0.5s;
@@ -691,13 +704,30 @@ h2{
     font-size: 20px;
   }
 
+}
 
 
 
 
+@media  screen and (max-width: 410px){
 
-
-
-
+  #text{
+    height: 30px;
+    border-radius: 15px;
+    width: 90%;
+    min-width: 0px;
+    font-size: 15px;
+    padding: 6px 14px;
+    font-family: 'Pacifico', cursive;
+    border: none;
+    background-color: #e9e9e9;
+    color: black;
+  }
+  #clear{
+    padding: 6px 14px;
+    font-size: 15px;
+    height: 30px;
+    width: 90%;
+  }
 
 }
