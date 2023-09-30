@@ -729,5 +729,17 @@ h2{
     height: 30px;
     width: 90%;
   }
+  .opis{
+    transform: translateY(-38vh);
+  }
 
+  .card_title {
+    font-size: 20px;
+  }
+  
+  
+  
+  .card_text p {
+    font-size: 15px;
+  }
 }
