@@ -24,9 +24,11 @@ h3 {
 }
 #contact #container #ones {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 100px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  row-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 #contact #container #ones #fform {
   font-family: "Montserrat", sans-serif;
@@ -35,7 +37,7 @@ h3 {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  width: 400px;
+  width: 350px;
 }
 #contact #container #ones #fform h1 {
   font-family: "Poppins", sans-serif;
@@ -87,6 +89,9 @@ h3 {
 }
 #contact #container #ones #media {
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
 }
 #contact #container #ones #media h1 {
@@ -137,6 +142,11 @@ h3 {
   font-family: "xxx", sans-serif;
 }
 
+@media screen and (max-width: 850px) {
+  #contact #container #ones {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 700px) {
   #contact #container #prawa {
     font-weight: 700;

@@ -5,7 +5,7 @@ html {
 }
 
 #formus {
-  background-image: linear-gradient(rgba(1, 1, 1, 0.9), rgba(3, 3, 3, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/bg2.jpg?raw=true");
+  background-image: linear-gradient(rgba(1, 1, 1, 0.7), rgba(3, 3, 3, 0.7)), url("https://github.com/mkuba2006/rpp/blob/master/images/bg2.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

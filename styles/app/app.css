@@ -81,6 +81,7 @@ html {
   padding-top: 30px;
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
 #app .product-list .prod-item #ram .kontent h1 a {
   color: #E900FF;
@@ -159,7 +160,7 @@ html {
   #app .product-list {
     padding: 0;
     width: auto;
-    max-width: 300px;
+    max-width: 380px;
     height: auto;
     grid-template-columns: 1fr;
   }

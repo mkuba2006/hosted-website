@@ -8,7 +8,7 @@
 body{
   color: black;
   margin: 0;
-  background-color: rgb(255, 255, 255);
+  background: #fff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -155,7 +155,7 @@ select{
   padding: 10px 40px;
   height: auto;
   transition: 0.5s;
-  background-color: #d6e4e521;
+  background-color: rgb(240, 239, 237);
   margin: 3px;
 }
 

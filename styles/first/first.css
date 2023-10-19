@@ -5,7 +5,7 @@ html {
 }
 
 #first {
-  background-image: linear-gradient(rgba(3, 3, 3, 0.9), rgba(3, 3, 3, 0.9)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true");
+  background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -90,7 +90,6 @@ html {
   border-radius: 50%;
   height: auto;
   box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px, rgba(192, 49, 49, 0.774) -6px -2px 16px 0px;
-  opacity: 0.7;
 }
 
 .hoverBubble {

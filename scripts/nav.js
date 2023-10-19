@@ -1,10 +1,6 @@
-const nav = document.querySelector('#nav1');
+const nav = document.getElementById('nav1');
 
-const scroll = () =>{
-    const scrollPos = window.scrollY;
-    nav.classList.toggle("scroll-down", scrollPos > 56 );
-};
-document.addEventListener('scroll', scroll,{passive: true});
+
 
 $(document).ready(function(){
 	$('#burger1').click(function(){
@@ -12,12 +8,50 @@ $(document).ready(function(){
 	});
 });
 
-const navl = document.querySelector("#burger1")
+
+
+const elementDoNasluchiwania = window;
+let lastScrollPosition = 0;
+
+function scrollListener(event) {
+  const currentScrollPosition = window.scrollY;
+  if (currentScrollPosition > lastScrollPosition) {
+    console.log("Użytkownik przewija w dół");
+    nav.classList.add("scroll-down" );
+  }
+  if (currentScrollPosition < lastScrollPosition) {
+    console.log("Użytkownik przewija w górę");
+    nav.classList.remove("scroll-down" );
+  }
+  lastScrollPosition = currentScrollPosition;
+}
+elementDoNasluchiwania.addEventListener("scroll", scrollListener);
+
+
+
+
+
+
+
 const navi = document.querySelector("#secret")
 const nav_links = navi.querySelectorAll('a');
 const burger = document.querySelector("#burger1");
+
+const burger2 = document.querySelector("#burger2");
+
+
+burger2.addEventListener("click", () => {
+  burger.classList.toggle("toggle");
+  burger2.classList.toggle("toggle");
+  navi.classList.toggle("nav_active");
+  nav_links.forEach((link, index) => {
+    link.style.animation = `navLink 0.5s ease forwards ${index / 7}s`;
+  });
+});
+
 burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
+  burger2.classList.toggle("toggle");
   navi.classList.toggle("nav_active");
   nav_links.forEach((link, index) => {
     link.style.animation = `navLink 0.5s ease forwards ${index / 7}s`;

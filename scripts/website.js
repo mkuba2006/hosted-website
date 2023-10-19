@@ -1,24 +1,24 @@
-const scrollHandler = () => {
-  const nav = document.querySelector('nav');
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, 0);
-  });
+// const scrollHandler = () => {
+//   const nav = document.querySelector('nav');
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve();
+//     }, 0);
+//   });
 
-  promise.then(() => {
-    nav.style.top = '-12%';
-    nav.style.transition = '0.4s';
-    nav.style.animationTimingFunction = 'ease';
-    setTimeout(() => {
-      nav.style.top = '0';
-    }, 100); 
-  });
+//   promise.then(() => {
+//     nav.style.top = '-12%';
+//     nav.style.transition = '0.4s';
+//     nav.style.animationTimingFunction = 'ease';
+//     setTimeout(() => {
+//       nav.style.top = '0';
+//     }, 100); 
+//   });
 
-  window.removeEventListener('scroll', scrollHandler);
-};
+//   window.removeEventListener('scroll', scrollHandler);
+// };
 
-window.addEventListener('scroll', scrollHandler);
+// window.addEventListener('scroll', scrollHandler);
 
 
 
@@ -42,24 +42,38 @@ buttons.forEach((button) => {
 
 
 
-function func() {
-  const bubble = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
-  const Data = new Date('October 5, 2007 01:00:00');
-  let tDay = new Date();
-  var roznica = tDay - Data;
-  var roznicaData = new Date(roznica);
-  var lata = roznicaData.getUTCFullYear() - 1970;
-  var miesiace = roznicaData.getUTCMonth();
 
-  var cdni = tDay.getDate() - Data.getDate();
-  var cgodz = tDay.getHours() - Data.getHours();
-  var cmin = tDay.getMinutes() - Data.getMinutes();
-  var csek = tDay.getSeconds() - Data.getSeconds();
-  var cmilsek = tDay.getMilliseconds() - Data.getMilliseconds();
-  bubble.textContent = `${lata}.${miesiace}${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
-  setTimeout(func, 20);
+function updateTimer() {
+  const startDate = new Date('2006-10-05');
+  const currentDate = new Date();
+  const timeDifference = currentDate - startDate;
+
+  const millisecondsInASecond = 1000;
+  const secondsInAMinute = 60;
+  const secondsInAnHour = 60 * secondsInAMinute;
+  const secondsInADay = 24 * secondsInAnHour;
+  const secondsInAMonth = 30 * secondsInADay;
+  const secondsInAYear = 365 * secondsInADay;
+
+  const years = Math.floor(timeDifference / (secondsInAYear * millisecondsInASecond));
+  const months = Math.floor((timeDifference % (secondsInAYear * millisecondsInASecond)) / (secondsInAMonth * millisecondsInASecond));
+  const days = Math.floor((timeDifference % (secondsInAMonth * millisecondsInASecond)) / (secondsInADay * millisecondsInASecond));
+  const hours = Math.floor((timeDifference % (secondsInADay * millisecondsInASecond)) / (secondsInAnHour * millisecondsInASecond));
+  const minutes = Math.floor((timeDifference % (secondsInAnHour * millisecondsInASecond)) / (secondsInAMinute * millisecondsInASecond));
+  const seconds = Math.floor((timeDifference % (secondsInAMinute * millisecondsInASecond)) / millisecondsInASecond);
+  const milliseconds = timeDifference % millisecondsInASecond;
+
+  const timerElement = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
+  timerElement.innerHTML = `${years}.${months}${days}${hours}${minutes}${seconds}${milliseconds}`;
 }
-func();
+setInterval(updateTimer, 10);
+updateTimer();
+
+
+
+
+
+
 
 
 document.querySelector("#appl > ul > li:nth-child(4) > div > div.content > select option")

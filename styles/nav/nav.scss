@@ -15,17 +15,9 @@ html {
   font-family: "Indie Flower", cursive;
   color: $el3;
 }
-.toggle .line_one {
-  transform: rotate(-45deg) translate(-9px, 4px);
-}
-
-.toggle .line_dwo {
-  opacity: 0;
-}
-
-.toggle .line_three {
-  transform: rotate(45deg) translate(-9px, -4px);
-}
+.toggle .line_one {transform: rotate(-45deg) translate(-9px, 4px);}
+.toggle .line_dwo {opacity: 0;}
+.toggle .line_three {transform: rotate(45deg) translate(-9px, -4px);}
 
 
 
@@ -47,9 +39,12 @@ body.open .overlay{
   visibility: visible;
   opacity: 1;
 }
+body.open aside{
+  translate: 0;
+}
 aside{
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   top: 0;
   right: 0;
   padding: 20px;
@@ -59,114 +54,124 @@ aside{
   box-shadow: 0 0 20px rgb(0 0 0 / 70%);
   translate: 100% 0;
   transition: 0.3s;
+  #burger2 {
+    display: block;
+    z-index: 11;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    div {
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      height: 4px;
+      margin: 5px;
+      background-color: #fdfdfd;
+      padding-left: 3%;
+      transition: all 0.26s ease;
+      z-index: 13;
+      border-radius: 50px;
+    }
+  }
+  a{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  a:first-of-type{
+    margin-top: 60px;
+  }
 }
-body.open aside{
-  translate: 0;
-}
-aside a{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-}
-aside a:first-of-type{
-  margin-top: 60px;
-}
+
 #burger1 {
   display: none;
   z-index: 11;
   position: fixed;
-}
-#burger1 div {
-  display: none;
-  cursor: pointer;
-  width: 26px;
-  height: 4px;
-  margin: 5px;
-  background-color: #fdfdfd;
-  padding-left: 3%;
-  transition: all 0.26s ease;
-  z-index: 3;
+  div {
+    display: none;
+    cursor: pointer;
+    width: 26px;
+    height: 4px;
+    margin: 5px;
+    background-color: #fdfdfd;
+    padding-left: 3%;
+    transition: all 0.26s ease;
+    z-index: 13;
+  }
 }
 #nav1 {
   backdrop-filter: blur(6px);
   font-family: "Indie Flower", cursive;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.664);
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 10;
   color: white;
+  transition: 0.5s;
   .in-nav {
+    width: 100vw;
     padding: 0.3% 15% 0.3% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  #nav1.scroll-down {
-    top: 0;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
-  }
-  
-  #hrf {
-    text-decoration: none;
-  }
-  
-  #logo1 {
-    cursor: pointer;
-    height: auto;
-    font-size: 55px;
-    font-weight: 900;
-    transition-duration: 0.4s;
-    border-radius: 10px;
-    animation: doLogo 5s linear infinite;
-  }
-  
-  @keyframes doLogo {
-    0% {
-      color: #f5eaea;
+    transition: 0.5s;
+    #secret{
+      transition: 0.5s;  
+      .Nav-el {
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        padding: 6px 11px 6px 11px;
+        border: 1px solid $el4mod;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.541);
+        transition-duration: 0.4s;
+      }
+      .Nav-el:hover {
+        background-color: rgba(22, 22, 22, 0.541);
+      }
     }
-    25% {
-      color: $green;
+    #hrf {
+      text-decoration: none;
+      #logo1 {
+        cursor: pointer;
+        height: auto;
+        font-size: 55px;
+        font-weight: 900;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+        animation: doLogo 5s linear infinite;
+        transition: 0.5s;
+        @keyframes doLogo {
+          0% {color: #f5eaea;}
+          25% {color: $green;}
+          50% {color: #f16767;}
+          75% {color: #a459d1;}
+          100% {color: #f5eaea;}
+        }
+      }
+      #logo1:hover {
+        background-color: #34343481;
+      }
     }
-    50% {
-      color: #f16767;
-    }
-    75% {
-      color: #a459d1;
-    }
-    100% {
-      color: #f5eaea;
-    }
-  }
-  
-  #logo1:hover {
-    background-color: #34343481;
   }
 }
 
-  .Nav-el {
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    padding: 6px 11px 6px 11px;
-    border: 1px solid $el4mod;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.541);
-    transition-duration: 0.4s;
-  }
-  .mp {
-    background-color: $el4mod;
-  }
-  .scroll {
-    background-color: rgb(46, 44, 44);
-  }
-
+.mp {
+  background-color: $el4mod;
+}
+.scroll {
+  background-color: rgb(46, 44, 44);
+}
 .nav-hidden {
   top: -100%;
 }
@@ -174,37 +179,49 @@ aside a:first-of-type{
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 1050px) {
+  #nav1.scroll-down {
+    padding: 15px 0;
+    transition: 0.5s;
+    top: 0;
+    height: 60px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+    .in-nav {
+      height: 60px;
+      #secret{
+        transition: 0.5s;
+        display: none;
+        .Nav-el {
+          transition: 0.5s;
+          display: none;
+        }
+      }
+      #hrf {
+        text-decoration: none;
+        #logo1 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
 
   #nav1 {
-    padding-top: 0;
+    padding: 0;
+    transition: 0.5s;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.877);
-    max-width: 100%;
-    position: fixed;
-    z-index: 1;
     .in-nav {
-      height: 17vh;
+      transition: 0.5s;
+      height: 100px;
       padding: 0.3% 10% 0.3% 10%;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-
-    #logo1 {
-      height: auto;
-      font-size: 50px;
-      font-weight: 900;
-      transition-duration: 0.4s;
-      border-radius: 10px;
-      padding: 10px 10px 0px 10px;
-      animation: doLogo 5s linear infinite;
-    }
     #logo:hover {
       background-color: #1b1b1b81;
     }
-    #nav1 {
-      width: 100%;
-    }
     .Nav-el {
+      transition: 0.5s;
       font-family: "Montserrat", sans-serif;
       padding: 6px 11px 6px 11px;
       border: 1px solid $el4mod;
@@ -212,31 +229,27 @@ aside a:first-of-type{
       border-radius: 5px;
       font-size: 16px;
       background-color: black;
-      transition-duration: 0.4s;
     }
   }
 }
 
 @media screen and (max-width: 880px) {
-  
   #burger1 {
     display: block;
-    z-index: 11;
-    position: fixed;
-      right: 40px;
-      top: 6.5%;
-  }
-  #burger1 div {
-    display: block;
-  }
-
-  #burger1 #jeden,
-  #burger1 #dwa,
-  #burger1 #trzy {
-    display: block;
-    cursor: pointer;
-    width: 30px;
-    border-radius: 50px;
+    z-index: 110;
+    position: relative;
+    right: 40px;
+    div {
+      z-index: 110;
+      display: block;
+    }
+    #jeden,#dwa,#trzy {
+      z-index: 110;
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      border-radius: 50px;
+    } 
   }
   #nav > div:nth-child(2) {
     display: none;
