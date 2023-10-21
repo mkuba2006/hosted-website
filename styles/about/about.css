@@ -38,7 +38,7 @@ section#about #line {
 section#about #container {
   width: 900px;
   text-align: left;
-  border: 0.1px solid #494b50;
+  border: 0.1px solid #892cdc;
 }
 section#about #container #rest {
   display: flex;
@@ -64,7 +64,7 @@ section#about #container #rest #text h6 {
   font-weight: 400;
 }
 section#about #container #rest #text p {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 950px) {
@@ -81,8 +81,6 @@ section#about #container #rest #text p {
   }
   section#about #container {
     width: 90%;
-    text-align: left;
-    border: 0.1px solid #7f8799;
   }
   section#about #container #rest {
     display: flex;
@@ -90,7 +88,6 @@ section#about #container #rest #text p {
     align-items: center;
     width: 90%;
     margin: 0;
-    color: #7f8799;
   }
   section#about #container #rest #text {
     font-size: 15px;
@@ -107,7 +104,6 @@ section#about #container #rest #text p {
     align-items: center;
     width: 90%;
     margin: 0;
-    color: #7f8799;
   }
   section#about #container #rest #text {
     font-size: 15px;
@@ -132,7 +128,6 @@ section#about #container #rest #text p {
   }
   section#about #container h3 {
     margin: 0;
-    color: aliceblue;
     margin-bottom: 20px;
   }
   section#about #container #rest {
@@ -141,7 +136,6 @@ section#about #container #rest #text p {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    color: rgb(193, 197, 201);
   }
   section#about #container #rest #text {
     width: 300px;
@@ -156,7 +150,6 @@ section#about #container #rest #text p {
   }
   section#about #container #rest #text p {
     font-size: 15px;
-    font-weight: 400;
   }
   section#about #container #rest #image {
     display: flex;
@@ -188,7 +181,6 @@ section#about #container #rest #text p {
   section#about #container #rest {
     display: flex;
     width: 100%;
-    color: #F8F6F4;
   }
   section#about #container #rest #image {
     width: 100%;
@@ -209,9 +201,6 @@ section#about #container #rest #text p {
   section#about #container #rest #text h6 {
     font-weight: 400;
   }
-  section#about #container #rest #text p {
-    font-weight: 300;
-  }
 }
 @media screen and (max-width: 350px) {
   section#about {
@@ -230,7 +219,6 @@ section#about #container #rest #text p {
   section#about #container #rest {
     display: flex;
     width: 100%;
-    color: #F8F6F4;
   }
   section#about #container #rest #image {
     width: 100%;
@@ -251,8 +239,5 @@ section#about #container #rest #text p {
   }
   section#about #container #rest #text h6 {
     font-weight: 400;
-  }
-  section#about #container #rest #text p {
-    font-weight: 300;
   }
 }/*# sourceMappingURL=about.css.map */

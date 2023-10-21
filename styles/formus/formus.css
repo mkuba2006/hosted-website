@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400");
 html {
   font-family: "Indie Flower", cursive;
   color: #bc6ff1;
@@ -12,6 +13,75 @@ html {
   background-size: cover;
 }
 
+#gate {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#gate h1 {
+  color: rgba(255, 255, 255, 0.884);
+  font: normal 400 50px "Josefin Sans", sans-serif;
+}
+
+.demo {
+  padding-top: 150px;
+}
+
+.demo a {
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+#section05 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+#section05 a {
+  transform: translateY(-100px);
+  padding-top: 70px;
+}
+
+#section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 450px) {
   #formus {
     background: url("https://raw.githubusercontent.com/mkuba2006/rpp/188a8683501e4dfddf993e28c354d459cba6c8c4/images/circle.svg");

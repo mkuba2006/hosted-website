@@ -3,6 +3,14 @@
   font-family: 'Argon';
   src: url(/ArgonPERSONAL-Regular.otf);
 }
+$yellow: #ffb84c;
+$aliceblue: #f0f8ff;
+$h2: #7f8799;
+$white: #ffffff;
+$item_h1: #E900FF;
+$item_h3: #ffb74ce8;
+$item_h3_v2: #ecdbba;
+$important: #df2e38;
 $bg: #000000;
 $el1: #52057b;
 $el2: #892cdc;
@@ -11,6 +19,8 @@ $el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
 $green: #ffb84c;
+
+
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -66,7 +76,6 @@ aside{
       width: 30px;
       height: 4px;
       margin: 5px;
-      background-color: #fdfdfd;
       padding-left: 3%;
       transition: all 0.26s ease;
       z-index: 13;
@@ -78,7 +87,6 @@ aside{
     align-items: center;
     height: 100px;
     text-decoration: none;
-    color: aliceblue;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
   }
@@ -97,7 +105,6 @@ aside{
     width: 26px;
     height: 4px;
     margin: 5px;
-    background-color: #fdfdfd;
     padding-left: 3%;
     transition: all 0.26s ease;
     z-index: 13;
@@ -114,7 +121,6 @@ aside{
   justify-content: space-between;
   position: fixed;
   z-index: 10;
-  color: white;
   transition: 0.5s;
   .in-nav {
     width: 100vw;
@@ -128,16 +134,17 @@ aside{
       .Nav-el {
         cursor: pointer;
         font-family: "Montserrat", sans-serif;
-        padding: 6px 11px 6px 11px;
+        padding: 6px 12px 6px 12px;
         border: 1px solid $el4mod;
         color: white;
         border-radius: 5px;
         font-size: 16px;
         background-color: rgba(0, 0, 0, 0.541);
         transition-duration: 0.4s;
+        font-weight: 500;
       }
       .Nav-el:hover {
-        background-color: rgba(22, 22, 22, 0.541);
+        background-color: $el4mod;
       }
     }
     #hrf {
@@ -166,9 +173,9 @@ aside{
   }
 }
 
-.mp {
-  background-color: $el4mod;
-}
+// .mp {
+//   background-color: $el4mod;
+// }
 .scroll {
   background-color: rgb(46, 44, 44);
 }

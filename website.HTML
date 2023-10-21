@@ -27,7 +27,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </head>
 <body>
-
+  <div id="gate">
+    <section id="section05" class="demo">
+        <a href="" id="ah">
+            <span></span>Press to open
+        </a>
+    </section>
+    <script>
+      const a = document.getElementById('ah');
+      a.addEventListener('click',(e)=>{
+        e.preventDefault();
+      })
+    </script>
+</div>
   <nav id="nav1">
     <div class="in-nav" id="nav">
       <div id="one">
@@ -35,7 +47,7 @@
       </div>
       <div id="secret">
         <a href="#about"><button id="abou" class="Nav-el" >about</button></a>
-        <a href="#app"><button id="languages" class="Nav-el">hobbies</button></a>
+        <a href="/hobbies.html"><button id="languages" class="Nav-el">hobbies</button></a>
         <a href="#four"><button id="infos" class="Nav-el">experience</button></a>
         <a href="#certificates"><button id="certificate" class="Nav-el">certificates</button></a>
         <a href="#ones"><button id="contact" class="Nav-el">contact</button></a>
@@ -57,7 +69,7 @@
       <div id="trzy" class="line_three"></div>
     </div>
     <a href="#about">about</a>
-    <a href="#app">hobbies</a>
+    <a href="/hobbies.html">hobbies</a>
     <a href="#four">experience</a>
     <a href="#certificates">certificates</a>
     <a href="#ones">contact</a>
@@ -108,13 +120,13 @@
       </div>
   </section>
 
-  <section id="formus">
+  <!-- <section id="formus">
     <div id="app"></div>
 
     <div id="appl">
         <ul class="products"></ul>
     </div>
-  </section>
+  </section> -->
 
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -182,7 +194,7 @@
           <i class="fa-brands fa-css3-alt"></i>
           <div id="info">
             <h3>CSS</h3>
-            <progress value="70" max="100" style="--value: 50; --max: 100;"></progress>
+            <progress value="70" max="100" style="--value: 60; --max: 100;"></progress>
           </div>
         </div>
         <div id="JS" class="mmm">
@@ -196,7 +208,7 @@
           <i class="fa-brands fa-react"></i>
           <div id="info">
             <h3>React</h3>
-            <progress value="70" max="100" style="--value: 40; --max: 100;"></progress>
+            <progress value="70" max="100" style="--value: 70; --max: 100;"></progress>
           </div>
         </div>
         <div id="Bootstrap" class="mmm">
@@ -319,6 +331,19 @@
 <script src="scripts/movies-script.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/rocket.js"></script>
+<script>
+  const button = document.querySelector("#section05 > a");
+  const gate = document.getElementById('gate');
+
+  if(gate.style.zIndex='1000'){
+      document.body.style.overflowY= 'hidden';
+  }
+  button.addEventListener('click', () => {
+      gate.style.transition = 'transform 1s';
+      gate.style.transform = 'translateY(-100vh)';
+      document.body.style.overflowY= 'scroll';
+  });
+</script>
 </body>
 
 </html>

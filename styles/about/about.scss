@@ -1,9 +1,7 @@
-
 @font-face {
   font-family: 'xxx';
   src: url(../Library3am-5V3Z.otf);
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
 $bg: #000000;
 $el1: #52057b;
@@ -31,6 +29,7 @@ section#about {
   align-items: center;
   background-color: #0e0e0f;
   overflow: hidden;
+
   h3{
     color: white;
     width: 100%;
@@ -50,7 +49,7 @@ section#about {
   #container {
     width: 900px;
     text-align: left;
-    border: 0.1px solid #494b50;;
+    border: 0.1px solid $el2;
 
     #rest {
       display: flex;
@@ -74,7 +73,7 @@ section#about {
           font-weight: 400;
         }
          p{
-          font-weight: 300;
+          font-weight: 500;
         }
       }
     }
@@ -96,16 +95,12 @@ section#about {
     background-color: #0e0e0f;
     #container {
         width: 90%;
-        text-align: left;
-        border: 0.1px solid #7f8799;;
-    
       #rest {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 90%;
         margin: 0;
-        color: #7f8799;
         #text {
           font-size: 15px;
           padding: 5px 0px 5px 20px;
@@ -128,7 +123,6 @@ section#about {
           align-items: center;
           width: 90%;
           margin: 0;
-          color: #7f8799;
           #text {
             font-size: 15px;
             padding: 5px 0px 5px 20px;
@@ -156,7 +150,6 @@ section#about {
       border: none;
       h3 {
         margin: 0;
-        color: aliceblue;
         margin-bottom: 20px;
       }
       #rest {
@@ -165,7 +158,6 @@ section#about {
         align-items: flex-start;
         flex-wrap: wrap;
         width: 100%;
-        color: rgb(193, 197, 201);
         #text {
           width: 300px;
           font-size: 15px;
@@ -179,7 +171,6 @@ section#about {
           }
           p{
             font-size: 15px;
-            font-weight: 400;
           }
 
 
@@ -219,7 +210,6 @@ section#about {
       #rest {
         display: flex;
         width: 100%;
-        color: #F8F6F4;
         #image {
           width: 100%;
           filter: blur(0.1px);
@@ -237,9 +227,6 @@ section#about {
           }
           h6{
             font-weight: 400;
-          }
-           p{
-            font-weight: 300;
           }
         }
       }
@@ -264,7 +251,6 @@ section#about {
       #rest {
         display: flex;
         width: 100%;
-        color: #F8F6F4;
         #image {
           width: 100%;
           filter: blur(0.1px);
@@ -283,9 +269,6 @@ section#about {
           }
           h6{
             font-weight: 400;
-          }
-           p{
-            font-weight: 300;
           }
         }
       }

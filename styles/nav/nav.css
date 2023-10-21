@@ -70,7 +70,6 @@ aside #burger2 div {
   width: 30px;
   height: 4px;
   margin: 5px;
-  background-color: #fdfdfd;
   padding-left: 3%;
   transition: all 0.26s ease;
   z-index: 13;
@@ -81,7 +80,6 @@ aside a {
   align-items: center;
   height: 100px;
   text-decoration: none;
-  color: aliceblue;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -100,7 +98,6 @@ aside a:first-of-type {
   width: 26px;
   height: 4px;
   margin: 5px;
-  background-color: #fdfdfd;
   padding-left: 3%;
   transition: all 0.26s ease;
   z-index: 13;
@@ -118,7 +115,6 @@ aside a:first-of-type {
   justify-content: space-between;
   position: fixed;
   z-index: 10;
-  color: white;
   transition: 0.5s;
 }
 #nav1 .in-nav {
@@ -135,16 +131,17 @@ aside a:first-of-type {
 #nav1 .in-nav #secret .Nav-el {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  padding: 6px 11px 6px 11px;
+  padding: 6px 12px 6px 12px;
   border: 1px solid #1b1b1b;
   color: white;
   border-radius: 5px;
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.541);
   transition-duration: 0.4s;
+  font-weight: 500;
 }
 #nav1 .in-nav #secret .Nav-el:hover {
-  background-color: rgba(22, 22, 22, 0.541);
+  background-color: #1b1b1b;
 }
 #nav1 .in-nav #hrf {
   text-decoration: none;
@@ -178,10 +175,6 @@ aside a:first-of-type {
 }
 #nav1 .in-nav #hrf #logo1:hover {
   background-color: rgba(52, 52, 52, 0.5058823529);
-}
-
-.mp {
-  background-color: #1b1b1b;
 }
 
 .scroll {

@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
-$bg: #000000;
-$el1: #52057b;
-$el2: #892cdc;
-$el3: #bc6ff1;
-$el4mod: #1b1b1b;
-$el3mod: #bd6ff1a6;
-$alic: rgba(255, 255, 255, 0.884);
-$green: #ffb84c;
+$yellow: #ffb84c;
+$aliceblue: #f0f8ff;
+$h2: #7f8799;
+$white: #ffffff;
+$item_h1: #E900FF;
+$item_h3: #ffb74ce8;
+$item_h3_v2: #ecdbba;
+$important: #df2e38;
+
+a{
+  color: $white;
+}
+
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -53,7 +58,7 @@ body {
       height: 2px;
       width: 0px;
       transform: translateY(23px);
-      background-color: rgb(255, 255, 255);
+      background-color: #ffffff;
       z-index: 1;
       transition: all 0.6s;
     }
