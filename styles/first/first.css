@@ -5,7 +5,7 @@ html {
 }
 
 #first {
-  background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(3, 3, 3)), url("https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -30,11 +30,11 @@ html {
 }
 #first #cont #opis h3 {
   font-size: 12px;
-  color: #7f8799;
+  color: #80B3FF;
   letter-spacing: 1.5px;
 }
 #first #cont #opis h1 {
-  color: #7f8799;
+  color: #80B3FF;
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
@@ -45,8 +45,8 @@ html {
 }
 #first #cont #opis #myname {
   margin: 0;
-  font-size: 40px;
-  color: #ffb84c;
+  font-size: 50px;
+  color: #fcff4c;
 }
 #first #cont #opis #buttons {
   width: 80%;
@@ -61,23 +61,23 @@ html {
   background-color: none;
   text-decoration: none;
   padding: 6px 12px;
-  color: grey;
+  color: gray;
 }
 #first #cont #opis #buttons button i {
-  color: grey;
+  color: gray;
   transition-duration: 0.3s;
 }
 #first #cont #opis #buttons button a {
   text-decoration: none;
-  color: grey;
+  color: gray;
 }
 #first #cont #opis #buttons button:hover {
-  color: #ddf7e3;
+  color: white;
   background-color: #1b1b1b;
 }
 #first #cont #opis #buttons button:hover a,
 #first #cont #opis #buttons button:hover i {
-  color: #ddf7e3;
+  color: white;
 }
 #first #opis2 {
   width: 20%;

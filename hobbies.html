@@ -34,5 +34,17 @@
     <script src="scripts/movies.js"></script>
     <script src="scripts/movies-script.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script>
+        const button = document.querySelector("#section05 > a");
+        const gate = document.getElementById('gate');
 
+        if(gate.style.zIndex='1000'){
+            document.body.style.overflowY= 'hidden';
+        }
+        button.addEventListener('click', () => {
+            gate.style.transition = 'transform 1s';
+            gate.style.transform = 'translateY(-100vh)';
+            document.body.style.overflowY= 'scroll';
+        });
+    </script>
 </html>

@@ -11,6 +11,14 @@ $el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
 $green: #ffb84c;
+$yellow: #ffb84c;
+$aliceblue: #f0f8ff;
+$h2: #7f8799;
+$white: #ffffff;
+$item_h1: #E900FF;
+$item_h3: #ffb74ce8;
+$item_h3_v2: #ecdbba;
+$important: #df2e38;
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -21,7 +29,7 @@ section#about {
   font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -49,18 +57,17 @@ section#about {
   #container {
     width: 900px;
     text-align: left;
-    border: 0.1px solid $el2;
 
     #rest {
       display: flex;
       width: 100%;
       color: #F8F6F4;
       #image {
-        width: 250px;
+        width: 300px;
         filter: blur(0.1px);
         opacity: 0.8;
         img {
-          width: 250px;
+          width: 300px;
           height: 100%;
         }
       }
@@ -68,12 +75,16 @@ section#about {
         padding: 5px 20px;
         h1{
           font-weight: 400;
+          color: $yellow;
+          font-size: 50px;
         }
         h6{
-          font-weight: 400;
+          color: #FC2947;
+          font-size: 25px;
         }
          p{
-          font-weight: 500;
+          font-size: 20px;
+          color: #FC2947;
         }
       }
     }

@@ -6,7 +6,11 @@ $el3: #bc6ff1;
 $el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
-$green: #ffb84c;
+$green: #fcff4c;
+$item_h1: #E900FF;
+$item_h3: #ffb74ce8;
+$item_h3_v2: #ecdbba;
+$important: #df2e38;
 html {
   font-family: "Indie Flower", cursive;
   color: $el3;
@@ -14,7 +18,7 @@ html {
 
 //1000
 #first {
-  background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url('https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(3, 3, 3, 1)), url('https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -39,12 +43,12 @@ html {
       
       h3 {
         font-size: 12px;
-        color: #7f8799;
+        color: #80B3FF;
         letter-spacing: 1.5px;
       }
       
       h1 {
-        color: #7f8799;
+        color: #80B3FF;
         font-size: 30px;
         margin: 20px 0 20px 0;
         
@@ -56,7 +60,7 @@ html {
       
       #myname {
         margin: 0;
-        font-size: 40px;
+        font-size: 50px;
         color: $green;
       }
       
@@ -73,26 +77,26 @@ html {
           background-color: none;
           text-decoration: none;
           padding: 6px 12px;
-          color: grey;
+          color: gray;
           
           i {
-            color: grey;
+            color: gray;
             transition-duration: 0.3s;
           }
           
           a {
             text-decoration: none;
-            color: grey;
+            color: gray;
           }
         }
         
         button:hover {
-          color: #ddf7e3;
+          color: white;
           background-color: $el4mod;
           
           a,
           i {
-            color: #ddf7e3;
+            color: white;
           }
         }
       }

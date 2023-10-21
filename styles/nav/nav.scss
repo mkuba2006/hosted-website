@@ -71,6 +71,7 @@ aside{
     right: 40px;
     top: 40px;
     div {
+      background-color: white;
       display: block;
       cursor: pointer;
       width: 30px;
@@ -100,6 +101,7 @@ aside{
   z-index: 11;
   position: fixed;
   div {
+    background-color: white;
     display: none;
     cursor: pointer;
     width: 26px;
@@ -152,7 +154,7 @@ aside{
       #logo1 {
         cursor: pointer;
         height: auto;
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 900;
         transition-duration: 0.4s;
         border-radius: 10px;
