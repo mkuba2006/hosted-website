@@ -109,8 +109,7 @@ aside a:first-of-type {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   font-family: "Indie Flower", cursive;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.664);
+  padding: 20px 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -134,49 +133,43 @@ aside a:first-of-type {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   padding: 6px 12px 6px 12px;
-  border: 1px solid #1b1b1b;
+  border: none;
   color: white;
   border-radius: 5px;
-  font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.541);
-  transition-duration: 0.4s;
+  font-size: 18px;
+  background: none;
+  transition-duration: 1s;
   font-weight: 500;
+  position: relative;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
+#nav1 .in-nav #secret .Nav-el:focus,
 #nav1 .in-nav #secret .Nav-el:hover {
-  background-color: #1b1b1b;
+  color: #fff;
 }
-#nav1 .in-nav #hrf {
-  text-decoration: none;
+#nav1 .in-nav #secret .Nav-el:focus:after,
+#nav1 .in-nav #secret .Nav-el:hover:after {
+  width: 100%;
+  left: 0%;
 }
-#nav1 .in-nav #hrf #logo1 {
-  cursor: pointer;
-  height: auto;
-  font-size: 45px;
-  font-weight: 900;
-  transition-duration: 0.4s;
-  border-radius: 10px;
-  animation: doLogo 5s linear infinite;
-  transition: 0.5s;
+#nav1 .in-nav #secret .Nav-el:after {
+  content: "";
+  pointer-events: none;
+  bottom: 4px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
-@keyframes doLogo {
-  0% {
-    color: #f5eaea;
-  }
-  25% {
-    color: #ffb84c;
-  }
-  50% {
-    color: #f16767;
-  }
-  75% {
-    color: #a459d1;
-  }
-  100% {
-    color: #f5eaea;
-  }
-}
-#nav1 .in-nav #hrf #logo1:hover {
-  background-color: rgba(52, 52, 52, 0.5058823529);
+#nav1 .in-nav #logo1 {
+  width: 220px;
 }
 
 .scroll {
@@ -216,7 +209,6 @@ aside a:first-of-type {
     padding: 0;
     transition: 0.5s;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.877);
   }
   #nav1 .in-nav {
     transition: 0.5s;

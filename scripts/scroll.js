@@ -29,9 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
       ScrollReveal().reveal('#certificates #first_cert', { delay: 200, origin: 'left', distance: '20%' });
       ScrollReveal().reveal('#certificates #second_cert', { delay: 400, origin: 'left', distance: '20%' });
       const img = document.querySelector("#img1");
-      const width = img.offsetWidth;
       const els = document.querySelectorAll("#cloud");
-      els.forEach(e => e.style.width = `${width}px`);
+      els.forEach(e => e.style.width = `${img.offsetWidth}px`);
     }
     if (window.outerWidth > 800) {
       ScrollReveal().reveal('#prawa', {delay: 200, origin: 'bottom', distance: '40%'});

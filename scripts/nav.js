@@ -15,13 +15,11 @@ let lastScrollPosition = 0;
 
 function scrollListener(event) {
   const currentScrollPosition = window.scrollY;
-  if (currentScrollPosition > lastScrollPosition) {
-    console.log("Użytkownik przewija w dół");
-    nav.classList.add("scroll-down" );
+  if (currentScrollPosition == 0) {
+    nav.style.background='none';
   }
-  if (currentScrollPosition < lastScrollPosition) {
-    console.log("Użytkownik przewija w górę");
-    nav.classList.remove("scroll-down" );
+  if (currentScrollPosition !== 0) {
+    nav.style.backgroundColor='rgba(0, 0, 0, 0.9)';
   }
   lastScrollPosition = currentScrollPosition;
 }

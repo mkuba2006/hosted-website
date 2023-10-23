@@ -33,7 +33,6 @@ const line = document.createElement('div');
 line.className= 'line';
 line.id='line';
 document.querySelector('.products').before(Title);
-document.querySelector('.products').before(line);
 ScrollReveal().reveal(document.querySelector('.titlep'), {
     origin: 'left',
     distance: '10%'
@@ -46,11 +45,3 @@ ScrollReveal().reveal('.item', {
   });
   render(movies);
   ScrollReveal().reveal('.sr-item', {delay: 200,origin: 'bottom',distance: '20%',interval: 100});
-
-
-
-
-
-
-
-

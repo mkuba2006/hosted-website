@@ -20,8 +20,8 @@ window.onload = () => {
 
 
     const items = document.getElementById("itemsa");
-    items.style.height = totalDocumentHeight+'px';
-    console.log(totalDocumentHeight);  
+    // items.style.height = totalDocumentHeight+'px';
+    // console.log(totalDocumentHeight);  
 
 
 
@@ -49,12 +49,12 @@ window.onload = () => {
 
 
 
-    const dynamicElement = document.getElementById('scroll');
+    // const dynamicElement = document.getElementById('scroll');
 
-    window.addEventListener('scroll', () => {
-        const newHeight = 100 + window.scrollY * 0.5;
+    // window.addEventListener('scroll', () => {
+    //     const newHeight = 100 + window.scrollY * 0.5;
     
-        dynamicElement.style.height = `${newHeight}vh`;
-        console.log(totalDocumentHeight);  
-    });
+    //     dynamicElement.style.height = `${newHeight}vh`;
+    //     console.log(totalDocumentHeight);  
+    // });
 };
