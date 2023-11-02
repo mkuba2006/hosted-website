@@ -26,11 +26,12 @@ h2 {
   background: #FEA1A1;
 }
 #questions #infos {
-  width: 1000px;
+  width: 100vw;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #questions #infos #selection {
   width: 450px;

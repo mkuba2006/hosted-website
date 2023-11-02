@@ -28,11 +28,12 @@ h2{
       }
 
     #infos{
-        width: 1000px;
+        width: 100vw;
+        max-width: 1000px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         #selection{
             width: 450px;
             height: 40px;
