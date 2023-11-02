@@ -204,7 +204,7 @@ h3 {
       margin: 0 auto;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
       justify-content: space-around;
       overflow: hidden;
@@ -217,7 +217,7 @@ h3 {
           width: 100%;
           z-index: 0;
         }
-        .cloud1, .cloud2{
+        .cloud1, .cloud2, .cloud3{
           height: 100%; 
           background-color: #000000e6; 
           top: 0px;
@@ -237,15 +237,7 @@ h3 {
             max-height: 250px;
           }
         }
-        .cloud1:hover{
-          opacity: 1; 
-          display: flex;
-          img{
-            margin: 0;
-            opacity: 1;
-          }
-        }
-        .cloud2:hover{
+        .cloud1:hover, .cloud2:hover ,.cloud3:hover{
           opacity: 1; 
           display: flex;
           img{

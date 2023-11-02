@@ -165,7 +165,7 @@ h3 {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
@@ -180,7 +180,7 @@ h3 {
   width: 100%;
   z-index: 0;
 }
-#four #certificates div .cloud1, #four #certificates div .cloud2 {
+#four #certificates div .cloud1, #four #certificates div .cloud2, #four #certificates div .cloud3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9019607843);
   top: 0px;
@@ -194,25 +194,17 @@ h3 {
   text-align: center;
   margin: 0;
 }
-#four #certificates div .cloud1 img, #four #certificates div .cloud2 img {
+#four #certificates div .cloud1 img, #four #certificates div .cloud2 img, #four #certificates div .cloud3 img {
   margin: 0;
   opacity: 1;
   max-width: 250px;
   max-height: 250px;
 }
-#four #certificates div .cloud1:hover {
+#four #certificates div .cloud1:hover, #four #certificates div .cloud2:hover, #four #certificates div .cloud3:hover {
   opacity: 1;
   display: flex;
 }
-#four #certificates div .cloud1:hover img {
-  margin: 0;
-  opacity: 1;
-}
-#four #certificates div .cloud2:hover {
-  opacity: 1;
-  display: flex;
-}
-#four #certificates div .cloud2:hover img {
+#four #certificates div .cloud1:hover img, #four #certificates div .cloud2:hover img, #four #certificates div .cloud3:hover img {
   margin: 0;
   opacity: 1;
 }
