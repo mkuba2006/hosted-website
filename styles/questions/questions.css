@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "xxx";
+  src: url(../Library3am-5V3Z.otf);
+}
+h2 {
+  margin: 0px auto 10px;
+  font-size: 33px;
+  font-family: "xxx", sans-serif;
+  color: black;
+}
+
+#questions {
+  padding: 50px 0;
+  width: 100%;
+  background-color: #f1e8ea;
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#questions .line {
+  margin: 0px auto 30px;
+  width: 100px;
+  height: 2px;
+  background: #FEA1A1;
+}
+#questions #infos {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#questions #infos #selection {
+  width: 450px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 10px 10px;
+  padding: 5px 16px;
+  overflow-y: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#questions #infos #selection #line1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+#questions #infos #selection #line1 #plus {
+  font-size: 20px;
+  transition: 0.2s;
+  margin-right: 30px;
+}
+#questions #infos #selection #line1 span {
+  font-weight: 900;
+}
+#questions #infos #selection #line2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 130px;
+}/*# sourceMappingURL=questions.css.map */

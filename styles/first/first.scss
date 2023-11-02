@@ -17,12 +17,13 @@ html {
 }
 
 //1000
+
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(3, 3, 3, 1)), url('https://github.com/mkuba2006/rpp/blob/master/images/pexels-bich-tran-669996.jpg?raw=true');
+  background: url('../../images/1-11.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
+  
   font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
@@ -40,7 +41,10 @@ html {
       width: 55%;
       padding: 9% 1% 12% 16%;
       margin-right: 100px;
-      
+      #yrs{
+        margin: 0;
+        width: max-content;
+      }
       h3 {
         font-size: 12px;
         color: #80B3FF;
@@ -55,6 +59,7 @@ html {
         .p {
           text-decoration: underline 2px solid aliceblue;
           cursor: pointer;
+          width: max-content;
         }
       }
       

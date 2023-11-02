@@ -1,27 +1,3 @@
-// const scrollHandler = () => {
-//   const nav = document.querySelector('nav');
-//   const promise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve();
-//     }, 0);
-//   });
-
-//   promise.then(() => {
-//     nav.style.top = '-12%';
-//     nav.style.transition = '0.4s';
-//     nav.style.animationTimingFunction = 'ease';
-//     setTimeout(() => {
-//       nav.style.top = '0';
-//     }, 100); 
-//   });
-
-//   window.removeEventListener('scroll', scrollHandler);
-// };
-
-// window.addEventListener('scroll', scrollHandler);
-
-
-
 let buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
@@ -38,10 +14,6 @@ buttons.forEach((button) => {
   const dos_el = document.querySelectorAll("#dos div");
 
   
-
-
-
-
 
 function updateTimer() {
   const startDate = new Date('2006-10-05');
@@ -65,6 +37,8 @@ function updateTimer() {
 
   const timerElement = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
   timerElement.innerHTML = `${years}.${months}${days}${hours}${minutes}${seconds}${milliseconds}`;
+  const yrs = document.getElementById('yrs');
+  yrs.textContent=`${years} y.o`;
 }
 setInterval(updateTimer, 10);
 updateTimer();

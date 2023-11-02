@@ -90,6 +90,7 @@ aside{
     text-decoration: none;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
+    color: white;
   }
   a:first-of-type{
     margin-top: 60px;
@@ -193,61 +194,8 @@ aside{
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media screen and (max-width: 1050px) {
-  #nav1.scroll-down {
-    padding: 15px 0;
-    transition: 0.5s;
-    top: 0;
-    height: 60px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
-    .in-nav {
-      height: 60px;
-      #secret{
-        transition: 0.5s;
-        display: none;
-        .Nav-el {
-          transition: 0.5s;
-          display: none;
-        }
-      }
-      #hrf {
-        text-decoration: none;
-        #logo1 {
-          font-size: 45px;
-        }
-      }
-    }
-  }
 
-  #nav1 {
-    padding: 0;
-    transition: 0.5s;
-    height: 100px;
-    .in-nav {
-      transition: 0.5s;
-      height: 100px;
-      padding: 0.3% 10% 0.3% 10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    #logo:hover {
-      background-color: #1b1b1b81;
-    }
-    .Nav-el {
-      transition: 0.5s;
-      font-family: "Montserrat", sans-serif;
-      padding: 6px 11px 6px 11px;
-      border: 1px solid $el4mod;
-      color: $alic;
-      border-radius: 5px;
-      font-size: 16px;
-      background-color: black;
-    }
-  }
-}
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   #burger1 {
     display: block;
     z-index: 110;

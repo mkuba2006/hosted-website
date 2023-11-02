@@ -26,14 +26,21 @@ h3 {
   color: $el3;
 }
 
+
+
 #contact {
   #container {
+    background-position: left;
     color: aliceblue;
     font-family: "Montserrat", sans-serif;
     width: 100%;
     margin: 0 auto;
     padding: 4% 15% 4% 15%;
-    background-color: #0e0e0f;
+    background-color: #0e100f;
+    background: url('/images/Meteor.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     position: relative;
     bottom: 0;
     #ones {
@@ -156,7 +163,7 @@ h3 {
       margin-top: 60px;
       display: flex;
       justify-content: center;
-      font-size: 15px;
+      font-size: 17px;
       span {
         color: #df2e38;
         padding: 0 5px;
@@ -169,17 +176,33 @@ h3 {
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
+@media screen and (max-width: 1450px) {
+  #contact {
+    #container {
+      background: url('../../images/foot2.svg');
+      background-position: left;
+    }
+  }
+}
 
   @media screen and (max-width: 850px) {
     #contact #container #ones {
       flex-wrap: wrap;
     }
+    
   }
   
-
+  @media screen and (max-width: 750px) {
+    #contact #container #prawa {
+      color: black;
+      font-size: 16px;
+      span {
+        color: #9e2edf;
+        padding: 0 5px;
+        font-family: 'xxx', sans-serif;
+      }
+  }
+  }
 @media screen and (max-width: 700px) {
   #contact #container #prawa {
     font-weight: 700;

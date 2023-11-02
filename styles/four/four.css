@@ -29,11 +29,7 @@ h3 {
 }
 
 #four {
-  background-image: linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)), url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-color: #0e100f;
   padding-top: 12%;
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -88,7 +84,7 @@ h3 {
 }
 #four #dos .mmm #info h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 50px;
   color: white;
 }
 #four #dos .mmm #info progress {
@@ -226,7 +222,7 @@ h3 {
   width: min-content;
   margin: 0px auto 10px;
   font-weight: 100;
-  font-size: 33px;
+  font-size: 40px;
   font-family: "xxx", sans-serif;
 }
 #four .line {
@@ -383,10 +379,5 @@ h3 {
   }
   #dos {
     margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  #four {
-    background: url("https://raw.githubusercontent.com/mkuba2006/rpp/188a8683501e4dfddf993e28c354d459cba6c8c4/images/circle.svg");
   }
 }/*# sourceMappingURL=four.css.map */

@@ -12,22 +12,24 @@ section#about {
   font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
-  height: 800px;
+  height: -moz-min-content;
+  height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #0e0e0f;
+  background-color: #FEF2F4;
   overflow: hidden;
 }
 section#about h3 {
-  color: white;
+  color: black;
   width: 100%;
   display: flex;
   justify-content: center;
   font-family: "xxx", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 50px;
 }
 section#about #line {
   margin: 0px auto 30px;
@@ -42,7 +44,7 @@ section#about #container {
 section#about #container #rest {
   display: flex;
   width: 100%;
-  color: #F8F6F4;
+  color: black;
 }
 section#about #container #rest #image {
   width: 300px;
@@ -58,16 +60,24 @@ section#about #container #rest #text {
 }
 section#about #container #rest #text h1 {
   font-weight: 400;
-  color: #ffb84c;
-  font-size: 50px;
+  color: black;
+  font-size: 40px;
 }
 section#about #container #rest #text h6 {
-  color: #FC2947;
+  color: black;
   font-size: 25px;
 }
 section#about #container #rest #text p {
   font-size: 20px;
-  color: #FC2947;
+  color: black;
+}
+
+section#about::after {
+  height: 700px;
+  background: url("../../images/1-2.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 1000px;
+  background-size: cover;
 }
 
 @media screen and (max-width: 950px) {
@@ -80,7 +90,6 @@ section#about #container #rest #text p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #0e0e0f;
   }
   section#about #container {
     width: 90%;
@@ -164,7 +173,6 @@ section#about #container #rest #text p {
   }
   section#about #container #rest #image img {
     width: 300px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -173,8 +181,10 @@ section#about #container #rest #text p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0e0e0f;
     overflow: hidden;
+  }
+  section#about h3 {
+    font-size: 30px;
   }
   section#about #container {
     width: 100%;
@@ -211,7 +221,6 @@ section#about #container #rest #text p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0e0e0f;
     overflow: hidden;
   }
   section#about #container {

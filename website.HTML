@@ -7,7 +7,6 @@
     <title>JmsuiPage</title>
     <link rel="shortcut icon" href="LOGO.xcf" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/website.css">
     <link rel="stylesheet" href="styles/first/first.css">
     <link rel="stylesheet" href="styles/nav/nav.css">
     <link rel="stylesheet" href="styles/about/about.css">
@@ -17,6 +16,9 @@
     <link rel="stylesheet" href="styles/four/four.css">
     <link rel="stylesheet" href="styles/contact/contact.css">
     <link rel="stylesheet" href="styles/coursel/coursel.css">
+    <link rel="stylesheet" href="./styles/questions/questions.css">
+    <link rel="stylesheet" href="./skills/skills.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
@@ -27,7 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </head>
 <body>
-  <div id="gate">
+  <!-- <div id="gate">
     <section id="section05" class="demo">
         <a href="" id="ah">
             <span></span>Press to open
@@ -39,7 +41,7 @@
         e.preventDefault();
       })
     </script>
-</div>
+</div> -->
   <nav id="nav1">
     <div class="in-nav" id="nav">
       <div id="one">
@@ -85,7 +87,11 @@
         </div>
         <h1 id="myname">Jakub Myrta.</h1>
         <h1 >I'm
-        <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p id="p1">Lorem</p></div></span>   
+        <span class="p"><span id="yrs">16 y.o</span>
+        <div class="redBubble bubblePosition hoverBubble">
+          <p id="p1">Lorem</p>
+        </div>
+      </span>   
           student from gdańsk. I'm Front-End developer</h1>
         <div id="buttons">
           <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006"> GITHUB</a><span></span></button>
@@ -104,7 +110,7 @@
       <div id="container">
           <div id="rest">
               <div id="image">
-                  <img src="./images/b.png"/>
+                  <img src="./images/logo.png"/>
               </div>
               <div id="text">
                   <h1>Your programmer</h1>
@@ -122,113 +128,218 @@
       </div>
   </section>
 
-  <!-- <section id="formus">
-    <div id="app"></div>
 
-    <div id="appl">
-        <ul class="products"></ul>
+  <section id="caruzela">
+    <h3 id="info"><span>EXPERIENCE</span></h3>
+    <div class="line"></div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/favlist.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a style="text-decoration: none;" href="./projects/Fake-shop/index.HTML">Fav list app</a></h5>
+            <p>Here you can search your favourite album and add to favourite list</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://github.com/mkuba2006/rpp/blob/master/images/jedz.png?raw=true" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a style="text-decoration: none;" href="./projects/foodapp/index.html">Food app</a></h5>
+            <p>App where you can find every single dish from around the world</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://github.com/mkuba2006/rpp/blob/master/images/fapp2.png?raw=true" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a style="text-decoration: none;" href="./projects/calculator/calculator.HTML">Calculator</a></h5>
+            <p>Basic calculator</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/ixlo.png?raw=true" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><a style="text-decoration: none;" href="https://mkuba2006.github.io/IXLO_website/main.html">IX LO website</a></h5>
+            <p>Website for the 9th high school in Gdańsk</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </section> -->
-
-
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/favlist.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5><a style="text-decoration: none;" href="./projects/Fake-shop/index.HTML">Fav list app</a></h5>
-          <p>Here you can search your favourite album and add to favourite list</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://github.com/mkuba2006/rpp/blob/master/images/jedz.png?raw=true" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5><a style="text-decoration: none;" href="./projects/foodapp/index.html">Food app</a></h5>
-          <p>App where you can find every single dish from around the world</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://github.com/mkuba2006/rpp/blob/master/images/fapp2.png?raw=true" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5><a style="text-decoration: none;" href="./projects/calculator/calculator.HTML">Calculator</a></h5>
-          <p>Basic calculator</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/ixlo.png?raw=true" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5><a style="text-decoration: none;" href="https://mkuba2006.github.io/IXLO_website/main.html">IX LO website</a></h5>
-          <p>Website for the 9th high school in Gdańsk</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
+  </section>
 
     <section id="four">
-      <h3 id="info"><span>EXPERIENCE</span></h3>
 
-      <div class="line"></div>
 
-      <div id="dos">
-        <div id="HTML" class="mmm">
-          <i class="fa-brands fa-html5"></i>
-          <div id="info">
-            <h3>HTML</h3>
-            <progress value="100" max="100" style="--value:90; --max: 100;"></progress>
-          </div>
+      <section id="skills">
+        <h1>My skills<div class="arrow"></div></h1>
+        <div id="my_skills">
+            <div id="HTML">
+                <p>HTML</p>
+                <div id="dots">
+                    <div id="dot1"></div>
+                    <div id="dot2"></div>
+                    <div id="dot3"></div>
+                    <div id="dot4"></div>
+                    <div id="dot5"></div>
+                    <div id="dot6"></div>
+                    <div id="dot7"></div>
+                    <div id="dot8"></div>
+                    <div id="dot9"></div>
+                    <div id="dot10"></div>
+                </div>
+            </div>
+            <div id="CSS">
+                <p>CSS</p>
+                <div id="dots">
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="BootStrap">
+                <p>BootStrap</p>
+                <div id="dots">
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="Tailwind">
+                <p>Tailwind</p>
+                <div id="dots">
+                     <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="Javascript">
+                <p>Javascript</p>
+                <div id="dots">
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="Jquery">
+                <p>Jquery</p>
+                <div id="dots">
+                     <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="React">
+                <p>React</p>
+                <div id="dots">
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="Node">
+                <p>Node</p>
+                <div id="dots">
+                     <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="Git">
+                <p>Git</p>
+                <div id="dots">
+                     <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="SQL">
+                <p>SQL</p>
+                <div id="dots">
+                     <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                    <div id="dot"></div>
+                </div>
+            </div>
+            
         </div>
-        <div id="CSS" class="mmm">
-          <i class="fa-brands fa-css3-alt"></i>
-          <div id="info">
-            <h3>CSS</h3>
-            <progress value="70" max="100" style="--value: 60; --max: 100;"></progress>
-          </div>
-        </div>
-        <div id="JS" class="mmm">
-          <i class="fa-brands fa-square-js"></i>
-          <div id="info">
-            <h3>JavaScript</h3>
-            <progress value="70" max="100" style="--value: 60; --max: 100;"></progress>
-          </div>
-        </div>
-        <div id="React" class="mmm">
-          <i class="fa-brands fa-react"></i>
-          <div id="info">
-            <h3>React</h3>
-            <progress value="70" max="100" style="--value: 70; --max: 100;"></progress>
-          </div>
-        </div>
-        <div id="Bootstrap" class="mmm">
-          <i class="fa-brands fa-bootstrap"></i>
-          <div id="info">
-            <h3>Bootstrap</h3>
-            <progress value="70" max="100" style="--value: 90; --max: 100;"></progress>
-          </div>
-        </div>
-        <div id="Tailwind" class="mmm">
-          <i class="devicon-tailwindcss-plain"></i>
-          <div id="info">
-            <h3>Tailwind</h3>
-            <progress value="70" max="100" style="--value: 75; --max: 100;"></progress>
-          </div>
-        </div>
-      </div>
-
+    </section>
           <h3 id="info"><span>CERTIFICATES</span></h3>
           <div class="line" id="line2"></div>
           <section id="certificates">
@@ -244,10 +355,92 @@
                   <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR21.png?raw=true"/>
                 </div>
             </div>
+            <div id="third_cert">
+              <img src="https://github.com/mkuba2006/rpp/blob/master/images/certyfikat_2.png?raw=true" id="img2"/>
+              <div id="cloud" class="cloud3">
+                <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR21.png?raw=true"/>
+              </div>
+          </div>
           </section>
     </section>
     
-  <section id="hire">
+
+
+
+
+
+  <section id="questions" id="faqs">
+    <h2 id="info"><span>Hire me</span></h2>
+    <div class="line"></div>
+    <div id="infos">
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span> 1. Consultation</span>
+        </div>
+        <div id="line2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor,
+          ad nisi eligendi natus quisquam dolore. Sequi placeat dolorem id quaerat similique, laudantium itaque ea temporibus adipisci? Dolore, quasi autem.
+        </div>
+      </div>
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span>2. Processing</span>
+        </div>
+        <div id="line2"></div>
+      </div>
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span>3. presenting</span>
+        </div>
+        <div id="line2"></div>
+      </div>
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span>4. Payment</span>
+        </div>
+        <div id="line2"></div>
+      </div>
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span>5. Done</span>
+        </div>
+        <div id="line2">
+          
+        </div>
+      </div>
+
+      <div id="selection">
+        <div id="line1">
+          <i class="fa-solid fa-plus" id="plus"></i><span>x</span>
+        </div>
+        <div id="line2"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <section id="hire">
     <div id="main">
       <h3 id="info"><span>Hire Me</span></h3>
       <div class="line" id="line"></div>
@@ -282,7 +475,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -327,12 +520,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="scripts/website.js"></script>
-<script src="scripts/songs.js" ></script>
 <script src="scripts/nav.js"></script>
-<script src="scripts/movies.js"></script>
-<script src="scripts/movies-script.js"></script>
+<script src="scripts/hire.js"></script>
+
 <script src="scripts/scroll.js"></script>
 <script src="scripts/rocket.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
 <script>
   const button = document.querySelector("#section05 > a");
   const gate = document.getElementById('gate');

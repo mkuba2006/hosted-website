@@ -7,7 +7,7 @@ $item_h1: #E900FF;
 $item_h3: #ffb74ce8;
 $item_h3_v2: #ecdbba;
 $important: #df2e38;
-
+$b: #0e100f;
 a{
   color: $white;
 }
@@ -22,59 +22,18 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #010206;
+  background-color: #0e100f;
   overflow-x: hidden;
 }
 
-.carousel {
-  max-height: 700px;
-  background-color: #0e0e0f;
-  padding: 80px 0;
-}
-.carousel-item {
-  width: 100%;
-  img {
-    max-width: 50%;
-    max-height: 50%;
-    margin: 0 auto;
 
-    filter: blur(0.3px);
-    min-height: 500px;
-    max-height: 500px;
-    filter: brightness(70%);
-  }
-}
-.carousel-caption {
-  background-color: #0e0e0f;
-  text-align: center;
-  h5{
-    overflow: hidden;
-    a{
-      z-index: 2;
-    }
-    a::before {
-      content: '';
-      position: absolute;
-      height: 2px;
-      width: 0px;
-      transform: translateY(23px);
-      background-color: #ffffff;
-      z-index: 1;
-      transition: all 0.6s;
-    }
-    a:hover::before {
-      width: 102px;
-    }
-  }
-  
-}
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 @media screen and (max-width: 1250px) {
   #second {
-    background-color: #010206;
+    background-color: #0e100f;
     padding-top: 18%;
     font-family: "Montserrat", sans-serif;
     width: 100vw;

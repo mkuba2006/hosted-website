@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(3, 3, 3, 1)), url('../../images/prior.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+#skills{
+  background: url('/images/blob-haikei.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    min-height: 700px;
+    h1 {
+        width: 1000px;
+        color: white;
+        font-weight: 800;
+        font-size: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .arrow {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent; 
+        border-bottom: 20px solid transparent; 
+        border-right: 20px solid white;
+        margin-left: 50px; 
+      }
+      
+      .arrow::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 400px;
+        height: 5px;
+        background: white;
+        border-radius: 12px;
+      }
+      
+    #my_skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 1000px;
+        div{
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 5px 0;
+            p{
+                color: white;
+                display: flex;
+                align-items: center;
+                width: 130px;
+                margin: 0;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            #dots{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                div{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #1B2430;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    #HTML #dots div:not(:nth-child(n+10)){
+      background-color: #E90064;
+    }
+    #CSS #dots div:not(:nth-child(n+7)){
+        background-color: #E90064;
+    }
+    #BootStrap #dots div:not(:nth-child(n+10)){
+        background-color: #E90064;
+    }
+    #Tailwind #dots div:not(:nth-child(n+7)){
+        background-color: #E90064;
+    }
+    #Javascript #dots div:not(:nth-child(n+8)){
+        background-color: #E90064;
+    }
+    #Jquery #dots div:not(:nth-child(n+8)){
+        background-color: #E90064;
+    }
+    #React #dots div:not(:nth-child(n+9)){
+        background-color: #E90064;
+    }
+    #Node #dots div:not(:nth-child(n+3)){
+        background-color: #E90064;
+    }
+    #Git #dots div:not(:nth-child(n+7)){
+        background-color: #E90064;
+    }
+    #SQL #dots div:not(:nth-child(n+8)){
+        background-color: #E90064;
+    }
+}
+
+
+
+
+
+
+
+
+.questions {
+    background-color: var(--first-color-lighten);
+  }
+  
+  .questions__container {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .questions__group {
+    display: grid;
+    row-gap: 1.5rem;
+  }
+  
+  .questions__item {
+    background-color: var(--container-color);
+    border-radius: 0.25rem;
+  }
+  
+  .questions__item-title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .questions__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+  }
+  
+  .questions__description {
+    font-size: var(--smaller-font-size);
+    padding: 0 1.25rem 1.25rem 2.5rem;
+  }
+  
+  .questions__header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+  }
+  
+  .questions__item,
+  .questions__header,
+  .questions__item-title,
+  .questions__description,
+  .questions__content {
+    transition: 0.3s;
+  }
+  
+  .questions__item:hover {
+    box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, 0.15);
+  }
+  
+  /*Rotate icon, change color of titles and background*/
+  .accordion-open .questions__header,
+  .accordion-open .questions__content {
+    background-color: var(--first-color);
+  }
+  
+  .accordion-open .questions__item-title,
+  .accordion-open .questions__description,
+  .accordion-open .questions__icon {
+    color: #fff;
+  }
+  
+  .accordion-open .questions__icon {
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 1220px) {
+
+  #skills{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 100px auto;
+      h1 {
+          width: 90%;
+          color: white;
+          font-weight: 800;
+          font-size: 50px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        
+        .arrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent; 
+          border-bottom: 20px solid transparent; 
+          border-right: 20px solid white;
+          margin-left: 50px; 
+        }
+        
+        .arrow::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: 5px;
+          width: 300px;
+          height: 5px;
+          background: white;
+          border-radius: 12px;
+        }
+        
+      #my_skills{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90%;
+          max-width: 900px;
+          div{
+              width: auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: left;
+              margin: 5px 0;
+              p{
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                  width: 120px;
+                  margin: 0;
+                  font-weight: 700;
+                  font-size: 20px;
+              }
+              #dots{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  flex-wrap: nowrap;
+                  div{
+                      width: 17px;
+                      height: 17px;
+                      background-color: #1B2430;
+                      border-radius: 50%;
+                      margin-right: 7px;
+                  }
+              }
+          }
+
+      }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  #skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 100px auto;
+      h1 {
+          width: 90%;
+          color: white;
+          font-weight: 800;
+          font-size: 50px;
+          display: flex;
+          flex-direction: row;
+          align-items: left;
+          justify-content: center;
+          max-width: none;
+        }
+        
+        .arrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent; 
+          border-bottom: 20px solid transparent; 
+          border-right: 20px solid white;
+          margin-left: 50px; 
+        }
+        
+        .arrow::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: 5px;
+          width: 200px;
+          height: 5px;
+          background: white;
+          border-radius: 12px;
+        }
+        
+      #my_skills{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90%;
+          max-width: 900px;
+          div{
+              width: auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: left;
+              margin: 5px 0;
+              p{
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                  width: 130px;
+                  margin: 0;
+                  font-weight: 700;
+                  font-size: 20px;
+              }
+              #dots{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  flex-wrap: nowrap;
+                  div{
+                      width: 20px;
+                      height: 20px;
+                      background-color: #1B2430;
+                      border-radius: 50%;
+                      margin-right: 10px;
+                  }
+              }
+          }
+
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 800px) {
+
+//   #skills{
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       margin: 100px auto;
+//       h1 {
+//           width: 90%;
+//           color: white;
+//           font-weight: 800;
+//           font-size: 50px;
+//           display: flex;
+//           flex-direction: row;
+//           align-items: left;
+//           max-width: none;
+//         }
+        
+//         .arrow {
+//           position: relative;
+//           width: 0;
+//           height: 0;
+//           border-top: 20px solid transparent; 
+//           border-bottom: 20px solid transparent; 
+//           border-right: 20px solid white;
+//           margin-left: 50px; 
+//         }
+        
+//         .arrow::before {
+//           content: '';
+//           position: absolute;
+//           top: -2px;
+//           left: 5px;
+//           width: 200px;
+//           height: 5px;
+//           background: white;
+//           border-radius: 12px;
+//         }
+        
+//       #my_skills{
+//           display: flex;
+//           flex-direction: row;
+//           justify-content: left;
+//           align-items: center;
+//           flex-wrap: wrap;
+//           width: 90%;
+//           max-width: 900px;
+//           div{
+//               width: auto;
+//               display: flex;
+//               flex-direction: row;
+//               justify-content: left;
+//               margin: 5px 0;
+//               p{
+//                   color: white;
+//                   display: flex;
+//                   align-items: center;
+//                   width: 120px;
+//                   margin: 0;
+//                   font-weight: 700;
+//                   font-size: 20px;
+//               }
+//               #dots{
+//                   display: flex;
+//                   flex-direction: row;
+//                   justify-content: center;
+//                   align-items: center;
+//                   flex-wrap: nowrap;
+//                   div{
+//                       width: 20px;
+//                       height: 20px;
+//                       background-color: #1B2430;
+//                       border-radius: 50%;
+//                       margin-right: 10px;
+//                   }
+//               }
+//           }
+
+//       }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  #skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 100px auto;
+      h1 {
+          width: 90%;
+          color: white;
+          font-weight: 800;
+          font-size: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+        }
+        
+        .arrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent; 
+          border-bottom: 20px solid transparent; 
+          border-right: 20px solid white;
+          margin-left: 30px; 
+        }
+        
+        .arrow::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: 5px;
+          width: 250px;
+          height: 5px;
+          background: white;
+          border-radius: 12px;
+        }
+        
+      #my_skills{
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90%;
+          div{
+              width: auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: left;
+              margin: 5px 0;
+              p{
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                  width: 90px;
+                  margin: 0;
+                  font-weight: 700;
+                  font-size: 16px;
+              }
+              #dots{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  flex-wrap: nowrap;
+                  div{
+                      width: 20px;
+                      height: 20px;
+                      background-color: #1B2430;
+                      border-radius: 50%;
+                      margin-right: 10px;
+                  }
+              }
+          }
+
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 440px) {
+
+  #skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 100px auto;
+      h1 {
+          width: 90%;
+          color: white;
+          font-weight: 800;
+          font-size: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+        }
+        
+        .arrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          border-top: 20px solid transparent; 
+          border-bottom: 20px solid transparent; 
+          border-right: 20px solid white;
+          margin-left: 30px; 
+        }
+        
+        .arrow::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: 5px;
+          width: 120px;
+          height: 5px;
+          background: white;
+          border-radius: 12px;
+        }
+        
+      #my_skills{
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 90%;
+          div{
+              width: auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: left;
+              margin: 5px 0;
+              p{
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                  width: 90px;
+                  margin: 0;
+                  font-weight: 700;
+                  font-size: 16px;
+              }
+              #dots{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  flex-wrap: nowrap;
+                  div{
+                      width: 17px;
+                      height: 17px;
+                      background-color: #1B2430;
+                      border-radius: 50%;
+                      margin-right: 7px;
+                  }
+              }
+          }
+
+      }
+  }
+}
