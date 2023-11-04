@@ -127,6 +127,14 @@ html {
   }
 }
 
+
+@media screen and (max-width: 500px) {
+  #caruzela #info {
+    font-size: 35px;
+  }
+}
+
+
 // @media screen and (max-width: 880px) {
 //   .carousel-item {
 //     width: 100%;

@@ -125,7 +125,7 @@ section#about::after {
 @media screen and (max-width: 750px) {
   section#about {
     height: auto;
-    min-height: 900px;
+    min-height: 600px;
   }
   section#about #container {
     width: 100%;

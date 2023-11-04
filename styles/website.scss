@@ -71,6 +71,7 @@ body {
     position: relative;
     padding-bottom: 10%;
     display: flex;
+    overflow-x: hidden;
     i {
       padding: 0 auto 0 auto;
       color: $el3;

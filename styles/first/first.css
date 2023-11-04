@@ -103,7 +103,7 @@ html {
   color: #ffffff;
   cursor: pointer;
   opacity: 0;
-  padding: 0px 10px;
+  padding: 8px 12px;
   position: absolute;
   text-align: left;
   visibility: hidden;
@@ -140,19 +140,27 @@ html {
 .p:hover .hoverBubble p {
   padding: 0;
   margin: 0;
-  padding: 10px 0;
   min-width: 113px;
   display: flex;
   justify-content: left;
 }
 
 @media screen and (max-width: 1250px) {
+  #first #cont #opis {
+    padding: 9% 1% 12% 12%;
+    width: 60%;
+    margin-right: 70px;
+  }
   #first #cont #opis h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   #first #cont #opis #buttons {
     width: 100%;
     margin-top: 10px;
+  }
+  #first #cont #opis h1:nth-child(3) {
+    margin: auto;
+    margin: 15px 0 15px 0;
   }
   #first #cont #opis2 {
     width: 250px;
@@ -162,16 +170,18 @@ html {
     width: 250px;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 900px) {
   #first #cont #opis {
     width: 55%;
   }
   #first #cont #opis h1 {
     font-size: 20px;
   }
+  #first #cont #opis #myname {
+    font-size: 35px;
+  }
   #first #cont #opis h1:nth-child(3) {
-    margin: auto;
-    padding: 0 20px;
+    margin: auto 10%;
   }
   #first #cont #opis #buttons button {
     font-size: 15px;
@@ -186,7 +196,7 @@ html {
     width: 200px;
   }
 }
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 800px) {
   #first {
     padding-top: 5vh;
   }
@@ -194,6 +204,7 @@ html {
     width: 670px;
     display: grid;
     margin: 0 auto 0 auto;
+    padding-bottom: 100px;
   }
   #first #cont #opis {
     order: 2;
@@ -214,8 +225,14 @@ html {
     right: 0;
   }
 }
+@media screen and (max-width: 490px) {
+  #first #cont #opis #myname {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 400px) {
   #first #cont #opis h1:nth-child(3) {
     font-size: 18px;
+    margin: auto 5%;
   }
 }/*# sourceMappingURL=first.css.map */

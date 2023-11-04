@@ -216,6 +216,16 @@ aside{
   #nav > div:nth-child(2) {
     display: none;
   }
+  #nav1 .in-nav #logo1 {
+    width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #nav1 .in-nav #logo1 {
+    width: 150px;
+  }
 }
 
 

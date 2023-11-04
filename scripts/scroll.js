@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.outerWidth > 1000) {
       ScrollReveal().reveal('#certificates #first_cert', { delay: 200, origin: 'left', distance: '20%' });
       ScrollReveal().reveal('#certificates #second_cert', { delay: 400, origin: 'left', distance: '20%' });
+      ScrollReveal().reveal('#certificates #third_cert', { delay: 600, origin: 'left', distance: '20%' });
       const img = document.querySelector("#img1");
       const els = document.querySelectorAll("#cloud");
       els.forEach(e => e.style.width = `${img.offsetWidth}px`);
@@ -27,5 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 ScrollReveal().reveal('#itemek', {delay: 2000,origin: 'bottom', distance: '30%', duration: 2000});
-ScrollReveal().reveal('#my_skills div', { origin: 'left', distance: '30%', interval: 20});
+ScrollReveal().reveal('#my_skills div', { origin: 'left', distance: '30%', interval: 10});
 ScrollReveal().reveal('#skills h1', { origin: 'left', distance: '30%', interval: 100});

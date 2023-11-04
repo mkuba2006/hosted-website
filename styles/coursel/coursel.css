@@ -110,4 +110,9 @@ html {
   .carousel {
     display: none;
   }
+}
+@media screen and (max-width: 500px) {
+  #caruzela #info {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=coursel.css.map */

@@ -37,7 +37,7 @@ h3 {
     margin: 0 auto;
     padding: 4% 15% 4% 15%;
     background-color: #0e100f;
-    background: url('/images/Meteor.svg');
+    background: url('/images/layered-waves-haikei1.svg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -160,7 +160,7 @@ h3 {
     }
     #prawa {
       font-weight: 700;
-      margin-top: 60px;
+      margin-top: 80px;
       display: flex;
       justify-content: center;
       font-size: 17px;
@@ -206,7 +206,7 @@ h3 {
 @media screen and (max-width: 700px) {
   #contact #container #prawa {
     font-weight: 700;
-    margin-top: 60px;
+    margin-top: 10px;
     display: block;
     font-size: 15px;
     text-align: center;
@@ -217,6 +217,7 @@ h3 {
 @media screen and (max-width: 500px) {
   #contact {
     #container {
+      padding: 0% 15% 0% 15%;
       #ones {
         #fform {
           form {
