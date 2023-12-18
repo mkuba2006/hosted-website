@@ -88,10 +88,13 @@
   <section id="first">
     <div id="cont">
       <div id="opis">
+        
         <div class="navUL">
           <h3> &#9995 Hi, my name is</h3>
         </div>
         <h1 id="myname">Jakub Myrta.</h1>
+
+
         <h1 >I'm
         <span class="p"><span id="yrs">16 y.o</span>
         <div class="redBubble bubblePosition hoverBubble">
@@ -459,6 +462,7 @@
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -468,22 +472,18 @@
 <script src="scripts/website.js"></script>
 <script src="scripts/nav.js"></script>
 <script src="scripts/hire.js"></script>
-
 <script src="scripts/scroll.js"></script>
 <script src="scripts/rocket.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
 <script>
-  const button = document.querySelector("#section05 > a");
-  const gate = document.getElementById('gate');
 
-  if(gate.style.zIndex='1000'){
-      document.body.style.overflowY= 'hidden';
-  }
-  button.addEventListener('click', () => {
-      gate.style.transition = 'transform 1s';
-      gate.style.transform = 'translateY(-100vh)';
-      document.body.style.overflowY= 'scroll';
-  });
+  // var typed = new Typed('#yrs', {
+  //     strings: ['','Jakub Myrta', 'Web design'],
+  //     typeSpeed: 150,
+  //     backSpeed: 50,
+  //     loop: true,
+  // });
+
 </script>
 </body>
 

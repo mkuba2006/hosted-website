@@ -107,8 +107,7 @@ aside a:first-of-type {
 }
 
 #nav1 {
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4235294118);
   font-family: "Indie Flower", cursive;
   padding: 20px 0;
   width: 100vw;

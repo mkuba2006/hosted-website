@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgb(3, 3, 3)), url("../../images/prior.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(3, 3, 3, 0.842)), url("../../images/prior.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
