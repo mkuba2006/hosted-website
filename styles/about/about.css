@@ -21,6 +21,7 @@ section#about {
   align-items: center;
   background-color: #FEF2F4;
   overflow: hidden;
+  padding: 5% 0;
 }
 section#about h3 {
   color: black;

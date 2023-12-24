@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Shantell+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 html {
   font-family: "Indie Flower", cursive;
   color: #bc6ff1;
 }
 
 #first {
-  background: url("../../images/1-11.png");
+  background: url("../../images/wave-haikei.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -23,8 +25,8 @@ html {
   display: flex;
 }
 #first #cont #opis {
-  width: 55%;
-  padding: 9% 1% 12% 16%;
+  width: 50%;
+  padding: 9% 1% 12% 10%;
   margin-right: 100px;
 }
 #first #cont #opis #yrs {
@@ -33,26 +35,46 @@ html {
   width: max-content;
 }
 #first #cont #opis h3 {
-  font-size: 12px;
-  color: #80B3FF;
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+  color: #9400FF;
   letter-spacing: 1.5px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#first #cont #opis #myname {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 70px;
+  color: #fcff4c;
+  text-transform: capitalize;
+  color: #9400FF;
 }
 #first #cont #opis h1 {
-  color: #80B3FF;
+  color: #9400FF;
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
 #first #cont #opis h1 .p {
-  -webkit-text-decoration: underline 2px solid aliceblue;
-          text-decoration: underline 2px solid aliceblue;
+  -webkit-text-decoration: underline 2px solid #9400FF;
+          text-decoration: underline 2px solid #9400FF;
   cursor: pointer;
   width: -moz-max-content;
   width: max-content;
 }
-#first #cont #opis #myname {
+#first #cont #opis #typed {
+  font-weight: 600;
+  display: flex;
+  text-transform: capitalize;
+}
+#first #cont #opis #typed #type {
+  padding-left: 10px;
+  color: #F90716;
   margin: 0;
-  font-size: 50px;
-  color: #fcff4c;
+}
+#first #cont #opis #typed span {
+  color: #F90716;
 }
 #first #cont #opis #buttons {
   width: 80%;

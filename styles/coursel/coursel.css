@@ -9,7 +9,7 @@ html {
 }
 
 #caruzela {
-  background: url("../../images/1-2.svg");
+  background: url("../../images/wave-haikei2.svg");
   background-repeat: no-repeat;
   background-color: #0e100f;
   padding: 500px 0 0 0;
@@ -50,7 +50,7 @@ html {
 }
 #caruzela .carousel-caption h5 a {
   z-index: 2;
-  font-family: "xxx", sans-serif;
+  font-weight: 900;
   color: #ffb84c;
 }
 #caruzela .carousel-caption h5 a::before {
