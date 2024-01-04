@@ -94,36 +94,35 @@ html {
         width: 80%;
         
         button {
-          transition-duration: 0.3s;
-          background-color: $bg;
-          border: 2px solid $el4mod;
-          border-radius: 5px;
-          font-size: 20px;
-          width: 170px;
-          background-color: none;
+          margin: 0 2px;
+          transition: filter .2s;
+          border: none;
+          border-radius: 50%;
+          font-size: 18px;
           text-decoration: none;
-          padding: 6px 12px;
-          color: gray;
-          
-          i {
-            color: gray;
-            transition-duration: 0.3s;
-          }
-          
+          padding: 8px 13px 6px 13px;
+          color: #F3F8FF;
+          background: #27005D;
           a {
             text-decoration: none;
-            color: gray;
+            color: #F3F8FF;
           }
         }
         
         button:hover {
-          color: white;
-          background-color: $el4mod;
-          
-          a,
-          i {
-            color: white;
-          }
+          filter: brightness(80%);
+        }
+        button:nth-child(1){
+          background-color: #191825;
+        }
+        button:nth-child(2){
+          background-color: #3F0071;
+        }
+        button:nth-child(3){
+          background-color: #CF0000;
+        }
+        button:nth-child(4){
+          background-color: #0079FF;
         }
       }
     }
@@ -238,21 +237,12 @@ html {
       #opis {
         width: 55%;
         h1 {
-          font-size: 20px;
+          font-size: 25px;
         }
         #myname {
-          font-size: 35px;
+          font-size: 40px;
         }
-        h1:nth-child(3){
-          margin: auto 10%;
-        }
-        #buttons {
-          button {
-            font-size: 15px;
-            padding: 5px 9px;
-            width: 145px;
-          }
-        }
+        
       }
       #opis2 {
         width: 200px;
@@ -282,6 +272,15 @@ html {
         padding: 0;
         margin-right: 0px;
         margin-top: 20px;
+        #typed{
+          margin: 0;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          width: auto;
+          padding: 0 auto;
+          text-transform: capitalize;
+        }
       }
       #opis2 {
         clear: both;
@@ -300,6 +299,30 @@ html {
   #first #cont #opis #myname {
     font-size: 28px;
   }
+  #first #cont #opis h3 {
+    font-size: 45px;
+  }
+  #first {
+    #cont {
+      #opis {
+        h1 {
+          font-size: 30px;
+        }
+        #myname {
+          padding: 0 10px;
+          font-size: 40px;
+        }
+        
+      }
+      #opis2 {
+        width: 200px;
+        padding: 0;
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
 }
 
 
@@ -310,3 +333,27 @@ html {
   }
 }
 
+@media screen and (max-width: 370px) {
+  #first #cont #opis h1:nth-child(3) {
+    font-size: 22px;
+    margin: auto 5%;
+  }
+  #first {
+    #cont {
+      #opis {
+        #myname {
+          padding: 0 10px;
+          font-size: 35px;
+        }
+        
+      }
+      #opis2 {
+        width: 200px;
+        padding: 0;
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

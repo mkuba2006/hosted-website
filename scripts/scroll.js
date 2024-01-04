@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 ScrollReveal().reveal('#itemek', {delay: 2000,origin: 'bottom', distance: '30%', duration: 2000});
-ScrollReveal().reveal('#my_skills div', { origin: 'left', distance: '30%', interval: 10});
+ScrollReveal().reveal('#my_skills div', { origin: 'left', distance: '20%', interval: 10});
 ScrollReveal().reveal('#skills h1', { origin: 'left', distance: '30%', interval: 100});

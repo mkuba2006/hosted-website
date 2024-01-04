@@ -61,6 +61,7 @@ h3 {
           font-family: "Poppins", sans-serif;
           font-size: 29px;
           margin: 20px 0 20px 0;
+          font-weight: 800;
         }
         form {
           padding: 0 10px 0 0;
@@ -120,8 +121,10 @@ h3 {
         flex-direction: column;
         justify-content: center;
         font-family: "Poppins", sans-serif;
+        font-weight: 800;
         h1 {
           font-size: 29px;
+          font-weight: 800;
           span {
             color: $green;
           }
