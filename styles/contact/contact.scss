@@ -179,14 +179,7 @@ h3 {
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media screen and (max-width: 1450px) {
-  #contact {
-    #container {
-      background: url('../../images/foot2.svg');
-      background-position: left;
-    }
-  }
-}
+
 
   @media screen and (max-width: 850px) {
     #contact #container #ones {
@@ -220,18 +213,27 @@ h3 {
 @media screen and (max-width: 500px) {
   #contact {
     #container {
-      padding: 0% 15% 0% 15%;
+      padding: 25% 15% 5% 15%;
+      background: url('/images/blb3.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
       #ones {
         #fform {
           form {
             padding: 0 10px 0 0;
             input,
             textarea {
+              border: 1px solid #ffffff70;
+              color: #ffffff8f;
               width: 280px;
             }
           }
         }
       }
     }
+  }
+  #contact #container #prawa {
+    color: white;
   }
 }
