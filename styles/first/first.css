@@ -81,33 +81,30 @@ html {
 }
 #first #cont #opis #buttons button {
   margin: 0 2px;
-  transition: filter 0.2s;
+  transition: 0.4s;
   border: none;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   padding: 8px 13px 6px 13px;
   color: #F3F8FF;
-  background: #27005D;
+  background: white;
 }
 #first #cont #opis #buttons button a {
   text-decoration: none;
   color: #F3F8FF;
 }
-#first #cont #opis #buttons button:hover {
-  filter: brightness(80%);
-}
 #first #cont #opis #buttons button:nth-child(1) {
-  background-color: #191825;
+  border: 0px solid #201f30;
 }
 #first #cont #opis #buttons button:nth-child(2) {
-  background-color: #3F0071;
+  border: 0px solid #3F0071;
 }
 #first #cont #opis #buttons button:nth-child(3) {
-  background-color: #CF0000;
+  border: 0px solid #CF0000;
 }
 #first #cont #opis #buttons button:nth-child(4) {
-  background-color: #0079FF;
+  border: 0px solid #0079FF;
 }
 #first #opis2 {
   width: 20%;

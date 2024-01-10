@@ -7,13 +7,40 @@ buttons.forEach((button) => {
     button.addEventListener("mouseleave", () => {
         button.classList.remove("mp");
     });
-  });
+});
 
   
-  const dos = document.getElementById("dos");
-  const dos_el = document.querySelectorAll("#dos div");
+const dos = document.getElementById("dos");
+const dos_el = document.querySelectorAll("#dos div");
 
   
+const media_buttons = document.querySelectorAll("#buttons button");
+
+media_buttons.forEach(button=>{
+  const computedStyle = window.getComputedStyle(button);
+  const borderColor = computedStyle.getPropertyValue('border-color');
+  const i = button.querySelector('a i');
+  i.style.color = borderColor;
+  i.style.transition = '.2s';
+  i.style.scale = '1.15';
+  button.addEventListener('mouseenter',()=>{
+    button.style.background = borderColor;
+    button.style.scale = '1.1';
+    console.log(i);
+    i.style.color = 'white';
+    i.style.scale = '1.18';
+  })
+  button.addEventListener('mouseleave',()=>{
+    button.style.background ='';
+    button.style.scale = '1';
+    i.style.color = borderColor;
+    i.style.scale = '1.15';
+  })
+
+})
+
+
+
 
 // function updateTimer() {
 //   const startDate = new Date('2006-10-05');
