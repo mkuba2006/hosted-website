@@ -25,16 +25,7 @@ body{
 #hh i:hover{
   transform: translate3d(0, -6px, 0);
 }
-header {
-    background-color: #252525;
-    font-family: 'Pacifico', cursive;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 10% 0 10%;
-}
+
 #one{
   width: 100%;
   display: flex;
@@ -308,7 +299,9 @@ h2{
   font-size: 70px;
   margin: 0 0 10px 0;
 }
-
+.opis h1 span{
+  color: #b3ff00;
+}
 .opis h3{
   margin: 0 0 10px 0;
   max-width: 500px;
@@ -319,8 +312,8 @@ h2{
 #see{
   font-family: "Montserrat", sans-serif;
   padding: 12px 32px;
-  border: 1px solid red;
-  background-color: #D80032;
+  border: 2px solid red;
+  background: none;
   color: white;
   font-size: 20px;
   transition: .4s;
@@ -328,6 +321,7 @@ h2{
 }
 #see:hover{
   scale: 1.05;
+  background-color: red;
 }
 
 
@@ -720,7 +714,7 @@ h2{
     justify-content: center;
     align-items: center;
     max-height: 400px;
-    transform: translateY(-500px);
+    transform: translateY(-400px);
     z-index: 10;
     width: 100vw;
     position: relative;
@@ -760,7 +754,15 @@ h2{
     width: 90%;
   }
   .opis{
-    transform: translateY(-48vh);
+    transform: translateY(-380px);
+  }
+  .opis h1{
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .opis h3{
+    padding: 0 10%;
+    font-size: 16px;
   }
   .card_item{
     width: 80%;
@@ -792,4 +794,25 @@ h2{
     gap: 10px;
   }
 
+  #see{
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 24px;
+    border: 2px solid red;
+    background: none;
+    color: white;
+    font-size: 13px;
+    transition: .4s;
+    border-radius: 7px;
+  }
+}
+
+
+@media screen and (max-width: 390px){
+  .opis h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+  }
 }
