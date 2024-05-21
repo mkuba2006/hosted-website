@@ -23,14 +23,13 @@ if(window.innerWidth < 601){
             search.style.transform = "translateY(0px)";
             options.style.transform = "translateY(0px)";
             products.style.top=220+'px';
-            nav.style.boxShadow='rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;'
             nav.style.backgroundColor="#121212";
         } else{
             rotationState = 0;
             arrow.style.transform = "rotate(0deg)";
             products.style.top = h - 50+'px';
-            search.style.transform = 'translateY(-90px)';
-            options.style.transform = "translateY(-90px)";
+            search.style.transform = 'translateY(-130px)';
+            options.style.transform = "translateY(-130px)";
             nav.style.background="none";
         } 
     });
@@ -83,39 +82,6 @@ function initializeApp() {
                 }
             });
         }
-    
-        // i.forEach((a)=>{
-        //     console.log(a);
-        //     const copy = document.createElement('li');
-        //     copy.className = 'li_fav';
-
-        //     const parent = a.parentElement;
-
-        //     const tit = document.createElement('a');
-        //     const title = parent.querySelector('#title').textContent;
-        //     tit.innerHTML = title;
-
-        //     const img = parent.querySelector('#img_back').innerHTML;
-        //     copy.innerHTML = img;
-        //     copy.appendChild(tit)
-
-
-        //     a.className = 'faR faH';
-        //     const heart = a.querySelector('i');
-        //     a.addEventListener('click', ()=>{
-        //         console.log(a);
-        //         heart.classList.toggle('fa-regular');
-        //         heart.classList.toggle('fa-solid');
-        //         a.classList.toggle('faR');
-        //         a.classList.toggle('faS');  
-        //         if(a.classList.contains('faS')){
-        //             dropdown.appendChild(copy);
-        //         } else{
-        //             dropdown.removeChild(copy);
-        //         }
-        //         console.log(heart);
-        //     })
-        // })
     }
 }
 

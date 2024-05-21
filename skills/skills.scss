@@ -217,7 +217,12 @@ body{
 
 
 
+  @media screen and (max-width: 900px) {
 
+    #skills{
+        min-height: 400px;
+    }
+  }
 
 
 

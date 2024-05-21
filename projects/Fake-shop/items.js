@@ -416,7 +416,7 @@ products = [
         nazwa_albumu: 'XX',
         rok_wydania: '2012',
         zespol: 'Rage Against The Machine',
-        obraz: 'https://cdn.smehost.net/ratmcom-uslegacyprod/wp-content/uploads/2019/02/ratm_rage20_deluxe-771x771.jpg',
+        obraz: 'https://m.media-amazon.com/images/I/81ApIxyhiAL._UF1000,1000_QL80_.jpg',
         opis: 'A 20th-anniversary reissue of their debut album, featuring bonus tracks and unreleased material, celebrating their influential debut.',
         rank: '8/10'
     },

@@ -94,34 +94,24 @@ html {
         width: 80%;
         
         button {
-          margin: 0 2px;
+          margin: 0;
           transition: .4s;
           border: none;
           border-radius: 50%;
-          font-size: 20px;
+          font-size: 23px;
           text-decoration: none;
           padding: 8px 13px 6px 13px;
-          color: #F3F8FF;
-          background: white;
-          a {
-            text-decoration: none;
-            color: #F3F8FF;
+          color: #f3f8ffc2;
+          background: none;
+          i{
+            color: #ffffff73;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #ffffffd7;
           }
         }
-        
-
-        button:nth-child(1){
-          border: 0px solid #201f30;
-        }
-        button:nth-child(2){
-          border: 0px solid #3F0071;
-        }
-        button:nth-child(3){
-          border: 0px solid #CF0000;
-        }
-        button:nth-child(4){
-          border: 0px solid #0079FF;
-        }
+      
       }
     }
   }

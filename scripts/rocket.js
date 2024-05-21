@@ -43,18 +43,4 @@ window.onload = () => {
     for (let i = 1; i < itemekElements.length; i += 4) {
         itemekElements[i].style.backgroundColor = "green";
     }
-
-
-
-
-
-
-    // const dynamicElement = document.getElementById('scroll');
-
-    // window.addEventListener('scroll', () => {
-    //     const newHeight = 100 + window.scrollY * 0.5;
-    
-    //     dynamicElement.style.height = `${newHeight}vh`;
-    //     console.log(totalDocumentHeight);  
-    // });
 };

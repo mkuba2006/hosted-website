@@ -178,7 +178,7 @@ h3 {
 @media screen and (max-width: 500px) {
   #contact #container {
     padding: 25% 15% 5% 15%;
-    background: url("/images/blb3.svg");
+    background: #070013;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

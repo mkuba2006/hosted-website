@@ -1,3 +1,4 @@
+
 let buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
@@ -14,64 +15,13 @@ const dos = document.getElementById("dos");
 const dos_el = document.querySelectorAll("#dos div");
 
   
-const media_buttons = document.querySelectorAll("#buttons button");
 
-media_buttons.forEach(button=>{
-  const computedStyle = window.getComputedStyle(button);
-  const borderColor = computedStyle.getPropertyValue('border-color');
-  const i = button.querySelector('a i');
-  i.style.color = borderColor;
-  i.style.transition = '.2s';
-  i.style.scale = '1.15';
-  button.addEventListener('mouseenter',()=>{
-    button.style.background = borderColor;
-    button.style.scale = '1.1';
-    console.log(i);
-    i.style.color = 'white';
-    i.style.scale = '1.18';
-  })
-  button.addEventListener('mouseleave',()=>{
-    button.style.background ='';
-    button.style.scale = '1';
-    i.style.color = borderColor;
-    i.style.scale = '1.15';
-  })
-
-})
-
-
-
-
-// function updateTimer() {
-//   const startDate = new Date('2006-10-05');
-//   const currentDate = new Date();
-//   const timeDifference = currentDate - startDate;
-
-//   const millisecondsInASecond = 1000;
-//   const secondsInAMinute = 60;
-//   const secondsInAnHour = 60 * secondsInAMinute;
-//   const secondsInADay = 24 * secondsInAnHour;
-//   const secondsInAMonth = 30 * secondsInADay;
-//   const secondsInAYear = 365 * secondsInADay;
-
-//   const years = Math.floor(timeDifference / (secondsInAYear * millisecondsInASecond));
-//   const months = Math.floor((timeDifference % (secondsInAYear * millisecondsInASecond)) / (secondsInAMonth * millisecondsInASecond));
-//   const days = Math.floor((timeDifference % (secondsInAMonth * millisecondsInASecond)) / (secondsInADay * millisecondsInASecond));
-//   const hours = Math.floor((timeDifference % (secondsInADay * millisecondsInASecond)) / (secondsInAnHour * millisecondsInASecond));
-//   const minutes = Math.floor((timeDifference % (secondsInAnHour * millisecondsInASecond)) / (secondsInAMinute * millisecondsInASecond));
-//   const seconds = Math.floor((timeDifference % (secondsInAMinute * millisecondsInASecond)) / millisecondsInASecond);
-//   const milliseconds = timeDifference % millisecondsInASecond;
-
-//   const timerElement = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
-//   timerElement.innerHTML = `${years}.${months}${days}${hours}${minutes}${seconds}${milliseconds}`;
-//   const yrs = document.getElementById('yrs');
-//   yrs.textContent=`${years} y.o`;
-// }
-// setInterval(updateTimer, 10);
-// updateTimer();
-
-
-
+var typed = new Typed('#type', {
+  strings: ['','Web designer', 'Frontend developer'],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+});
 
 
 

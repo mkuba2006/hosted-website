@@ -37,7 +37,7 @@
         width: 120px;
     }
     #scroll #itemsa div #itemek{
-        width: 100px;
+        width: 110px;
     }
 
 }
@@ -45,29 +45,56 @@
 
 @media screen and (max-width:900px) {
     #scroll #itemsa div{
-        width: 100px;
+        width: 120px;
     }
     #scroll #itemsa div #itemek{
-        width: 80px;
+        width: 110px;
     }
 
 }
-@media screen and (max-width:800px) {
+
+@media screen and (max-width:760px) {
+     #row_three{
+        display: none;
+    }
     #scroll #itemsa div{
-        width: 80px;
+        width: 120px;
     }
     #scroll #itemsa div #itemek{
-        width: 70px;
+        width: 110px;
     }
 
 }
 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:660px) {
     #row_one, #row_two, #row_three{
         display: none;
     }
     .products{
         z-index: 2;
         background: none;
+    }
+    #scroll #itemsa div{
+        width: 130px;
+    }
+    #scroll #itemsa div #itemek{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #row_one, #row_two, #row_three{
+        display: none;
+    }
+    .products{
+        z-index: 2;
+        background: none;
+    }
+    #scroll #itemsa div{
+        width: 100px;
+    }
+    #scroll #itemsa div #itemek{
+        width: 90px;
     }
 }

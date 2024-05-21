@@ -34,32 +34,32 @@ window.onload = () => {
             itemekElements[i].className ='itemek'+ i;
         }
         for (let i = 1; i < itemekElements.length; i +=13) {
-            itemekElements[i].style.backgroundColor = "#43919B";
+            itemekElements[i].style.backgroundColor = "#e31d65";
             const calculatedHeight = totalDocumentHeight * 0.2;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
         for (let i = 1; i < itemekElements.length; i++) {
-            itemekElements[i].style.backgroundColor = "#FF1E1E";
+            itemekElements[i].style.backgroundColor = "#ff7c35";
             const calculatedHeight = totalDocumentHeight * 0.125;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
         for (let i = 1; i < itemekElements.length; i += 2) {
-            itemekElements[i].style.backgroundColor = "#00F5FF";
+            itemekElements[i].style.backgroundColor = "#ffcb36";
             const calculatedHeight = totalDocumentHeight * 0.19;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
         for (let i = 1; i < itemekElements.length; i += 3) {
-            itemekElements[i].style.backgroundColor = "#38E54D";
+            itemekElements[i].style.backgroundColor = "#25a954";
             const calculatedHeight = totalDocumentHeight * 0.25;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
         for (let i = 1; i < itemekElements.length; i += 4) {
-            itemekElements[i].style.backgroundColor = "#570A57";
+            itemekElements[i].style.backgroundColor = "#007d97";
             const calculatedHeight = totalDocumentHeight * 0.3;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
         for (let i = 1; i < itemekElements.length; i += 5) {
-            itemekElements[i].style.backgroundColor = "#F6F54D";
+            itemekElements[i].style.backgroundColor = "#553ab8";
             const calculatedHeight = totalDocumentHeight * 0.2;
             itemekElements[i].style.height = calculatedHeight + 'px';
         }
@@ -131,12 +131,4 @@ window.onload = () => {
     }
     ScrollReveal().reveal('#itemek', { delay: 500 });
 
-    const dynamicElement = document.getElementById('scroll');
-
-    // window.addEventListener('scroll', () => {
-    //     const newHeight = 100 + window.scrollY * 0.5;
-    
-    //     dynamicElement.style.height = `${newHeight}vh`;
-    //     console.log(totalDocumentHeight);  
-    // });
 };

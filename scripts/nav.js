@@ -16,7 +16,7 @@ let lastScrollPosition = 0;
 function scrollListener(event) {
   const currentScrollPosition = window.scrollY;
   if (currentScrollPosition == 0) {
-    nav.style.background='rgba(0, 0, 0, 0.259)';
+    nav.style.background='rgba(0, 0, 0, 0)';
   }
   if (currentScrollPosition !== 0) {
     nav.style.backgroundColor='rgba(0, 0, 0, 0.9)';

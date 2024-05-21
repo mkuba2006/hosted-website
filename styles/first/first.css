@@ -80,31 +80,22 @@ html {
   width: 80%;
 }
 #first #cont #opis #buttons button {
-  margin: 0 2px;
+  margin: 0;
   transition: 0.4s;
   border: none;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 23px;
   text-decoration: none;
   padding: 8px 13px 6px 13px;
-  color: #F3F8FF;
-  background: white;
+  color: rgba(243, 248, 255, 0.7607843137);
+  background: none;
 }
-#first #cont #opis #buttons button a {
-  text-decoration: none;
-  color: #F3F8FF;
+#first #cont #opis #buttons button i {
+  color: rgba(255, 255, 255, 0.4509803922);
+  transition: 0.2s;
 }
-#first #cont #opis #buttons button:nth-child(1) {
-  border: 0px solid #201f30;
-}
-#first #cont #opis #buttons button:nth-child(2) {
-  border: 0px solid #3F0071;
-}
-#first #cont #opis #buttons button:nth-child(3) {
-  border: 0px solid #CF0000;
-}
-#first #cont #opis #buttons button:nth-child(4) {
-  border: 0px solid #0079FF;
+#first #cont #opis #buttons button i:hover {
+  color: rgba(255, 255, 255, 0.8431372549);
 }
 #first #opis2 {
   width: 20%;

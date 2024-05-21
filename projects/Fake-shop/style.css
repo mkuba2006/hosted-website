@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     font-size: 15px;
     --var-soft-blue: hsl(215, 51%, 70%);
@@ -27,7 +29,7 @@ html {
 }
 
 body{
-    font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     color: #0e0e0ecb;
@@ -73,6 +75,8 @@ select{
   color: white;
   transition: 0.2s;
   padding: 5px 10px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
 }
 
 
@@ -82,13 +86,13 @@ select{
   select{
     margin-top: 10px;
     display: block;
-    transform: translateY(-90px);
+    transform: translateY(-130px);
     transition: transform 0.5s ease;
   }
   #before-search{
     display: block;
     transition: transform 0.5s ease;
-    transform: translateY(-90px);
+    transform: translateY(-130px);
   }
   .navbar{
     box-shadow: none;
@@ -145,7 +149,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
 }
 .li_fav:hover{
@@ -165,6 +169,7 @@ ul{
   position: relative;
 }
 .f_input{
+  font-weight: 400;
   height: 50px;
   border-style: none;
   padding: 10px;
@@ -184,7 +189,7 @@ ul{
   color:rgba(255,255,255,.5);
   font-size: 18px;
   letter-spacing: 2px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .btn-search{
   width: 50px;
@@ -282,8 +287,12 @@ img{
   padding: 9px;
   border-radius: 100%;
   font-size: 25px;
+  padding: 10px 9px 9px 9.5px;
+  max-height: 45px;
+  max-width: 45px;
   transition: 0.3s;
   z-index: 10;
+  transform: translate(5px,10px);
 }
 
 
@@ -329,9 +338,11 @@ img:hover, #products .card-container .global a:hover img {
   animation: slideFromTop 0.3s ease;
 }
 #band{
+  font-size: 13px;
   margin: 0 0 2px 0;
 }
 #rate{
+  font-size: 12px;
   margin: 0 0 9px 0;
 }
 #rate span{
@@ -406,13 +417,11 @@ span a{
     flex-direction: row;
     justify-content: space-evenly;
   }
-
   #before-search{
     min-width: 200px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 ;
   }
-  
   .search-box{
     width: fit-content;
     height: fit-content;
@@ -434,6 +443,14 @@ span a{
     top: 30vh;
   }
 }
+
+@media screen and (max-width:820px){
+  #third-nav {
+    margin-top: 20px;
+  }
+}
+
+
 @media screen and (max-width:600px) and (min-width:560px) {
   .card-text{
     width: 100%;
@@ -463,13 +480,32 @@ span a{
   .products{
     top: 26vh;
   }
-  .card-container{
-    flex-direction: row;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
   .card-container:hover{
     background-color: #1d1818;
+  }
+
+  .card-container {
+    z-index: 2;
+    background-color: #191414;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+    transition: all 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    border-left: 9px solid #FFC700;
+    max-width: 400px;
+  }
+  .card-container:nth-child(3n) {
+    border-left: 9px solid #FF204E;
+  }
+  .card-container:nth-child(2n) {
+    border-left: 9px solid #9400FF;
   }
 
   #products .card-container .global a i{
