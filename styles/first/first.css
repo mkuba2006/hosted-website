@@ -317,14 +317,20 @@ html {
     margin: auto 5%;
   }
   #first #cont #opis #myname {
-    padding: 0 10px;
-    font-size: 30px;
+    padding: 0 1px;
+    font-size: 28px;
+  }
+  #first #cont #opis #typed {
+    font-size: 18px;
+  }
+  #first #cont #opis h3 {
+    font-size: 38px;
   }
   #first #cont #opis2 {
     width: 200px;
     padding: 0;
   }
   #first #cont #opis2 img {
-    width: 270px;
+    width: 260px;
   }
 }/*# sourceMappingURL=first.css.map */

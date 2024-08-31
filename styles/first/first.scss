@@ -437,16 +437,21 @@ html {
     #cont {
       #opis {
         #myname {
-          padding: 0 10px;
-          font-size: 30px;
+          padding: 0 1px;
+          font-size: 28px;
         }
-        
+        #typed{
+          font-size: 18px;
+        }
+        h3{
+          font-size: 38px;
+        }
       }
       #opis2 {
         width: 200px;
         padding: 0;
         img {
-          width: 270px;
+          width: 260px;
         }
       }
     }
