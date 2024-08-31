@@ -12,26 +12,10 @@ $green: #ffb84c;
   inherits: true;
   initial-value: 0;
 }
-
-:root {
-  --progress-bar-color: #cfd8dc;
-  --progress-value-color: #2196f3;
-  --progress-empty-color-h: 4.1;
-  --progress-empty-color-s: 89.6;
-  --progress-empty-color-l: 58.4;
-  --progress-filled-color-h: 122.4;
-  --progress-filled-color-s: 39.4;
-  --progress-filled-color-l: 49.2;
-}
-html {
-  font-family: "Indie Flower", cursive;
-  color: $el3;
-}
 @font-face {
   font-family: 'xxx';
   src: url(../Library3am-5V3Z.otf);
 }
-// font-family: 'xxx', sans-serif;
 $color_1: #ffb84c;
 $color_2: #c84b31;
 $color_3: aliceblue;
@@ -41,162 +25,19 @@ $background-color_1: #161616;
 h3 {
   color: $el3;
 }
-#four {
-    // background-image: linear-gradient(rgba(1, 1, 1, 0.90), rgba(1, 1, 1, 0.90)), url('https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg');
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-size: cover;
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-    width: 100%;
-    position: relative;
-  
-    i {
-      padding: 0 auto 0 auto;
-      color: $el3;
-      font-size: 150px;
-    }
-  
-    h3 {
-      
-      color: $green;
-      font-weight: 1000;
-    }
-  
-    p {
-      color: $el2;
-      font-weight: 600;
-    }
-  
-    #dos{
-      width: 1000px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 0 auto 100px auto;
-      .mmm{
-        border-style: solid;
-        border-color: transparent;
-        width: 300px;
-        margin: 10px;
-        background-color: #040D12;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #E4FBFF;
-        justify-content: space-between;
-        padding: 5px 10px;
-        border-radius: 7px;
-        transition: 0.3s;
-        i{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 40px;
-          width: 50px;
-          height: 100%;
-        }
-        #info{
-          width: 200px;
-          
-          h3{
-            font-family: "Montserrat", sans-serif;
-            font-size: 50px;
-            color: white;
-          }
-          progress{
-            width: 200px;
-          }
-                    
-          progress[value] {
-            display: block;
-            position: relative;
-            appearance: none;
-            width: 80%;
-            height: 6px;
-            border: 0;
-            --border-radius: 10px;
-            border-radius: var(--border-radius);
-            counter-reset: progress var(--progress-value);
-            --progress-value-string: counter(progress) '%';
-            --progress-max-decimal: calc(var(--value, 0) / var(--max, 0));
-            --progress-value-decimal: calc(var(--progress-value, 0) / var(--max, 0));
-            @supports selector(::-moz-progress-bar) {
-              --progress-value-decimal: calc(var(--value, 0) / var(--max, 0));
-            }
-            --progress-value-percent: calc(var(--progress-value-decimal) * 100%);
-            --progress-value-color: hsl(
-              calc((var(--progress-empty-color-h) + (var(--progress-filled-color-h) - var(--progress-empty-color-h)) * var(--progress-value-decimal)) * 1deg)
-              calc((var(--progress-empty-color-s) + (var(--progress-filled-color-s) - var(--progress-empty-color-s)) * var(--progress-value-decimal)) * 1%)
-              calc((var(--progress-empty-color-l) + (var(--progress-filled-color-l) - var(--progress-empty-color-l)) * var(--progress-value-decimal)) * 1%)
-            );
-            animation: calc(3s * var(--progress-max-decimal)) linear 0.5s 1 normal both progress;
-          }
-
-          progress[value]::-webkit-progress-bar {
-            background-color: var(--progress-bar-color);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-          }
-
-          progress[value]::-webkit-progress-value {
-            width: var(--progress-value-percent) !important;
-            background-color: var(--progress-value-color);
-            border-radius: var(--border-radius);
-          }
-
-          progress[value]::-moz-progress-bar {
-            width: var(--progress-value-percent) !important;
-            background-color: var(--progress-value-color);
-            border-radius: var(--border-radius);
-          }
-
- 
-
-          @keyframes progress {
-            from {
-              --progress-value: 0;
-            } to {
-              --progress-value: var(--value);
-            }
-          }
-        }
-      }
-
-      #HTML {
-        i{
-          color: red;
-        }
-      }
-    
-      #CSS {
-        i{
-          color: blue;
-        }
-      }
-    
-      #JS {
-        i{
-          color: yellow;
-        }
-      }
-      #React{
-        i{
-          color: #61DBFB;
-        }
-      }
-      #Bootstrap{
-        i{
-          color: #0d6efd;
-        }
-      }
-      .mmm:hover{
-        border: solid #5d5cda;
-      }
-    }
-
-    #certificates{
+#certificates_section{
+    padding-top: 100px;
+    // background: url(../../images/blue2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.line {
+    margin: 0px auto 30px;
+    width: 100px;
+    height: 2px;
+    background: #FEA1A1;
+}
+#certificates{
       position: relative;
       width: 90%;
       margin: 0 auto;
@@ -207,8 +48,8 @@ h3 {
       justify-content: space-around;
       overflow: hidden;
       z-index: 0;
+      margin-bottom: 150px;
       div{
-        // width: 700px;
         width: 30%;
         z-index: 0;
         img{
@@ -246,36 +87,25 @@ h3 {
         }
       }
     }
-    
     #info{
-      color: black;
-      width: min-content;
-      margin: 0px auto 10px;
-      font-weight: 100;
-      font-size: 50px;
-      font-family: 'xxx', sans-serif;
+        display: flex;
+        justify-content: center;
     }
-  
-    .line{
-      margin: 0px auto 30px ;
-      width: 100px;
-      height: 2px;
-      background:#FEA1A1;
+    #crt2 {
+        color: black;
+        text-align: center;
+        width: -moz-min-content;
+        width: min-content;
+        margin: 0px auto 10px;
+        font-weight: 100;
+        font-size: 40px;
+        font-family: "xxx", sans-serif;
     }
-    #line2{
-      margin-bottom: 100px;
-    }
-  }
-
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 1400px) {
 
-  #four {
-    #line2 {
-      margin-bottom: 50px;
-    }
     #certificates{
       overflow-x: scroll;
       flex-wrap: nowrap;
@@ -307,11 +137,10 @@ h3 {
       }
     }
   }
-}
+
 
 @media screen and (max-width: 1200px) {
 
-  #four {
     #line2 {
       margin-bottom: 50px;
     }
@@ -346,16 +175,11 @@ h3 {
       }
     }
   }
-}
+
 
 
 @media screen and (max-width: 900px) {
 
-  #four {
-    font-family: "Montserrat", sans-serif;
-    width: 100%;
-    position: relative;
-    height: auto;
     #dos {
       margin-bottom: 100px;
     }
@@ -392,13 +216,11 @@ h3 {
       }
     }
   }
-}
 
 
 
 
 @media screen and (max-width: 1000px) {
-  #four {
     #dos {
       width: 100%;
       display: flex;
@@ -416,40 +238,7 @@ h3 {
       }
     }
   }
-}
-// @media screen and (max-width: 788px) {
 
-//   #four {
-//     padding-top: 18%;
-//     font-family: "Montserrat", sans-serif;
-//     width: 100%;
-//     position: relative;
-//     padding-bottom: 10%;
-//     height: auto;
-//     #dos {
-//       margin-bottom: 100px;
-//     }
-//     #certificates{
-//       gap: 40px;
-//       div{
-//         width: 500px;
-//         img{
-//           filter: blur(0px);
-//           width: 100%;
-//         }
-        
-//         .cloud1{
-//             height: 48%;
-//             top: 0px;
-//         }
-//         .cloud2{
-//             height: 48%;
-//             top: 52%;
-//         }
-//       }
-//     }
-//   }
-// }
 
 
 
@@ -457,7 +246,6 @@ h3 {
   #dos {
     margin-bottom: 0;
   }
-  #four {
     #dos {
       margin-bottom: 0;
     }
@@ -492,7 +280,7 @@ h3 {
         }
       }
     }
-  }
+  
 }
 
 
@@ -501,7 +289,6 @@ h3 {
   #dos {
     margin-bottom: 0;
   }
-  #four {
     #dos {
       margin-bottom: 0;
     }
@@ -536,23 +323,14 @@ h3 {
         }
       }
     }
-  }
+  
 }
 
 
-@media screen and (max-width: 500px) {
-  #four{
-    #dos {
-      margin-bottom: 50px;
-    }
-  }
-
-}
 
 
 @media screen and (max-width: 350px) {
-  #four{
-    
+
     #dos {
       margin-bottom: 0;
     }
@@ -590,6 +368,6 @@ h3 {
   #dos {
     margin-bottom: 0;
   }
-}
+
 
 

@@ -8,15 +8,6 @@ html {
   color: #bc6ff1;
 }
 
-body {
-  box-sizing: border-box;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: #010206;
-  overflow-x: hidden;
-}
-
 #appl {
   font-family: "Montserrat", sans-serif;
   height: 82vh;

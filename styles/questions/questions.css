@@ -12,8 +12,8 @@ h2 {
 #questions {
   padding: 50px 0;
   width: 100%;
-  background-color: #f1e8ea;
-  min-height: 500px;
+  background-color: #F90716;
+  min-height: 430px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ h2 {
   width: 450px;
   height: 40px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #FEF2F4;
   margin: 10px 10px;
   padding: 5px 16px;
   overflow-y: hidden;
@@ -52,11 +52,14 @@ h2 {
 }
 #questions #infos #selection #line1 #plus {
   font-size: 20px;
-  transition: 0.2s;
+  transition: 0.3s;
   margin-right: 30px;
 }
 #questions #infos #selection #line1 span {
   font-weight: 900;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #questions #infos #selection #line2 {
   width: 100%;
@@ -66,14 +69,16 @@ h2 {
   height: 130px;
   text-align: left;
   padding-top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 @media screen and (max-width: 1050px) {
   #questions {
     padding: 50px 0;
     width: 100%;
-    background-color: #f1e8ea;
-    min-height: 500px;
+    min-height: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -116,7 +121,6 @@ h2 {
   #questions {
     padding: 50px 0;
     width: 100%;
-    background-color: #f1e8ea;
     min-height: 500px;
     text-align: center;
     display: flex;

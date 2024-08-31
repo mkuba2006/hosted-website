@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
 body{
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(3, 3, 3, 0.842)), url('../../images/prior.jpg');
-   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(3, 3, 3, 0.1)), url('../../images/bgs3.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   font-family: 'Montserrat', sans-serif;
 }
 #skills{
-  background: url('/images/blob-haikei.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  // background: url('/images/blob-haikei.svg');
+  // background-position: center;
+  // background-repeat: no-repeat;
+    background-color: #9400FF;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
-    min-height: 700px;
+    margin: 0 auto;
+    min-height: 400px;
     h1 {
         width: 1000px;
         color: white;
@@ -81,7 +76,7 @@ body{
                 div{
                     width: 20px;
                     height: 20px;
-                    background-color: #1B2430;
+                    background-color: white;
                     border-radius: 50%;
                     margin-right: 10px;
                 }
@@ -89,34 +84,34 @@ body{
         }
     }
     #HTML #dots div:not(:nth-child(n+10)){
-      background-color: #E90064;
+      background-color: #FFD700;
     }
-    #CSS #dots div:not(:nth-child(n+7)){
-        background-color: #E90064;
+    #CSS #dots div:not(:nth-child(n+9)){
+        background-color: #FFD700;
     }
     #BootStrap #dots div:not(:nth-child(n+10)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
     #Tailwind #dots div:not(:nth-child(n+7)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
     #Javascript #dots div:not(:nth-child(n+8)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
     #Jquery #dots div:not(:nth-child(n+8)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
     #React #dots div:not(:nth-child(n+9)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
-    #Node #dots div:not(:nth-child(n+3)){
-        background-color: #E90064;
+    #Node #dots div:not(:nth-child(n+7)){
+        background-color: #FFD700;
     }
     #Git #dots div:not(:nth-child(n+7)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
     #SQL #dots div:not(:nth-child(n+8)){
-        background-color: #E90064;
+        background-color: #FFD700;
     }
 }
 
@@ -231,12 +226,13 @@ body{
 @media screen and (max-width: 1220px) {
 
   #skills{
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 100px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin: 0 auto;
+    min-height: 400px;
       h1 {
           width: 90%;
           color: white;
@@ -300,7 +296,7 @@ body{
                   div{
                       width: 17px;
                       height: 17px;
-                      background-color: #1B2430;
+                      // background-color: #1B2430;
                       border-radius: 50%;
                       margin-right: 7px;
                   }
@@ -323,7 +319,8 @@ body{
       align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 100px auto;
+      margin: 0 auto;
+      padding: 50px 0;
       h1 {
           width: 90%;
           color: white;
@@ -389,7 +386,7 @@ body{
                   div{
                       width: 20px;
                       height: 20px;
-                      background-color: #1B2430;
+                      // background-color: #1B2430;
                       border-radius: 50%;
                       margin-right: 10px;
                   }
@@ -414,102 +411,6 @@ body{
 
 
 
-// @media screen and (max-width: 800px) {
-
-//   #skills{
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//       flex-wrap: wrap;
-//       margin: 100px auto;
-//       h1 {
-//           width: 90%;
-//           color: white;
-//           font-weight: 800;
-//           font-size: 50px;
-//           display: flex;
-//           flex-direction: row;
-//           align-items: left;
-//           max-width: none;
-//         }
-        
-//         .arrow {
-//           position: relative;
-//           width: 0;
-//           height: 0;
-//           border-top: 20px solid transparent; 
-//           border-bottom: 20px solid transparent; 
-//           border-right: 20px solid white;
-//           margin-left: 50px; 
-//         }
-        
-//         .arrow::before {
-//           content: '';
-//           position: absolute;
-//           top: -2px;
-//           left: 5px;
-//           width: 200px;
-//           height: 5px;
-//           background: white;
-//           border-radius: 12px;
-//         }
-        
-//       #my_skills{
-//           display: flex;
-//           flex-direction: row;
-//           justify-content: left;
-//           align-items: center;
-//           flex-wrap: wrap;
-//           width: 90%;
-//           max-width: 900px;
-//           div{
-//               width: auto;
-//               display: flex;
-//               flex-direction: row;
-//               justify-content: left;
-//               margin: 5px 0;
-//               p{
-//                   color: white;
-//                   display: flex;
-//                   align-items: center;
-//                   width: 120px;
-//                   margin: 0;
-//                   font-weight: 700;
-//                   font-size: 20px;
-//               }
-//               #dots{
-//                   display: flex;
-//                   flex-direction: row;
-//                   justify-content: center;
-//                   align-items: center;
-//                   flex-wrap: nowrap;
-//                   div{
-//                       width: 20px;
-//                       height: 20px;
-//                       background-color: #1B2430;
-//                       border-radius: 50%;
-//                       margin-right: 10px;
-//                   }
-//               }
-//           }
-
-//       }
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
 
   #skills{
@@ -519,7 +420,8 @@ body{
       align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 100px auto;
+      margin: 0 auto;
+      padding: 50px 0;
       h1 {
           width: 90%;
           color: white;
@@ -583,7 +485,7 @@ body{
                   div{
                       width: 20px;
                       height: 20px;
-                      background-color: #1B2430;
+                      // background-color: #1B2430;
                       border-radius: 50%;
                       margin-right: 10px;
                   }
@@ -614,7 +516,8 @@ body{
       align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 100px auto;
+      margin: 0 auto;
+      padding: 50px 0;
       h1 {
           width: 90%;
           color: white;
@@ -678,7 +581,7 @@ body{
                   div{
                       width: 17px;
                       height: 17px;
-                      background-color: #1B2430;
+                      // background-color: #1B2430;
                       border-radius: 50%;
                       margin-right: 7px;
                   }
@@ -708,7 +611,8 @@ body{
       align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 100px auto;
+      margin: 0 auto;
+      padding: 50px 0;
       min-height: 500px;
       h1 {
           width: 90%;

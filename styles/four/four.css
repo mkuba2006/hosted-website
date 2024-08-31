@@ -29,12 +29,10 @@ h3 {
 }
 
 #four {
-  background-color: #0e100f;
-  padding-top: 12%;
+  background-color: white;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   position: relative;
-  padding-bottom: 20%;
 }
 #four i {
   padding: 0 auto 0 auto;
@@ -209,7 +207,7 @@ h3 {
   opacity: 1;
 }
 #four #info {
-  color: white;
+  color: black;
   width: -moz-min-content;
   width: min-content;
   margin: 0px auto 10px;
@@ -295,11 +293,9 @@ h3 {
 }
 @media screen and (max-width: 900px) {
   #four {
-    padding-top: 5%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
     position: relative;
-    padding-bottom: 35%;
     height: auto;
   }
   #four #dos {

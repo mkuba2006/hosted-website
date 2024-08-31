@@ -21,7 +21,7 @@ html {
 //1000
 
 #first {
-  background: url('../../images/wave-haikei.svg');
+ background: url('../../images/1.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -29,7 +29,8 @@ html {
   font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 900px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -37,12 +38,14 @@ html {
   
   #cont {
     width: 100%;
+    padding: 0 20px;
     display: flex;
-    
+    justify-content: space-between;
     #opis {
       width: 50%;
       padding: 9% 1% 12% 10%;
-      margin-right: 100px;
+      min-width: 820px;
+      max-width: 1000px;
       #yrs{
         margin: 0;
         width: max-content;
@@ -50,7 +53,9 @@ html {
       h3 {
         font-family: 'Poppins', sans-serif;
         font-size: 70px;
-        color: #9400FF;
+        background: linear-gradient(90deg, #03BE3D 50%, #006D22 120%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         letter-spacing: 1.5px;
         font-weight: 700;
         text-transform: capitalize;
@@ -63,6 +68,7 @@ html {
         color: $green;
         text-transform: capitalize;
         color: #9400FF;
+        
       }
       
       h1 {
@@ -77,7 +83,7 @@ html {
         }
       }
       #typed{
-        font-weight: 600;
+        font-weight: 800;
         display: flex;
         text-transform: capitalize;
         #type{
@@ -98,17 +104,17 @@ html {
           transition: .4s;
           border: none;
           border-radius: 50%;
-          font-size: 23px;
+          font-size: 24px;
           text-decoration: none;
           padding: 8px 13px 6px 13px;
           color: #f3f8ffc2;
           background: none;
           i{
-            color: #ffffff73;
+            color: #7C00FE;
             transition: 0.2s;
           }
           i:hover{
-            color: #ffffffd7;
+            color: #7b00fea4;
           }
         }
       
@@ -117,17 +123,13 @@ html {
   }
   
   #opis2 {
-    width: 20%;
-    margin: auto;
+    width: 580px;
+    margin: auto 0;
     position: relative;
     right: 50px;
     
     img {
-      width: 250px;
-      border-radius: 50%;
-      height: auto;
-      box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px,
-        rgba(192, 49, 49, 0.774) -6px -2px 16px 0px;
+      width: 530px;
     }
   }
 }
@@ -186,15 +188,64 @@ html {
 
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 1530px) {
+
+  #first {
+    #cont {
+      width: 100%;
+      display: flex;
+      
+      #opis {
+        width: 50%;
+        padding: 9% 0% 10% 6%;
+        min-width: 800px;
+        h3 {
+          font-size: 65px;
+        }
+        #myname {
+          font-size: 65px;
+        }
+        
+        h1 {
+          color: #9400FF;
+          font-size: 30px;
+          margin: 20px 0 20px 0;
+          
+        }
+      }
+    }
+    
+    #opis2 {
+      right: 50px;
+      img {
+        width: 460px;
+      }
+    }
+  }
+
+}
 
 
-@media screen and (max-width: 1250px) {
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
   #first {
     #cont {
       #opis {
-        padding: 9% 1% 12% 12%;
+        padding: 9% 1% 12% 4%;
         width: 60%;
         margin-right: 70px;
+        min-width: 650px;
         h1 {
           font-size: 25px;
         }
@@ -208,22 +259,69 @@ html {
         }
       }
       #opis2 {
-        width: 250px;
+        width: 400px;
         padding: 0;
         img {
-          width: 250px;
+          width: 400px;
         }
       }
     }
   }
 }
 
+
+
+@media screen and (max-width: 1170px) {
+  #first {
+    height: 900px;
+    padding: 100px 0 150px 0;
+    #cont {
+      flex-direction: column-reverse;
+      align-items: center;
+      #opis {
+        padding: 0;
+        text-align: center;
+        width: 60%;
+        margin-right: 0;
+        min-width: 650px;
+        #typed{
+          justify-content: center;
+        }
+        h1 {
+          font-size: 25px;
+        }
+        #buttons {
+          width: 100%;
+          margin-top: 10px;
+        }
+        h1:nth-child(3){
+          margin: auto;
+          margin: 15px 0 15px 0;
+        }
+      }
+      #opis2 {
+        width: 400px;
+        padding: 0;
+        padding: 0 30px;
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
 @media screen and (max-width: 900px) {
 
   #first {
     #cont {
       #opis {
-        width: 55%;
+        min-width: 250px;
+        width: 90%;
         h1 {
           font-size: 25px;
         }
@@ -232,81 +330,90 @@ html {
         }
         
       }
-      #opis2 {
-        width: 200px;
-        padding: 0;
-        img {
-          width: 200px;
-        }
-      }
     }
   }
 }
-
-
 @media screen and (max-width: 800px) {
   #first {
-    padding-top: 5vh;
-    #cont {
-      width: 670px;
-      display: grid;
-      margin: 0 auto 0 auto;
-      padding-bottom: 100px;
-      #opis {
-        order: 2;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        padding: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-        #typed{
-          margin: 0;
-          font-weight: 600;
-          display: flex;
-          justify-content: center;
-          width: auto;
-          padding: 0 auto;
-          text-transform: capitalize;
-        }
-      }
-      #opis2 {
-        clear: both;
-        order: 1;
-        display: inline-block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-      }
-    }
+    height: 900px;
+    padding: 50px 0 150px 0
   }
 }
+// @media screen and (max-width: 800px) {
+//   #first {
+//     padding-top: 5vh;
+//     #cont {
+//       width: 670px;
+//       display: grid;
+//       margin: 0 auto 0 auto;
+//       padding-bottom: 100px;
+//       #opis {
+//         order: 2;
+//         display: inline-block;
+//         text-align: center;
+//         width: 100%;
+//         padding: 0;
+//         margin-right: 0px;
+//         margin-top: 20px;
+//         #typed{
+//           margin: 0;
+//           font-weight: 600;
+//           display: flex;
+//           justify-content: center;
+//           width: auto;
+//           padding: 0 auto;
+//           text-transform: capitalize;
+//         }
+//       }
+//       #opis2 {
+//         clear: both;
+//         order: 1;
+//         display: inline-block;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         right: 0;
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 490px) {
+
+
+@media screen and (max-width: 550px) {
   #first #cont #opis #myname {
     font-size: 28px;
   }
   #first #cont #opis h3 {
-    font-size: 45px;
+    font-size: 40px;
   }
   #first {
+    height: 700px;
+    padding: 0 0 30px 0;
     #cont {
       #opis {
         h1 {
           font-size: 30px;
+          margin: 0;
+        }
+        h3 {
+          margin: 0 0 2px 0;
+          letter-spacing: 0px;
         }
         #myname {
-          padding: 0 10px;
-          font-size: 40px;
+          padding: 0;
+          font-size: 30px;
         }
-        
+        #typed{
+          font-size: 20px;
+          margin: 10px 0 ;
+        }
       }
       #opis2 {
         width: 200px;
         padding: 0;
         img {
-          width: 200px;
+          width: 300px;
         }
       }
     }
@@ -331,7 +438,7 @@ html {
       #opis {
         #myname {
           padding: 0 10px;
-          font-size: 35px;
+          font-size: 30px;
         }
         
       }
@@ -339,7 +446,7 @@ html {
         width: 200px;
         padding: 0;
         img {
-          width: 200px;
+          width: 270px;
         }
       }
     }

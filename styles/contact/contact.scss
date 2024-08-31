@@ -37,10 +37,13 @@ h3 {
     margin: 0 auto;
     padding: 4% 15% 4% 15%;
     background-color: #0e100f;
-    background: url('/images/layered-waves-haikei1.svg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    //background: #070013;
+
+    
+    // background: url('/images/layered-waves-haikei1.svg');
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-size: cover;
     position: relative;
     bottom: 0;
     #ones {
@@ -190,7 +193,6 @@ h3 {
   
   @media screen and (max-width: 750px) {
     #contact #container #prawa {
-      color: black;
       font-size: 16px;
       span {
         color: #9e2edf;

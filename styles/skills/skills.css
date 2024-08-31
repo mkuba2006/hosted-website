@@ -1,24 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(3, 3, 3, 0.1)), url("../../images/bgs3.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
 #skills {
-  background: url("/images/blob-haikei.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #9400FF;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 100px auto;
-  min-height: 700px;
+  margin: 0 auto;
+  min-height: 400px;
 }
 #skills h1 {
   width: 1000px;
@@ -82,39 +75,39 @@ body {
 #skills #my_skills div #dots div {
   width: 20px;
   height: 20px;
-  background-color: #1B2430;
+  background-color: white;
   border-radius: 50%;
   margin-right: 10px;
 }
 #skills #HTML #dots div:not(:nth-child(n+10)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
-#skills #CSS #dots div:not(:nth-child(n+7)) {
-  background-color: #E90064;
+#skills #CSS #dots div:not(:nth-child(n+9)) {
+  background-color: #FFD700;
 }
 #skills #BootStrap #dots div:not(:nth-child(n+10)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 #skills #Tailwind #dots div:not(:nth-child(n+7)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 #skills #Javascript #dots div:not(:nth-child(n+8)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 #skills #Jquery #dots div:not(:nth-child(n+8)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 #skills #React #dots div:not(:nth-child(n+9)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
-#skills #Node #dots div:not(:nth-child(n+3)) {
-  background-color: #E90064;
+#skills #Node #dots div:not(:nth-child(n+7)) {
+  background-color: #FFD700;
 }
 #skills #Git #dots div:not(:nth-child(n+7)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 #skills #SQL #dots div:not(:nth-child(n+8)) {
-  background-color: #E90064;
+  background-color: #FFD700;
 }
 
 .questions {
@@ -201,11 +194,12 @@ body {
 @media screen and (max-width: 1220px) {
   #skills {
     display: flex;
-    justify-content: left;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
+    margin: 0 auto;
+    min-height: 400px;
   }
   #skills h1 {
     width: 90%;
@@ -270,7 +264,6 @@ body {
   #skills #my_skills div #dots div {
     width: 17px;
     height: 17px;
-    background-color: #1B2430;
     border-radius: 50%;
     margin-right: 7px;
   }
@@ -282,7 +275,8 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 50px 0;
   }
   #skills h1 {
     width: 90%;
@@ -349,7 +343,6 @@ body {
   #skills #my_skills div #dots div {
     width: 20px;
     height: 20px;
-    background-color: #1B2430;
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -362,7 +355,8 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 50px 0;
   }
   #skills h1 {
     width: 90%;
@@ -427,7 +421,6 @@ body {
   #skills #my_skills div #dots div {
     width: 20px;
     height: 20px;
-    background-color: #1B2430;
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -439,7 +432,8 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 50px 0;
   }
   #skills h1 {
     width: 90%;
@@ -504,7 +498,6 @@ body {
   #skills #my_skills div #dots div {
     width: 17px;
     height: 17px;
-    background-color: #1B2430;
     border-radius: 50%;
     margin-right: 7px;
   }
@@ -516,7 +509,8 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 50px 0;
     min-height: 500px;
   }
   #skills h1 {

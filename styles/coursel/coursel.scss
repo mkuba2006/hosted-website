@@ -17,15 +17,32 @@ html {
   color: $el3;
 }
 //1000
+.carousel-control-prev-x{
+  border: solid black; 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-width: 2px 2px 0 0; 
+  transform: rotate(225deg);
+}
+.carousel-control-next-x {
+  border: solid black; 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-width: 2px 2px 0 0; 
+  transform: rotate(45deg);
+}
 
 #caruzela{
-  background: url('../../images/wave-haikei2.svg');
+  background: url('../../images/2.svg');
   background-repeat: no-repeat;
-  background-color: #0e100f;
-  padding: 500px 0 0 0;
+  background-size: cover;
+  background-color: white;
+  padding: 300px 0 0 0;
   text-align: center;
   #info{
-    color: white;
+    color: black;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,8 +69,11 @@ html {
     }
   }
   .carousel-caption {
-    background-color: #0e100f;
+    background-color: white;
     text-align: center;
+    p{
+      color: black;
+    }
     h5{
       overflow: hidden;
       a{
@@ -67,7 +87,7 @@ html {
         height: 2px;
         width: 0px;
         transform: translateY(23px);
-        background-color: rgb(255, 255, 255);
+        background-color: white;
         z-index: 1;
         transition: all 0.6s;
       }

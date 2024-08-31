@@ -7,6 +7,7 @@
     <title>JmsuiPage</title>
     <link rel="shortcut icon" href="LOGO.xcf" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/website.css">
     <link rel="stylesheet" href="styles/first/first.css">
     <link rel="stylesheet" href="styles/nav/nav.css">
     <link rel="stylesheet" href="styles/about/about.css">
@@ -16,8 +17,9 @@
     <link rel="stylesheet" href="styles/four/four.css">
     <link rel="stylesheet" href="styles/contact/contact.css">
     <link rel="stylesheet" href="styles/coursel/coursel.css">
+    <link rel="stylesheet" href="styles/certificates/certificates.css">
     <link rel="stylesheet" href="./styles/questions/questions.css">
-    <link rel="stylesheet" href="./skills/skills.css">
+    <link rel="stylesheet" href="styles/skills/skills.css">
     <link rel="stylesheet" href="https://use.typekit.net/rbv2srb.css">
     <link rel="stylesheet" href="https://use.typekit.net/ydo8kpp.css">
     <link rel="stylesheet" href="https://use.typekit.net/fqd8uxn.css">
@@ -40,11 +42,11 @@
         </a>
       </div>
       <div id="secret">
-        <a href="#about"><button id="abou" class="Nav-el" >about</button></a>
-        <a href="/hobbies.html"><button id="languages" class="Nav-el">hobbies</button></a>
-        <a href="#four"><button id="infos" class="Nav-el">experience</button></a>
-        <a href="#crt2"><button id="certificate" class="Nav-el">certificates</button></a>
-        <a href="#ones"><button id="contact" class="Nav-el">contact</button></a>
+        <a href="#about"><button id="abou" class="Nav-el" >About</button></a>
+        <a href="/hobbies.html"><button id="languages" class="Nav-el">Hobbies</button></a>
+        <a href="#four"><button id="infos" class="Nav-el">Projects</button></a>
+        <a href="#crt2"><button id="certificate" class="Nav-el">Certificates</button></a>
+        <a href="#ones"><button id="contact" class="Nav-el">Contact</button></a>
       </div>
     </div>
     <div id="burger1" onclick="toggleMenu()">
@@ -61,11 +63,11 @@
       <div id="dwa" class="line_dwo"></div>
       <div id="trzy" class="line_three"></div>
     </div>
-    <a href="#about">about</a>
-    <a href="/hobbies.html">hobbies</a>
-    <a href="#four">experience</a>
-    <a href="#crt2">certificates</a>
-    <a href="#ones">contact</a>
+    <a href="#about">About</a>
+    <a href="/hobbies.html">Hobbies</a>
+    <a href="#four">Projects</a>
+    <a href="#crt2">Certificates</a>
+    <a href="#ones">Contact</a>
   </aside>
 
 
@@ -105,7 +107,7 @@
         </div>
       </div>
       <div id="opis2">
-        <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/ME6.jpg">
+        <img src="./images/me.png">
       </div>
     </div>
   </section>
@@ -144,19 +146,19 @@
       <div id="container">
           <div id="rest">
               <div id="image">
-                  <img src="./images/logo.png"/>
+                  <img src="./images/ilu1.svg"/>
               </div>
               <div id="text">
                   <h1>Your programmer</h1>
                   <h6>Front-End & Web Design Developer</h6>
                   <br>
                   <p>
-                      I'm a passionate Front-End and Web Design Developer with experience since 2021.
-                      Specializing in creating responsive websites and applications using JavaScript and React,
-                      I believe in crafting visually appealing and user-friendly digital experiences.
-                      Let's bring your ideas to life with high-quality solutions.
-                      With my expertise, your website will be taken to the next level.
-                  </p>
+                    I'm a passionate <span id="text_year">Front-End</span> and <span id="text_year">Web Design Developer</span> with experience since <span id="text_p_dev">2021</span>.
+                    Specializing in creating <span id="text_year">responsive websites</span> and <span id="text_year">applications</span> using JavaScript and React,
+                    I believe in crafting <span id="text_year">visually appealing</span> and <span id="text_year">user-friendly</span> digital experiences.
+                    Let's bring your ideas to life with <span id="text_year">high-quality</span> solutions.
+                    With my expertise, your website will be taken to the next level.
+                </p>
               </div>
           </div>
       </div>
@@ -164,7 +166,7 @@
 
 
   <section id="caruzela" data-scroll-section>
-    <h3 id="info"><span>EXPERIENCE</span></h3>
+    <h3 id="info"><span>PROJECTS</span></h3>
     <div class="line"></div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -177,14 +179,22 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
       </div>
+
+
+
       <div class="carousel-inner">
+
+
         <div class="carousel-item active">
-          <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/favlist.png" class="d-block w-100" alt="...">
+          <img src="./images/gral.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5><a style="text-decoration: none;" href="./projects/Fake-shop/index.HTML">Fav list app</a></h5>
-            <p>Here you can search your favourite album and add to favourite list</p>
+            <h5><a style="text-decoration: none;" href="https://mkuba2006.github.io/gralhost/">Gral</a></h5>
+            <p>Not official website for Gral.pl</p>
           </div>
         </div>
+
+
+
         <div class="carousel-item">
           <img src="https://github.com/mkuba2006/rpp/blob/master/images/jedz.png?raw=true" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -192,6 +202,7 @@
             <p>App where you can find every single dish from around the world</p>
           </div>
         </div>
+
         <div class="carousel-item">
           <img src="https://github.com/mkuba2006/rpp/blob/master/images/fapp2.png?raw=true" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -220,11 +231,11 @@
           </div>
         </div>
 
-        <div class="carousel-item">
-          <img src="./images/gral.png" class="d-block w-100" alt="...">
+        <div class="carousel-item ">
+          <img src="https://raw.githubusercontent.com/mkuba2006/rpp/master/images/favlist.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5><a style="text-decoration: none;" href="https://mkuba2006.github.io/gralhost/">Gral</a></h5>
-            <p>Not official website for Gral.pl</p>
+            <h5><a style="text-decoration: none;" href="./projects/Fake-shop/index.HTML">Fav list app</a></h5>
+            <p>Here you can search your favourite album and add to favourite list</p>
           </div>
         </div>
 
@@ -236,19 +247,21 @@
           </div>
         </div>
 
-
-
       </div>
+
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-x" aria-hidden="true"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-x" aria-hidden="true"></span>
       </button>
     </div>
   </section>
+
+  <div id="blue1">
+    <img id="blue_one" src="./images/blue11.svg" alt="">
+  </div>
 
     <section id="four" data-scroll-section>
 
@@ -408,32 +421,44 @@
             </div>
         </div>
     </section>
-          <h3 id="info"><span id="crt2">CERTIFICATES</span></h3>
-          <div class="line" id="line2"></div>
-          <section id="certificates">
-            <div id="first_cert">
-                <img src="https://github.com/mkuba2006/rpp/blob/master/images/centyfikat_1.png?raw=true" id="img1"/>
-                <div id="cloud" class="cloud1">
-                  <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR11.png?raw=true"/>
-                </div>
-            </div>
-            <div id="second_cert">
-                <img src="https://github.com/mkuba2006/rpp/blob/master/images/certyfikat_2.png?raw=true" id="img2"/>
-                <div id="cloud" class="cloud2">
-                  <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR21.png?raw=true"/>
-                </div>
-            </div>
-            <div id="third_cert">
-              <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/certyfikat_3.png?raw=true" id="img2"/>
-              <div id="cloud" class="cloud3">
-                <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/QR31.png?raw=true"/>
-              </div>
+  </section>
+
+  <div id="blue2">
+    <img id="blue_two" src="./images/blue22.svg" alt="">
+  </div>
+
+
+
+  <section id="certificates_section">
+    <h3 id="info"><span id="crt2">CERTIFICATES</span></h3>
+    <div class="line" id="line2"></div>
+    <div id="certificates">
+      <div id="first_cert">
+          <img src="https://github.com/mkuba2006/rpp/blob/master/images/centyfikat_1.png?raw=true" id="img1"/>
+          <div id="cloud" class="cloud1">
+            <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR11.png?raw=true"/>
           </div>
-          </section>
-    </section>
+      </div>
+      <div id="second_cert">
+          <img src="https://github.com/mkuba2006/rpp/blob/master/images/certyfikat_2.png?raw=true" id="img2"/>
+          <div id="cloud" class="cloud2">
+            <img src="https://github.com/mkuba2006/rpp/blob/master/images/QR21.png?raw=true"/>
+          </div>
+      </div>
+      <div id="third_cert">
+        <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/certyfikat_3.png?raw=true" id="img2"/>
+        <div id="cloud" class="cloud3">
+          <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/QR31.png?raw=true"/>
+        </div>
+      </div>
+    </div>
+  </section>
     
 
 
+  <div id="red1">
+    <img id="red_one" src="./images/red1.svg" alt="">
+  </div>
 
 
 
@@ -484,6 +509,9 @@
     </div>
   </section>
 
+  <div id="red2">
+    <img id="red_two" src="./images/red2.svg" alt="">
+  </div>
 
 
 

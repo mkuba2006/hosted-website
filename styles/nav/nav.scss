@@ -102,7 +102,7 @@ aside{
   z-index: 11;
   position: fixed;
   div {
-    background-color: white;
+    background-color: black;
     display: none;
     cursor: pointer;
     width: 26px;
@@ -114,9 +114,9 @@ aside{
   }
 }
 #nav1 {
- background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   font-family: "Indie Flower", cursive;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@ aside{
   transition: 0.5s;
   .in-nav {
     width: 100vw;
-    padding: 0.3% 15% 0.3% 15%;
+    padding: 10px 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,9 +137,8 @@ aside{
         cursor: pointer;
         font-family: "Montserrat", sans-serif;
         padding: 6px 12px 6px 12px;
-        // border: 1px solid $el4mod;
         border: none;
-        color: white;
+        color: black;
         border-radius: 5px;
         font-size: 18px;
         background: none;
@@ -153,7 +152,7 @@ aside{
       }
       .Nav-el:focus,
       .Nav-el:hover {
-        color: #fff;
+        color: #7C00FE;
       }
 
       .Nav-el:focus:after,

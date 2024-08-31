@@ -19,7 +19,7 @@ function scrollListener(event) {
     nav.style.background='rgba(0, 0, 0, 0)';
   }
   if (currentScrollPosition !== 0) {
-    nav.style.backgroundColor='rgba(0, 0, 0, 0.9)';
+    nav.style.backgroundColor='white';
   }
   lastScrollPosition = currentScrollPosition;
 }

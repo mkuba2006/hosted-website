@@ -15,13 +15,13 @@ lines.forEach((line) => {
     if (rotated) {
       plus.style.transform = 'rotate(-45deg)';
       rotated = false;
-      par.style.backgroundColor = '#E900FF';
+      // par.style.backgroundColor = '#E900FF';
       par.style.overflowY = 'visible';
       par.style.height = 'auto';
     } else {
       plus.style.transform = 'rotate(0deg)';
       rotated = true;
-      par.style.backgroundColor = '#fff';
+      // par.style.backgroundColor = '#FEF2F4';
       par.style.overflowY = 'hidden';
       par.style.height = '40px';
     }

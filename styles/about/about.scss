@@ -35,9 +35,9 @@ section#about {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #FEF2F4;
+  background-color: #85EF47;
   overflow: hidden;
-  padding: 5% 0;
+  padding: 0;
 
   h3{
     color: black;
@@ -65,18 +65,22 @@ section#about {
       width: 100%;
       color: black;
       #image {
-        width: 300px;
+        width: 370px;
+        padding: 30px;
+        border-radius: 12px;
         filter: blur(0.1px);
-        opacity: 0.8;
         img {
-          width: 300px;
+          width: 320px;
           height: 100%;
         }
       }
       #text{
         padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h1{
-          font-weight: 400;
+          font-weight: 500;
           color: black;
           font-size: 40px;
         }
@@ -84,9 +88,21 @@ section#about {
           color: black;
           font-size: 25px;
         }
-         p{
+        p{
           font-size: 20px;
           color: black;
+          #text_p_dev{
+            color: #0000FF;
+            font-weight: 600;
+          }
+          #text_year{
+            color: #9400FF;
+            font-weight: 600;
+          }
+          #text_app{
+            color: #f90717d8;
+            font-weight: 600;
+          }
         }
       }
     }
