@@ -450,7 +450,11 @@ html {
         }
       }
       #opis2 {
-        width: 200px;
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
         padding: 0;
         img {
           width: 260px;

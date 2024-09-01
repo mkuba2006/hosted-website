@@ -333,7 +333,11 @@ html {
     font-size: 38px;
   }
   #first #cont #opis2 {
-    width: 200px;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     padding: 0;
   }
   #first #cont #opis2 img {
