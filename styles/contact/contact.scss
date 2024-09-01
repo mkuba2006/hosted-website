@@ -231,6 +231,9 @@ h3 {
 
 @media screen and (max-width: 500px) {
   #contact #container #ones #fform {
+    width: 300px;
+}
+  #contact #container #ones #fform {
     padding: 6px 0;
 }
 
@@ -267,4 +270,42 @@ h3 {
   #contact #container #prawa {
     color: white;
   }
+}
+
+
+
+
+@media screen and (max-width: 360px) {
+  #contact {
+    #container {
+      padding: 20% 0 5% 0;
+      background: #070013;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      #ones {
+        #fform {
+          form {
+            padding: 0 10px 0 0;
+            input,
+            textarea {
+              border: 1px solid #ffffff70;
+              color: #ffffff8f;
+              width: 255px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #contact #container #prawa {
+    color: white;
+  }
+  #contact #container #ones #fform {
+    width: 260px;
+  }
+  #contact #container #ones #media {
+    width: 260px;
+  }
+
 }
