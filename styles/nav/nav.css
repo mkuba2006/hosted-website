@@ -110,7 +110,7 @@ aside a:first-of-type {
 #nav1 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Indie Flower", cursive;
-  padding: 10px 0;
+  padding: 5px 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -218,7 +218,7 @@ aside a:first-of-type {
     font-weight: 900;
     transition-duration: 0.4s;
     border-radius: 10px;
-    padding: 10px 10px 0px 10px;
+    padding: 5px 10px 0px 10px;
     animation: doLogo 5s linear infinite;
   }
   body aside a {
@@ -229,5 +229,11 @@ aside a:first-of-type {
     color: aliceblue;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
+  }
+  #nav1 {
+    padding: 10px 0;
+  }
+  #nav1 .in-nav {
+    padding: 0 10vw;
   }
 }/*# sourceMappingURL=nav.css.map */
