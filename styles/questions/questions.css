@@ -78,6 +78,10 @@ h2 {
   #questions #infos #selection #line2 {
     height: auto;
   }
+  #questions {
+    padding: 20px 0;
+    min-height: 350px;
+  }
 }
 @media screen and (max-width: 1050px) {
   #questions {
