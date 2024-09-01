@@ -134,9 +134,9 @@ section#about::after{
       #rest {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin: 0;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
         #text {
           font-size: 15px;
           padding: 5px 0px 5px 20px;
@@ -151,13 +151,12 @@ section#about::after{
 @media screen and (max-width: 800px) {
     section#about {
       #container {
-          width: 95%;
+          width: 90%;
       
         #rest {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 90%;
           margin: 0;
           #text {
             font-size: 15px;
@@ -195,18 +194,21 @@ section#about::after{
         flex-wrap: wrap;
         width: 100%;
         #text {
-          width: 300px;
-          font-size: 15px;
+          width: 80%;
+          min-width: 300px;
+          font-size: 18px;
           padding: 0;
-
+          text-align: center;
           h1{
             font-size: 25px;
+            text-align: center;
           }
           h6{
             font-size: 15px;
+            text-align: center;
           }
           p{
-            font-size: 15px;
+            font-size: 20px;
           }
 
 
@@ -258,7 +260,8 @@ section#about::after{
         }
         #text{
           padding: 0;
-          width: 250px;
+          min-width: 250px;
+          max-width: 400px;
           h1{
             font-weight: 400;
           }
