@@ -235,6 +235,7 @@ body{
     min-height: 400px;
       h1 {
           width: 90%;
+          max-width: 900px;
           color: white;
           font-weight: 800;
           font-size: 50px;
@@ -326,11 +327,7 @@ body{
           color: white;
           font-weight: 800;
           font-size: 50px;
-          display: flex;
-          flex-direction: row;
-          align-items: left;
-          justify-content: center;
-          max-width: none;
+          max-width: 430px;
         }
         
         .arrow {
@@ -431,6 +428,7 @@ body{
           flex-direction: row;
           justify-content: left;
           align-items: center;
+          max-width: 690px;
         }
         
         .arrow {
