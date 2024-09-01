@@ -236,6 +236,15 @@ section#about::after {
     font-weight: 400;
   }
 }
+@media screen and (max-width: 500px) {
+  section#about #container #rest #text p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #br_about {
+    display: none;
+  }
+}
 @media screen and (max-width: 350px) {
   section#about {
     display: flex;
