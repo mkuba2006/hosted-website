@@ -274,9 +274,11 @@ html {
 @media screen and (max-width: 1170px) {
   #first {
     height: auto;
-    min-height: 650px;
-    padding: 5vh 5vw 25vh 5vw;
+    min-height: 550px;
+    padding: 15vh 5vw 25vh 5vw;
     #cont {
+      justify-content: space-between;
+      gap: 20px;
       padding: 0;
       #opis {
         padding: 0;
@@ -303,11 +305,10 @@ html {
         }
       }
       #opis2 {
-        width: 370px;
-        padding: 0;
-        padding: 0 30px;
+        width: 340px;
+        padding: 0 0 0 30px;
         img {
-          width: 370px;
+          width: 340px;
         }
       }
     }
