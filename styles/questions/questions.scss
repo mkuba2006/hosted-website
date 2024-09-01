@@ -72,6 +72,11 @@ h2{
         }
     }
 }
+@media screen and (max-width: 1170px){
+    #questions #infos #selection #line2 {
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 1050px){
     #questions{
