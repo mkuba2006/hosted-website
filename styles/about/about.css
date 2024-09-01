@@ -24,7 +24,7 @@ section#about {
   padding: 0;
 }
 section#about h3 {
-  color: black;
+  color: white;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@ section#about #container {
 section#about #container #rest {
   display: flex;
   width: 100%;
-  color: black;
+  color: white;
 }
 section#about #container #rest #image {
   width: 370px;
@@ -65,16 +65,16 @@ section#about #container #rest #text {
 }
 section#about #container #rest #text h1 {
   font-weight: 500;
-  color: black;
+  color: white;
   font-size: 40px;
 }
 section#about #container #rest #text h6 {
-  color: black;
+  color: white;
   font-size: 25px;
 }
 section#about #container #rest #text p {
   font-size: 20px;
-  color: black;
+  color: white;
 }
 section#about #container #rest #text p #text_p_dev {
   color: #0000FF;
