@@ -316,6 +316,12 @@ html {
     font-size: 22px;
     margin: auto 5%;
   }
+  #first #cont {
+    padding: 0 10px;
+  }
+  #first #cont #opis {
+    width: 98%;
+  }
   #first #cont #opis #myname {
     padding: 0 1px;
     font-size: 28px;
