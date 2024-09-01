@@ -215,22 +215,26 @@ html {
 }
 @media screen and (max-width: 1170px) {
   #first {
-    height: 900px;
-    padding: 100px 0 150px 0;
+    height: auto;
+    min-height: 650px;
+    padding: 5vh 5vw 25vh 5vw;
   }
   #first #cont {
-    flex-direction: column-reverse;
-    align-items: center;
+    padding: 0;
   }
   #first #cont #opis {
     padding: 0;
-    text-align: center;
-    width: 60%;
+    width: auto;
     margin-right: 0;
-    min-width: 650px;
+    min-width: 500px;
+    height: -moz-min-content;
+    height: min-content;
   }
-  #first #cont #opis #typed {
-    justify-content: center;
+  #first #cont #opis h3 {
+    font-size: 55px;
+  }
+  #first #cont #opis #myname {
+    font-size: 55px;
   }
   #first #cont #opis h1 {
     font-size: 25px;
@@ -244,12 +248,12 @@ html {
     margin: 15px 0 15px 0;
   }
   #first #cont #opis2 {
-    width: 400px;
+    width: 370px;
     padding: 0;
     padding: 0 30px;
   }
   #first #cont #opis2 img {
-    width: 400px;
+    width: 370px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -264,10 +268,42 @@ html {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #first {
-    height: 900px;
-    padding: 50px 0 150px 0;
+    height: auto;
+    min-height: 550px;
+    padding: 15vh 5vw 25vh 5vw;
+  }
+  #first #cont {
+    padding: 0;
+  }
+  #first #cont #opis {
+    padding: 0;
+    width: auto;
+    margin-right: 0;
+    min-width: 370px;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  #first #cont #opis h3 {
+    font-size: 40px;
+  }
+  #first #cont #opis #myname {
+    font-size: 35px;
+  }
+  #first #cont #opis #typed {
+    font-size: 25px;
+    margin: 10px 0 5px 0;
+    margin-top: 5px;
+  }
+  #first #cont #opis #first #cont #opis #buttons {
+    margin-top: 0;
+  }
+  #first #cont #opis2 {
+    width: 320px;
+  }
+  #first #cont #opis2 img {
+    width: 320px;
   }
 }
 @media screen and (max-width: 550px) {

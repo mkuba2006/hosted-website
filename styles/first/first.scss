@@ -273,19 +273,22 @@ html {
 
 @media screen and (max-width: 1170px) {
   #first {
-    height: 900px;
-    padding: 100px 0 150px 0;
+    height: auto;
+    min-height: 650px;
+    padding: 5vh 5vw 25vh 5vw;
     #cont {
-      flex-direction: column-reverse;
-      align-items: center;
+      padding: 0;
       #opis {
         padding: 0;
-        text-align: center;
-        width: 60%;
+        width: auto;
         margin-right: 0;
-        min-width: 650px;
-        #typed{
-          justify-content: center;
+        min-width: 500px;
+        height: min-content;
+        h3{
+          font-size: 55px;
+        }
+        #myname{
+          font-size: 55px;
         }
         h1 {
           font-size: 25px;
@@ -300,11 +303,11 @@ html {
         }
       }
       #opis2 {
-        width: 400px;
+        width: 370px;
         padding: 0;
         padding: 0 30px;
         img {
-          width: 400px;
+          width: 370px;
         }
       }
     }
@@ -333,50 +336,44 @@ html {
     }
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #first {
-    height: 900px;
-    padding: 50px 0 150px 0
+    height: auto;
+    min-height: 550px;
+    padding: 15vh 5vw 25vh 5vw;
+
+    #cont {
+      padding: 0;
+      #opis {
+        padding: 0;
+        width: auto;
+        margin-right: 0;
+        min-width: 370px;
+        height: min-content;
+        h3{
+          font-size: 40px;
+        }
+        #myname{
+          font-size: 35px;
+        }
+        #typed {
+          font-size: 25px;
+          margin: 10px 0 5px 0;
+          margin-top: 5px;
+        }
+        #first #cont #opis #buttons {
+          margin-top: 0;
+        }
+      }
+      #opis2 {
+        width: 320px;
+        img {
+          width: 320px;
+        }
+      }
+    }
   }
 }
-// @media screen and (max-width: 800px) {
-//   #first {
-//     padding-top: 5vh;
-//     #cont {
-//       width: 670px;
-//       display: grid;
-//       margin: 0 auto 0 auto;
-//       padding-bottom: 100px;
-//       #opis {
-//         order: 2;
-//         display: inline-block;
-//         text-align: center;
-//         width: 100%;
-//         padding: 0;
-//         margin-right: 0px;
-//         margin-top: 20px;
-//         #typed{
-//           margin: 0;
-//           font-weight: 600;
-//           display: flex;
-//           justify-content: center;
-//           width: auto;
-//           padding: 0 auto;
-//           text-transform: capitalize;
-//         }
-//       }
-//       #opis2 {
-//         clear: both;
-//         order: 1;
-//         display: inline-block;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         right: 0;
-//       }
-//     }
-//   }
-// }
 
 
 
