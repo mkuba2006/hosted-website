@@ -646,8 +646,9 @@ body{
           div{
               margin: 5px 0;
               p{
-                  width: 85px;
-                  font-size: 16px;
+                min-width: 82px;
+                width: 85px;
+                font-size: 16px;
               }
               #dots{
                   div{

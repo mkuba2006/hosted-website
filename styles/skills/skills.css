@@ -542,6 +542,7 @@ body {
     margin: 5px 0;
   }
   #skills #my_skills div p {
+    min-width: 82px;
     width: 85px;
     font-size: 16px;
   }
