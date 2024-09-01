@@ -307,6 +307,16 @@ html {
     width: 320px;
   }
 }
+@media screen and (max-width: 800px) {
+  #cont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #first #cont #opis {
+    text-align: center;
+    min-width: auto;
+  }
+}
 @media screen and (max-width: 550px) {
   #first #cont #opis #myname {
     font-size: 28px;
