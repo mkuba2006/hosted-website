@@ -303,7 +303,7 @@ body {
     position: absolute;
     top: -2px;
     left: 5px;
-    width: 200px;
+    width: 120px;
     height: 5px;
     background: white;
     border-radius: 12px;
@@ -382,7 +382,7 @@ body {
     position: absolute;
     top: -2px;
     left: 5px;
-    width: 250px;
+    width: 120px;
     height: 5px;
     background: white;
     border-radius: 12px;
@@ -436,13 +436,13 @@ body {
     padding: 50px 0;
   }
   #skills h1 {
-    width: 90%;
+    width: 95%;
     color: white;
     font-weight: 800;
     font-size: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   #skills .arrow {
@@ -473,7 +473,7 @@ body {
     width: 95%;
   }
   #skills #my_skills div {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -483,7 +483,7 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    width: 90px;
+    width: auto;
     margin: 0;
     font-weight: 700;
     font-size: 16px;
@@ -491,7 +491,7 @@ body {
   #skills #my_skills div #dots {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
   }
