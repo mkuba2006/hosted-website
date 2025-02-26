@@ -17,11 +17,12 @@ body{
     h1 {
         width: 1000px;
         color: white;
-        font-weight: 800;
+        font-weight: 500;
         font-size: 70px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        font-family: "xxx", sans-serif;
       }
       
       .arrow {
@@ -232,7 +233,7 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     margin: 0 auto;
-    min-height: 400px;
+    min-height: 350px;
       h1 {
           width: 90%;
           max-width: 900px;

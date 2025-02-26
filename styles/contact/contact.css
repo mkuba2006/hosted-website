@@ -146,6 +146,16 @@ h3 {
   font-family: "xxx", sans-serif;
 }
 
+@media screen and (max-width: 1500px) {
+  #contact #container {
+    padding: 4% 5% 4% 5%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #contact #container #prawa {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 850px) {
   #contact #container {
     background-position: left;

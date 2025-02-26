@@ -135,7 +135,11 @@ html {
   }
   #caruzela{
     padding: 280px 0 0 0;
+    #info{
+      display: none;
+    }
     .line {
+      display: none;
       margin: 0px auto;
       width: 100px;
       height: 2px;

@@ -7,6 +7,7 @@
     <title>JmsuiPage</title>
     <link rel="shortcut icon" href="LOGO.xcf" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/website.css">
     <link rel="stylesheet" href="styles/first/first.css">
     <link rel="stylesheet" href="styles/nav/nav.css">
@@ -20,13 +21,15 @@
     <link rel="stylesheet" href="styles/certificates/certificates.css">
     <link rel="stylesheet" href="./styles/questions/questions.css">
     <link rel="stylesheet" href="styles/skills/skills.css">
+    <link rel="stylesheet" href="styles/hire/hire.css">
+
+
     <link rel="stylesheet" href="https://use.typekit.net/rbv2srb.css">
     <link rel="stylesheet" href="https://use.typekit.net/ydo8kpp.css">
     <link rel="stylesheet" href="https://use.typekit.net/fqd8uxn.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
-    <link rel="stylesheet" href="styles/hire/hire.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/9b742cfd8c.js" crossorigin="anonymous" ></script>
@@ -46,7 +49,7 @@
         <a href="/hobbies.html"><button id="languages" class="Nav-el">Hobbies</button></a>
         <a href="#four"><button id="infos" class="Nav-el">Projects</button></a>
         <a href="#crt2"><button id="certificate" class="Nav-el">Certificates</button></a>
-        <a href="#ones"><button id="contact" class="Nav-el">Contact</button></a>
+        <a href="#ones"><button id="ccontact" class="Nav-el">Contact</button></a>
       </div>
     </div>
     <div id="burger1" onclick="toggleMenu()">
@@ -169,7 +172,7 @@
     <h3 id="info"><span>PROJECTS</span></h3>
     <div class="line"></div>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -458,7 +461,15 @@
           <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/QR31.png?raw=true"/>
         </div>
       </div>
+    
+    <div id="third_cert">
+      <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/certyfikat_3.png?raw=true" id="img2"/>
+      <div id="cloud" class="cloud3">
+        <img src="https://github.com/mkuba2006/hosted-website/blob/master/images/QR31.png?raw=true"/>
+      </div>
     </div>
+    
+  </div>
   </section>
     
 
@@ -520,7 +531,9 @@
     <img id="red_two" src="./images/red2.svg" alt="">
   </div>
 
-
+  <div id="black1">
+    <img id="black_one" src="./images/wave-haikei (35).svg" alt="">
+  </div>
 
 <section id="contact">
     <div id="container">
@@ -578,6 +591,18 @@
 	var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 100
   });
+  function checkWidth() {
+    const imgElement = document.getElementById('black_one');
+    if (window.innerWidth < 500) {
+      imgElement.src = './images/wave-haikei (36).svg';
+    } else {
+      imgElement.src = './images/wave-haikei (35).svg';
+    }
+  }
+
+  window.addEventListener('resize', checkWidth);
+
+  checkWidth();
 </script>
 
 </body>
