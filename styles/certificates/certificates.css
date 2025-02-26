@@ -89,8 +89,8 @@ h3 {
   max-height: 250px;
 }
 #certificates div .cloud4 {
-  height: 48%;
-  transform: translateY(108%);
+  height: 49%;
+  transform: translateY(105%);
   background-color: rgba(0, 0, 0, 0.9019607843);
   top: 0px;
   position: absolute;
@@ -135,16 +135,13 @@ h3 {
 }
 
 @media screen and (max-width: 1400px) {
-  #certificates {
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-  }
   #certificates div img {
     filter: blur(0.5px);
     width: 100%;
   }
-  #certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3 {
+  #certificates div .cloud1, #certificates div .cloud3 {
     height: 100%;
+    width: 150%;
     background-color: rgba(0, 0, 0, 0.9019607843);
     top: 0px;
     position: absolute;
@@ -157,26 +154,64 @@ h3 {
     text-align: center;
     margin: 0;
   }
-  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+  #certificates div .cloud1 img, #certificates div .cloud3 img {
+    margin: 0;
+    opacity: 1;
+    max-width: 190px;
+    max-height: 190px;
+  }
+  #certificates div .cloud2 {
+    height: 100%;
+    width: 150%;
+    background-color: rgba(0, 0, 0, 0.9019607843);
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  #certificates div .cloud2 img {
+    margin: 0;
+    opacity: 1;
+    max-width: 190px;
+    max-height: 190px;
+  }
+  #certificates div .cloud4 {
+    height: 49%;
+    transform: translateY(105%);
+    background-color: rgba(0, 0, 0, 0.9019607843);
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  #certificates div .cloud4 img {
     margin: 0;
     opacity: 1;
     max-width: 190px;
     max-height: 190px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   #line2 {
     margin-bottom: 50px;
-  }
-  #certificates {
-    overflow-x: scroll;
-    flex-wrap: nowrap;
   }
   #certificates div img {
     filter: blur(0.5px);
     width: 100%;
   }
-  #certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3 {
+  #certificates div .cloud1, #certificates div .cloud3 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9019607843);
     top: 0px;
@@ -190,14 +225,56 @@ h3 {
     text-align: center;
     margin: 0;
   }
-  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+  #certificates div .cloud1 img, #certificates div .cloud3 img {
+    margin: 0;
+    opacity: 1;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  #certificates div .cloud2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9019607843);
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  #certificates div .cloud2 img {
+    margin: 0;
+    opacity: 1;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  #certificates div .cloud4 {
+    height: 49%;
+    transform: translateY(105%);
+    background-color: rgba(0, 0, 0, 0.9019607843);
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  #certificates div .cloud4 img {
     margin: 0;
     opacity: 1;
     max-width: 150px;
     max-height: 150px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   #dos {
     margin-bottom: 100px;
   }
@@ -208,7 +285,10 @@ h3 {
   #certificates div {
     width: 500px;
   }
-  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+  #certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3, #certificates div .cloud4 {
+    width: 500px;
+  }
+  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img, #certificates div .cloud4 img {
     margin: 0;
     opacity: 1;
     max-width: 200px;
@@ -219,16 +299,20 @@ h3 {
     width: 100%;
   }
   #certificates div .cloud1 {
-    height: 31%;
+    height: 23%;
     top: 0px;
   }
   #certificates div .cloud2 {
-    height: 31%;
-    top: 34.3%;
+    height: 23%;
+    top: 25.7%;
   }
   #certificates div .cloud3 {
-    height: 31%;
-    top: 69%;
+    height: 23%;
+    top: 51.4%;
+  }
+  #certificates div .cloud4 {
+    height: 23%;
+    top: 53%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -263,7 +347,10 @@ h3 {
   #certificates div {
     width: 370px;
   }
-  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+  #certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3, #certificates div .cloud4 {
+    width: 370px;
+  }
+  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img, #certificates div .cloud4 img {
     margin: 0;
     opacity: 1;
     max-width: 170px;
@@ -274,16 +361,20 @@ h3 {
     width: 100%;
   }
   #certificates div .cloud1 {
-    height: 31%;
+    height: 22.1%;
     top: 0px;
   }
   #certificates div .cloud2 {
-    height: 31%;
-    top: 34.3%;
+    height: 22.6%;
+    top: 25.8%;
   }
   #certificates div .cloud3 {
-    height: 31%;
-    top: 69%;
+    height: 22.1%;
+    top: 51.7%;
+  }
+  #certificates div .cloud4 {
+    height: 22.1%;
+    top: 54.6%;
   }
 }
 @media screen and (max-width: 440px) {
@@ -299,7 +390,10 @@ h3 {
   #certificates div {
     width: 300px;
   }
-  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+  #certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3, #certificates div .cloud4 {
+    width: 300px;
+  }
+  #certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img, #certificates div .cloud4 img {
     margin: 0;
     opacity: 1;
     max-width: 130px;
@@ -310,16 +404,20 @@ h3 {
     width: 100%;
   }
   #certificates div .cloud1 {
-    height: 30%;
+    height: 22.1%;
     top: 0px;
   }
   #certificates div .cloud2 {
-    height: 30%;
-    top: 34.6%;
+    height: 22.6%;
+    top: 25.8%;
   }
   #certificates div .cloud3 {
-    height: 30%;
-    top: 70%;
+    height: 22.1%;
+    top: 51.7%;
+  }
+  #certificates div .cloud4 {
+    height: 22.1%;
+    top: 54.6%;
   }
 }
 @media screen and (max-width: 350px) {
