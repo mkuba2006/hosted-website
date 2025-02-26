@@ -36,6 +36,7 @@ h3 {
   justify-content: space-around;
   overflow: hidden;
   z-index: 0;
+  row-gap: 20px;
   margin-bottom: 150px;
 }
 #certificates div {
@@ -47,7 +48,7 @@ h3 {
   width: 100%;
   z-index: 0;
 }
-#certificates div .cloud1, #certificates div .cloud2, #certificates div .cloud3 {
+#certificates div .cloud1, #certificates div .cloud3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9019607843);
   top: 0px;
@@ -61,17 +62,58 @@ h3 {
   text-align: center;
   margin: 0;
 }
-#certificates div .cloud1 img, #certificates div .cloud2 img, #certificates div .cloud3 img {
+#certificates div .cloud1 img, #certificates div .cloud3 img {
   margin: 0;
   opacity: 1;
   max-width: 250px;
   max-height: 250px;
 }
-#certificates div .cloud1:hover, #certificates div .cloud2:hover, #certificates div .cloud3:hover {
+#certificates div .cloud2 {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  top: 0px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+#certificates div .cloud2 img {
+  margin: 0;
+  opacity: 1;
+  max-width: 250px;
+  max-height: 250px;
+}
+#certificates div .cloud4 {
+  height: 48%;
+  transform: translateY(108%);
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  top: 0px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+#certificates div .cloud4 img {
+  margin: 0;
+  opacity: 1;
+  max-width: 250px;
+  max-height: 250px;
+}
+#certificates div .cloud1:hover, #certificates div .cloud2:hover, #certificates div .cloud3:hover, #certificates div .cloud4:hover {
   opacity: 1;
   display: flex;
 }
-#certificates div .cloud1:hover img, #certificates div .cloud2:hover img, #certificates div .cloud3:hover img {
+#certificates div .cloud1:hover img, #certificates div .cloud2:hover img, #certificates div .cloud3:hover img, #certificates div .cloud4:hover img {
   margin: 0;
   opacity: 1;
 }
